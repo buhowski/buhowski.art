@@ -5,6 +5,10 @@ import App from "./views/App";
 import { BrowserRouter } from "react-router-dom";
 
 // some fix with mobile window height
+// TODO:
+// if (window) {
+
+// }
 window.addEventListener("resize", () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -13,9 +17,10 @@ window.addEventListener("resize", () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    {/* TODO */}
+    {/* <React.StrictMode> */}
+    <App />
+    {/* </React.StrictMode> */}
   </BrowserRouter>
 );
 
