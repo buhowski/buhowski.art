@@ -17,6 +17,10 @@ const linksData = [
     pageLink: "gallery",
     pageName: "Gallery",
   },
+  {
+    pageLink: "/idea",
+    pageName: "Idea",
+  },
 ];
 const Header = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);

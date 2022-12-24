@@ -6,13 +6,12 @@ import { BrowserRouter } from "react-router-dom";
 
 // some fix with mobile window height
 // TODO:
-// if (window) {
-
-// }
-window.addEventListener("resize", () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-});
+if (window.innerWidth <= 720) {
+  window.addEventListener("resize", () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  });
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

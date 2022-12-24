@@ -1,0 +1,18 @@
+.wrapper--idea {
+	height: calc(100% - 100px - 4rem);
+}
+
+.idea-section {
+	background: #202020;
+	padding: 70px;
+	display: flex;
+	height: inherit;
+	overflow: hidden;
+
+	&__left {
+		max-width: 650px;
+		height: 100%;
+		overflow: auto;
+	}
+
+}

@@ -7,7 +7,9 @@ import Header from "../components/header/Header";
 import Home from "./home/Home";
 import About from "./about/About";
 import Projects from "./projects/Projects";
+// Gallery page with funny photos TODO: comment page
 import Gallery from "./gallery/Gallery";
+import Idea from "./idea/Idea";
 
 const routesData = [
   {
@@ -25,6 +27,10 @@ const routesData = [
   {
     pathTo: "gallery",
     pageComponent: <Gallery />,
+  },
+  {
+    pathTo: "idea",
+    pageComponent: <Idea />,
   },
 ];
 
