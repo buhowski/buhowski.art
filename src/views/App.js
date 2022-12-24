@@ -12,19 +12,19 @@ import Gallery from "./gallery/Gallery";
 const routesData = [
   {
     pathTo: "",
-    pageComponent: Home,
+    pageComponent: <Home />,
   },
   {
     pathTo: "about",
-    pageComponent: About,
+    pageComponent: <About />,
   },
   {
     pathTo: "projects",
-    pageComponent: Projects,
+    pageComponent: <Projects />,
   },
   {
     pathTo: "gallery",
-    pageComponent: Gallery,
+    pageComponent: <Gallery />,
   },
 ];
 
@@ -36,12 +36,7 @@ const App = () => {
         <Routes>
           {routesData.map(({ pathTo, pageComponent }, i) => {
             return (
-              <Route
-                path={`/${pathTo}`}
-                end
-                element={`<${pageComponent} />`}
-                key={i}
-              />
+              <Route path={`/${pathTo}`} end element={pageComponent} key={i} />
             );
           })}
         </Routes>
