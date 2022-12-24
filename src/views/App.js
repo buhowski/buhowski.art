@@ -1,6 +1,6 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-// import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { useLocation, Route, Routes } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "./App.scss";
 import Header from "../components/header/Header";
 
@@ -29,19 +29,30 @@ const routesData = [
 ];
 
 const App = () => {
+  const location = useLocation();
+
   return (
-    <div id="page" className="page">
-      <div className="page-container">
-        <Header />
-        <Routes>
-          {routesData.map(({ pathTo, pageComponent }, i) => {
-            return (
-              <Route path={`/${pathTo}`} end element={pageComponent} key={i} />
-            );
-          })}
-        </Routes>
-      </div>
-    </div>
+    <TransitionGroup>
+      <CSSTransition key={location.key} classNames="slide" timeout={1700}>
+        <div id="page" className="page">
+          <div className="page-container">
+            <Header />
+            <Routes location={location}>
+              {routesData.map(({ pathTo, pageComponent }, i) => {
+                return (
+                  <Route
+                    path={`/${pathTo}`}
+                    end
+                    element={pageComponent}
+                    key={i}
+                  />
+                );
+              })}
+            </Routes>
+          </div>
+        </div>
+      </CSSTransition>
+    </TransitionGroup>
   );
 };
 
