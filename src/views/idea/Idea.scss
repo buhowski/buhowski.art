@@ -16,3 +16,31 @@
 	}
 
 }
+
+// Slider default style
+.slider-container {
+	width: 100%;
+}
+
+.slider-js {
+	position: relative;
+	height: 100%;
+}
+
+.slider-item-js {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	&[data-active="true"] {
+		transform: translate(-50%, -50%);
+	}
+}
+
+.slide-item[data-active="false"] {
+	transform: translate(calc(-100vw - 50%), -50%);
+}
+
+.slide-item[data-active="true"]~.slide-item[data-active="false"] {
+	transform: translate(calc(100vw + 50%), -50%);
+}
