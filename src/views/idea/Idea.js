@@ -88,40 +88,13 @@ class Idea extends Component {
         <div className="idea-section">
           <div className="idea-info">
             <div className="idea-text">
-              <div className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                possimus architecto voluptatum voluptatibus praesentium
-                repellat. Voluptatumm enim consequuntur ducimus eos voluptatibus
-                provident debitis quisquam delectus mollitia sapiente
-                cessitatibus tenetur assumenda labore accusantium debitis
-                impedit sapiente harum minus quisquam! Beatae, quisquam autem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                possimus architecto voluptatum voluptatibus praesentium
-                repellat. Voluptatumm enim consequuntur ducimus eos voluptatibus
-                provident debitis quisquam delectus mollitia sapiente
-                cessitatibus tenetur assumenda labore accusantium debitis
-                impedit sapiente harum minus quisquam! Beatae, quisquam autem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                possimus architecto voluptatum voluptatibus praesentium
-                repellat. Voluptatumm enim consequuntur ducimus eos voluptatibus
-                provident debitis quisquam delectus mollitia sapiente
-                cessitatibus tenetur assumenda labore accusantium debitis
-                impedit sapiente harum minus quisquam! Beatae, quisquam autem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                possimus architecto voluptatum voluptatibus praesentium
-                repellat. Voluptatumm enim consequuntur ducimus eos voluptatibus
-                provident debitis quisquam delectus mollitia sapiente
-                cessitatibus tenetur assumenda labore accusantium debitis
-                impedit sapiente harum minus quisquam! Beatae, quisquam autem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                possimus architecto voluptatum voluptatibus praesentium
-                repellat. Voluptatumm enim consequuntur ducimus eos voluptatibus
-                provident debitis quisquam delectus mollitia sapiente
-                cessitatibus tenetur assumenda labore accusantium debitis
-                impedit sapiente harum minus quisquam! Beatae, quisquam autem.
-              </div>
+              <div className=""></div>
 
-              <div className="">btns here</div>
+              <div className="">
+                <a className="a nav-link" href="/" target="_blank">
+                  text
+                </a>
+              </div>
             </div>
           </div>
 

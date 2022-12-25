@@ -9,6 +9,33 @@
 	padding: 70px;
 	display: flex;
 	height: inherit;
+
+	.nav-link {
+		display: inline-block;
+		&::after {
+			height: 2px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 2px;
+			background-color: $blue-main;
+			z-index: -1;
+			transition: transform 0.4s ease;
+			transform: scale(0, 1);
+		}
+
+		&:hover::after {
+			transform: scale(0, 1);
+		}
+
+		&:hover::before {
+			transform: scale(1, 1);
+		}
+	}
 }
 
 .idea-info {
@@ -64,7 +91,6 @@
 .slides-number {
 	font-size: 10px;
 	position: absolute;
-	z-index: 1;
 	top: 12px;
 	right: 12px;
 }
@@ -78,7 +104,6 @@
 }
 
 .slider-btn-js {
-
 	width: 15px;
 	height: 15px;
 	border: 2px solid $blue-main;
