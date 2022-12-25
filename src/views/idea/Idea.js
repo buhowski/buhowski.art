@@ -16,6 +16,42 @@ const dataImgs = [
     imgSrc: sliderImg1,
     imgAlt: "idea picture",
   },
+  {
+    imgSrc: sliderImg1,
+    imgAlt: "idea picture",
+  },
+  {
+    imgSrc: sliderImg1,
+    imgAlt: "idea picture",
+  },
+  {
+    imgSrc: sliderImg1,
+    imgAlt: "idea picture",
+  },
+  {
+    imgSrc: sliderImg1,
+    imgAlt: "idea picture",
+  },
+  {
+    imgSrc: sliderImg1,
+    imgAlt: "idea picture",
+  },
+  {
+    imgSrc: sliderImg1,
+    imgAlt: "idea picture",
+  },
+  {
+    imgSrc: sliderImg1,
+    imgAlt: "idea picture",
+  },
+  {
+    imgSrc: sliderImg1,
+    imgAlt: "idea picture",
+  },
+  {
+    imgSrc: sliderImg1,
+    imgAlt: "idea picture",
+  },
 ];
 
 class Idea extends Component {
@@ -71,26 +107,24 @@ class Idea extends Component {
               })}
             </div>
 
+            <span className="slides-number">
+              {`${this.state.activeIndex + 1 < 10 ? "0" : ""}${
+                this.state.activeIndex + 1
+              } / ${dataImgs.length}`}
+            </span>
+
             <div className="slider-actions">
               <button
                 className="slider-btn-js slider-btn-js-prev"
                 type="button"
                 onClick={this.clickPrev}
-              >
-                prev
-              </button>
-
-              <span className="slides-number">
-                {`${this.state.activeIndex + 1} / ${dataImgs.length}`}
-              </span>
+              ></button>
 
               <button
                 className="slider-btn-js slider-btn-js-next"
                 type="button"
                 onClick={this.clickNext}
-              >
-                next
-              </button>
+              ></button>
             </div>
           </div>
         </div>

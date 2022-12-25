@@ -1,9 +1,11 @@
+@import '../../styles/variables.scss';
+
 .wrapper--idea {
 	height: calc(100% - 100px - 4rem);
 }
 
 .idea-section {
-	background: #202020;
+	background: $dark;
 	padding: 70px;
 	display: flex;
 	height: inherit;
@@ -22,13 +24,13 @@
 .slider-container {
 	width: 100%;
 	overflow: hidden;
+	position: relative;
 }
 
 .slider-js {
-	position: relative;
 	display: flex;
-	height: 90%;
-	transition: transform .3s ease-in;
+	height: calc(100% - 55px);
+	transition: transform .42s ease-in;
 }
 
 .slider-item-js {
@@ -42,17 +44,37 @@
 		width: 100%;
 		height: inherit;
 	}
+}
 
-	// &[data-active="true"] {
-	// 	transform: translate(0, 0);
-	// }
+.slides-number {
+	font-size: 10px;
+	position: absolute;
+	z-index: 1;
+	top: 12px;
+	right: 12px;
+}
 
-	// &[data-active="false"] {
-	// 	transform: translate(-100%, 0);
-		
-	// }
+.slider-actions {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	justify-content: flex-end;
+	margin-top: 30px;
+}
 
-	// &[data-active="true"] ~ .slider-item-js[data-active="false"] {
-	// 	transform: translate(100%, 0);
-	// }
+.slider-btn-js {
+	
+	width: 15px;
+	height: 15px;
+	border: 2px solid $blue-main;
+	border-width: 2px 2px 0 0;
+	
+	&-next {
+		transform: rotate(45deg);
+	}
+	
+	&-prev {
+		transform: rotate(-135deg);
+		margin-right: 20px;
+	}
 }
