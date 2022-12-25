@@ -9,15 +9,28 @@
 	padding: 70px;
 	display: flex;
 	height: inherit;
-	overflow: hidden;
+}
 
-	&__left {
-		max-width: 650px;
-		width: 100%;
-		height: 100%;
-		overflow: auto;
+.idea-info {
+	max-width: 600px;
+	width: 100%;
+	overflow: hidden;
+	flex-shrink: 0;
+	margin-right: 40px;
+}
+
+.idea-text {
+	height: 100%;
+	overflow: auto;
+	padding-right: 30px;
+
+	&::-webkit-scrollbar {
+		width: 2px;
 	}
 
+	&::-webkit-scrollbar-track {
+		background: $bg-color;
+	}
 }
 
 // Slider default style
@@ -25,19 +38,21 @@
 	width: 100%;
 	overflow: hidden;
 	position: relative;
+	margin-top: -110px;
 }
 
 .slider-js {
 	display: flex;
-	height: calc(100% - 55px);
-	transition: transform .42s ease-in;
+	// height: calc(100% - 100px);
+	height: 400px;
+	transition: transform .4s ease-in;
 }
 
 .slider-item-js {
 	width: 100%;
 	height: 100%;
 	flex-shrink: 0;
-	
+
 
 	img {
 		object-fit: cover;
@@ -59,20 +74,20 @@
 	align-items: center;
 	padding: 5px;
 	justify-content: flex-end;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .slider-btn-js {
-	
+
 	width: 15px;
 	height: 15px;
 	border: 2px solid $blue-main;
 	border-width: 2px 2px 0 0;
-	
+
 	&-next {
 		transform: rotate(45deg);
 	}
-	
+
 	&-prev {
 		transform: rotate(-135deg);
 		margin-right: 20px;

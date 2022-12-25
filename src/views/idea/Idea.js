@@ -86,10 +86,43 @@ class Idea extends Component {
         <h1 className="base-title">Idea title</h1>
 
         <div className="idea-section">
-          <div className="idea-section__left">
-            <div className="idea-section__left-text"></div>
+          <div className="idea-info">
+            <div className="idea-text">
+              <div className="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                possimus architecto voluptatum voluptatibus praesentium
+                repellat. Voluptatumm enim consequuntur ducimus eos voluptatibus
+                provident debitis quisquam delectus mollitia sapiente
+                cessitatibus tenetur assumenda labore accusantium debitis
+                impedit sapiente harum minus quisquam! Beatae, quisquam autem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                possimus architecto voluptatum voluptatibus praesentium
+                repellat. Voluptatumm enim consequuntur ducimus eos voluptatibus
+                provident debitis quisquam delectus mollitia sapiente
+                cessitatibus tenetur assumenda labore accusantium debitis
+                impedit sapiente harum minus quisquam! Beatae, quisquam autem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                possimus architecto voluptatum voluptatibus praesentium
+                repellat. Voluptatumm enim consequuntur ducimus eos voluptatibus
+                provident debitis quisquam delectus mollitia sapiente
+                cessitatibus tenetur assumenda labore accusantium debitis
+                impedit sapiente harum minus quisquam! Beatae, quisquam autem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                possimus architecto voluptatum voluptatibus praesentium
+                repellat. Voluptatumm enim consequuntur ducimus eos voluptatibus
+                provident debitis quisquam delectus mollitia sapiente
+                cessitatibus tenetur assumenda labore accusantium debitis
+                impedit sapiente harum minus quisquam! Beatae, quisquam autem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                possimus architecto voluptatum voluptatibus praesentium
+                repellat. Voluptatumm enim consequuntur ducimus eos voluptatibus
+                provident debitis quisquam delectus mollitia sapiente
+                cessitatibus tenetur assumenda labore accusantium debitis
+                impedit sapiente harum minus quisquam! Beatae, quisquam autem.
+              </div>
 
-            <div className="">btns here</div>
+              <div className="">btns here</div>
+            </div>
           </div>
 
           <div className="slider-container">

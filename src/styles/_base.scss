@@ -7,22 +7,28 @@ body {
 	letter-spacing: 1px;;
 	user-select: none;
 	overflow: hidden;
+	scrollbar-width: 2px;      
+  scrollbar-color: $blue-main $dark; 
 	@include mobile {
 		height: calc(var(--vh, 1vh) * 100);
 		min-height: -webkit-fill-available;
 	}
 }
+
 ::-webkit-scrollbar {
 	width: 8px;
+	
 	@include mobile {
 		width: 2px;
 	}
 }
 ::-webkit-scrollbar-track {
 	background: $dark;
+	border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
 	background: $blue-main;
+	border-radius: 10px;
 }
 .a {
 	color: #fff;
