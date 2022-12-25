@@ -90,11 +90,7 @@ class Idea extends Component {
             <div className="idea-text">
               <div className=""></div>
 
-              <div className="">
-                <a className="a nav-link" href="/" target="_blank">
-                  text
-                </a>
-              </div>
+              <div className=""></div>
             </div>
           </div>
 
@@ -132,6 +128,14 @@ class Idea extends Component {
                 onClick={this.clickNext}
               ></button>
             </div>
+
+            <a
+              className="a nav-link nav-link--underline"
+              href="/"
+              target="_blank"
+            >
+              Text Me or...
+            </a>
           </div>
         </div>
       </div>
