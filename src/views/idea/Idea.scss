@@ -2,6 +2,10 @@
 
 .wrapper--idea {
 	height: calc(100% - 100px - 4rem);
+	position: relative;
+	@include tabletBig {
+		height: auto;
+	}
 }
 
 
@@ -36,7 +40,21 @@
 	background: $dark;
 	padding: 70px;
 	display: flex;
+	// height: calc(100% - (4rem + 24px + 2.5vw));
 	height: inherit;
+
+	@include tabletBig {
+		// position: static;
+		flex-direction: column-reverse;
+		padding: 40px;
+		height: auto;
+		margin-bottom: 40px;
+	}
+
+	@include mobile {
+		padding: 20px;
+		padding-bottom: 35px;
+	}
 }
 
 .idea-info {
@@ -45,6 +63,13 @@
 	overflow: hidden;
 	flex-shrink: 0;
 	margin-right: 40px;
+
+	@include tabletBig {
+		max-width: 100%;
+		margin-right: 0;
+		margin-top: 30px;
+		flex-shrink: unset;
+	}
 }
 
 .idea-text {
@@ -59,6 +84,10 @@
 	&::-webkit-scrollbar-track {
 		background: $bg-color;
 	}
+
+	@include tabletBig {
+		padding-right: 0;
+	}
 }
 
 // Slider default style
@@ -70,19 +99,41 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@include tabletBig {
+		margin-top: -75px;
+		height: 120px;
+
+		.nav-link {
+			display: none;
+		}
+	}
+
+	@include tabletSmall {
+		margin-top: -62px;
+	}
+
+	@include mobile {
+		margin-top: -42px;
+	}
 }
 
 .slider-js {
 	display: flex;
 	max-height: 400px;
-	height: calc(100% - 120px);
+	height: calc(100% - 122px);
 	transition: transform .4s ease-in;
+
+	@include tabletBig {
+		height: 100%;
+	}
 }
 
 .slider-item-js {
 	width: 100%;
 	height: 100%;
 	flex-shrink: 0;
+	display: flex;
 
 	img {
 		object-fit: cover;
@@ -107,25 +158,67 @@
 	align-self: flex-end;
 	margin-top: 20px;
 	margin-bottom: 30px;
+
+	@include tabletBig {
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin: 0;
+	}
 }
 
 .slider-btn-js {
-	width: 15px;
-	height: 15px;
-	border: 2px solid $blue-main;
-	border-width: 2px 2px 0 0;
-	opacity: .5;
+	@include tabletBig {
+		padding: 10px;
+		background: $dark;
+		border-radius: 50%;
+	}
 
-	&:hover {
+	&::before {
+
+		content: '';
+		display: block;
+		width: 15px;
+		height: 15px;
+		border: 2px solid $blue-main;
+		border-width: 2px 2px 0 0;
+		opacity: .5;
+
+		@include tabletBig {
+			width: 5px;
+			height: 5px;
+			opacity: 1;
+		}
+
+	}
+
+	&:hover::before {
 		opacity: 1;
 	}
 
+
+
+
 	&-next {
-		transform: rotate(45deg);
+		&::before {
+			transform: rotate(45deg);
+			@include tabletBig {
+				transform: rotate(45deg) translate(-1px, 1px);
+			}
+		}
 	}
 
 	&-prev {
-		transform: rotate(-135deg);
 		margin-right: 20px;
+		@include tabletBig {
+			margin-right: 10px;
+		}
+		&::before {
+			transform: rotate(-135deg);
+			@include tabletBig {
+				transform: rotate(-135deg) translate(-1px, 1px);
+			}
+		}
+		
 	}
 }
