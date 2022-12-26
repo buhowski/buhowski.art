@@ -3,7 +3,9 @@ import React from "react";
 export default function IdeaText() {
   return (
     <div className="idea-text">
-      <div className=""> &copy;</div>
+      <div className="idea-copy">
+        <p>&copy; Alexander Tsiomakh {new Date().getFullYear()}</p>
+      </div>
 
       <div className="idea-block">
         <h2 className="idea-block__title h2">Basic. Главное в целом:</h2>
