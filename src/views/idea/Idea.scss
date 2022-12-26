@@ -141,7 +141,11 @@
 		margin-bottom: 5px;
 		position: relative;
 		display: flex;
-		align-items: center;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
 		&::before {
 			content: '';
 			display: block;
@@ -150,6 +154,8 @@
 			border-radius: 50%;
 			background: #dbb4b4;
 			margin-right: 10px;
+			margin-top: 6.5px;
+			flex-shrink: 0;
 		}
 
 		.idea-block__star {
@@ -164,6 +170,18 @@
 	&__desc {
 		font-size: 10px;
 		margin: 10px 0;
+	}
+
+	&--features {
+		p {
+			margin-bottom: 5px;
+		}
+
+		li {
+			&::before {
+				display: none;;
+			}
+		}
 	}
 }
 
