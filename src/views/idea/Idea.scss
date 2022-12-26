@@ -177,9 +177,16 @@
 			margin-bottom: 5px;
 		}
 
+		span {
+			color: $starYellow;
+			display: inline-block;
+			align-items: start;
+		}
+
 		li {
+			display: block;
 			&::before {
-				display: none;;
+				display: none;
 			}
 		}
 	}
