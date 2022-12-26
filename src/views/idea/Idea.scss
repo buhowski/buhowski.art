@@ -66,8 +66,10 @@
 
 .idea-info {
 	font-family: $Montserrat;
-	font-size: 14px;
+	font-size: 13px;
+	line-height: normal;
 	letter-spacing: normal;
+	color: #ddd;
 	max-width: 600px;
 	width: 100%;
 	overflow: hidden;
@@ -101,7 +103,30 @@
 }
 
 .idea-block {
-	margin-bottom: 15px;
+	margin-bottom: 30px;
+
+	.h2 {
+		color: $blue-main;
+		font-size: 16px;
+		// font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	.h3 {
+		// font-style: italic;
+		font-weight: 500;
+		color: #fff;
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+
+	p {
+		margin-bottom: 5px;
+	}
+
+	&__star {
+		color: #fff;
+	}
 }
 
 // Slider default style
