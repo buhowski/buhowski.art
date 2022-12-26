@@ -3,53 +3,9 @@ import "./Idea.scss";
 import IdeaText from "./IdeaText";
 import sliderImg1 from "./images/bm-l.jpg";
 
-let ideaLinkText = "some text";
+let ideaLinkText = "Contact Me";
 let ideaLinkURL = "/";
 const dataImgs = [
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
-  {
-    imgSrc: sliderImg1,
-    imgAlt: "idea picture",
-  },
   {
     imgSrc: sliderImg1,
     imgAlt: "idea picture",
@@ -97,9 +53,7 @@ class Idea extends Component {
         <h1 className="base-title">Idea title</h1>
 
         <div className="idea-section">
-          <div className="idea-info">
-            <IdeaText />
-          </div>
+          <IdeaText />
 
           <div className="slider-container">
             <div className="idea-slider slider-js" style={sliderStyle}>
@@ -119,7 +73,7 @@ class Idea extends Component {
             <span className="slides-number">
               {`${this.state.activeIndex + 1 < 10 ? "0" : ""}${
                 this.state.activeIndex + 1
-              } / ${dataImgs.length}`}
+              } / ${dataImgs.length < 10 ? "0" : ""}${dataImgs.length}`}
             </span>
 
             <div className="slider-actions">
