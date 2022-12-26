@@ -4,7 +4,7 @@ export default function IdeaText() {
   return (
     <div className="idea-text">
       <div className="idea-copy">
-        <p>&copy; Alexander Tsiomakh {new Date().getFullYear()}</p>
+        <p>&copy; {new Date().getFullYear()}</p>
       </div>
 
       <div className="idea-block">
