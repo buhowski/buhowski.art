@@ -1,5 +1,9 @@
 @import '../../styles/variables.scss';
 
+.h2 {
+	font-weight: 500;
+}
+
 .wrapper--idea {
 	height: calc(100% - 100px - 4rem);
 	position: relative;
@@ -61,6 +65,9 @@
 }
 
 .idea-info {
+	font-family: $Montserrat;
+	font-size: 14px;
+	letter-spacing: normal;
 	max-width: 600px;
 	width: 100%;
 	overflow: hidden;
@@ -81,7 +88,7 @@
 	padding-right: 30px;
 
 	&::-webkit-scrollbar {
-		width: 2px;
+		width: 3px;
 	}
 
 	&::-webkit-scrollbar-track {
@@ -91,6 +98,10 @@
 	@include tabletBig {
 		padding-right: 0;
 	}
+}
+
+.idea-block {
+	margin-bottom: 15px;
 }
 
 // Slider default style
