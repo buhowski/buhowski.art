@@ -4,7 +4,7 @@ import ideaData from "./ideaData";
 export default function IdeaText() {
   return (
     <div className="idea-info">
-      {ideaData.map((item, i) => {
+      {ideaData.map((data, i) => {
         return (
           <div className="idea-text" key={i}>
             <div className="idea-copy">
@@ -14,84 +14,39 @@ export default function IdeaText() {
             </div>
 
             <div className="idea-block">
-              <h2 className="idea-block__title h2">Basic. Главное в целом:</h2>
-              <p className="idea-block__text">
-                Приложение примера укомплектованного многофункционального
-                журнала с возможностью ведения и развития любой производственной
-                деятельности или же служащее для поиска информации, развлечения,
-                беззаботного времяпрепровождения.
-              </p>
-              <h3 className="h3">Возможности:</h3>
+              <h2 className="idea-block__title h2">{data.basicRu}</h2>
+              <p className="idea-block__text">{data.appSampleRu}</p>
+              <h3 className="h3">{data.possibilitiesTitleRu}</h3>
               <ul>
-                {/* {item.possibilitiesItemsRu.map((index) => {
-                  return <li>{index}</li>;
-                })} */}
-                <li>
-                  Социальная сеть, ведения фото/видео/текстового микроблогинга
-                  <span className="idea-block__star">*</span>
-                </li>
-                <li>
-                  Онлайн кинотеатр/видеохостинг
-                  <span className="idea-block__star">*</span>
-                </li>
-                <li>
-                  Видеостриминг<span className="idea-block__star">*</span>
-                </li>
-                <li>Имиджборд и анонимный веб-форум</li>
+                {data.possibilitiesStarRu.map((item, a) => {
+                  return (
+                    <li key={a}>
+                      {item}
+                      <span className="idea-block__star"> *</span>
+                    </li>
+                  );
+                })}
+                <li>{data.possibilitiesRu}</li>
               </ul>
               <p className="idea-block__desc">
-                <span className="idea-block__star">*</span> &ndash; Ветвь имеет
-                свою производственную деятельность: Журналистика. Кино/мульт
-                производство. Создание компьютерных игр.
+                <span className="idea-block__star">* </span> &ndash;{" "}
+                {data.branchDescRu}
               </p>
-              <p className="idea-block__info">
-                Для представления примера главной страницы входа в приложение
-                служат яркие/провокационные/сильные обложки журналов: Time, The
-                New Yorker, National Geographic, etc. Будут создаваться и
-                меняться в зависимости от текущего инфоповода для массового
-                обсуждения.
-              </p>
+              <p className="idea-block__info">{data.designRu}</p>
             </div>
 
             <div className="idea-block">
-              <h2 className="h2">Main Concepts. Идеи к рубрикам:</h2>
+              <h2 className="h2">{data.conceptTitleRu}</h2>
               <div className="idea-concept">
-                <h3 className="h3">Журналистика:</h3>
-                <p className="idea-block__text">
-                  Новое повествование современного дыхания, разнообразные
-                  мнения, правда и грязный реализм. Своеобразная подача
-                  информации без цензуры, с характером стиля письменности
-                  Хантера Томпсона, Буковски, Паланика, etc.
-                </p>
-                <p className="idea-block__text">
-                  Рассмотреть обзоры на: реклама, политика, бюрократия, вопрос
-                  цензуры, насилие, воспитание поколений, проблемы глобализма,
-                  развитие, перенаселение планеты, религия, эффект массы,
-                  состояние общества, etc.
-                </p>
-                <p className="idea-block__text">
-                  Гонзо журналистика (разобрать суть, реинкарнировать). Ведение
-                  повествования от первого лица (группы лиц) -
-                  текст/видео-дневников. Нырять в самое пекло идиотизма проблемы
-                  изучая её изнутри или создавать определенные условия для её
-                  появления (смесь психологических экспериментов поведения,
-                  внедрения в секты, церемония аяуаски, посещение burning man,
-                  etc).
-                </p>
+                <h3 className="h3">{data.journalistRu}</h3>
+                <p className="idea-block__text"></p>
+                <p className="idea-block__text"></p>
+                <p className="idea-block__text"></p>
               </div>
               <div className="idea-concept">
-                <h3 className="h3">Игры/кино/мульт производство:</h3>
-                <p className="idea-block__text">
-                  Поднимаем киноиндустрию и геймдев с колен. Пустить в ход
-                  множество собственных идей/сценариев/недоработок. Собрать
-                  воедино крутых, безгранично понимающих, критически мыслящих
-                  специалистов и начать творить новую историю культуры,
-                  искусства и технологического развития в стране.
-                </p>
-                <p className="idea-block__text">
-                  Дополнительно: студию правильного перевода (рус, укр, eng,
-                  “смешной перевод” - гоблин).
-                </p>
+                <h3 className="h3"></h3>
+                <p className="idea-block__text"></p>
+                <p className="idea-block__text"></p>
               </div>
             </div>
 
@@ -131,19 +86,16 @@ export default function IdeaText() {
             </div>
 
             <div className="idea-block idea-block--features">
-              <h2 className="h2">Misc features. Наработки деталей ресурса:</h2>
+              <h2 className="h2"></h2>
               <ul>
                 <li>
-                  <span>&plusmn;</span> Возможность постов совмещать воедино:
-                  картинка/текст/музыка/видео, etc.
+                  <span>&plusmn;</span>
                 </li>
                 <li>
-                  <span>&plusmn;</span> Возможность под/над/в песню
-                  прикреплять/обозначать официальный клип если таков существует.
+                  <span>&plusmn;</span>
                 </li>
                 <li>
-                  <span>&plusmn;</span> Удобная рубрика для знакомств с
-                  возможностью выбора поиска для чего любовь/друзей/секс/etc.
+                  <span>&plusmn;</span>
                 </li>
                 <li>
                   <span>&plusmn;</span> Сжатие (качество) картинок. Рассмотреть
