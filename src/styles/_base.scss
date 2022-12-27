@@ -57,7 +57,7 @@ img {
 .base-title {
 	font-size: calc(24px + 2.5vw);
 	letter-spacing: 10px;
-	margin: 4rem 0;
+	padding: 4rem 0;
 	font-family: $lg-bold;
 	line-height: normal;
 	@media screen and (max-width: 1366px) {
@@ -65,7 +65,7 @@ img {
 	}
 	@include tabletSmall {
 		font-size: calc(24px + 2.5vw);
-		margin: 1.5rem 0 2rem;
+		padding: 1.5rem 0 2rem;
 		letter-spacing: 6px;
 	}
 }
