@@ -62,7 +62,7 @@
 
 	@include mobile {
 		padding: 15px;
-		padding-bottom: 35px;
+		padding-bottom: 65px;
 	}
 }
 
@@ -165,7 +165,6 @@
 .idea-block {
 	font-family: $Montserrat;
 	font-size: 13px;
-	// line-height: normal;
 	letter-spacing: normal;
 	color: $textGrey;
 	margin-bottom: 30px;
@@ -177,7 +176,7 @@
 	.h2 {
 		color: $blue-main;
 		font-size: 18px;
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 
 	.h3 {
