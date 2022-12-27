@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import sliderImg1 from "./images/bm-l.jpg";
 
-let ideaLinkText = "Contact Me for more info";
+let ideaLinkText = "Contact Me To Know More";
 let ideaLinkURL = "/";
 const dataImgs = [
   {
