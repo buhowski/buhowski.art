@@ -1,59 +1,5 @@
 @import '../../styles/variables.scss';
-
-.idea-copy {
-	display: inline-block;
-	font-size: 12px;
-	position: absolute;
-	top: 32px;
-	left: 70px;
-
-	@include tabletBig {
-		top: 220px;
-		left: 40px;
-	}
-
-	@include tabletSmall {
-		top: 133px;
-	}
-
-	@include mobile {
-		top: 108px;
-		left: 15px;
-	}
-	p {
-		overflow: hidden;
-		border-right: 1px solid $blue-main;
-		white-space: nowrap; 
-		animation: typing 3s steps(30, end), 
-							blink-caret .666s step-end infinite;
-	}
-
-	span {
-		font-size: 14px;
-	}
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: $blue-main;
-  }
-}
-
-
-
+@import '../../styles/animation.scss';
 .h2 {
 	font-weight: 500;
 }
@@ -65,12 +11,6 @@
 		height: auto;
 	}
 }
-
-// .idea-tabs {
-// 	position: absolute;
-// 	right: 0;
-// }
-
 
 .nav-link--underline {
 	display: inline-block;
@@ -105,6 +45,7 @@
 .idea-section {
 	background: $dark;
 	padding: 70px;
+	padding-top: 0;
 	display: flex;
 	// height: calc(100% - (4rem + 24px + 2.5vw));
 	height: inherit;
@@ -127,9 +68,11 @@
 .idea-info {
 	max-width: 600px;
 	width: 100%;
-	overflow: hidden;
-	flex-shrink: 0;
 	margin-right: 40px;
+	flex-shrink: 0;
+	padding-top: 70px;
+	position: relative;
+	
 
 	@include tabletBig {
 		max-width: 100%;
@@ -139,10 +82,74 @@
 	}
 }
 
-.idea-text {
+
+.idea-copy {
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	top: 32px;
+	left: 0;
+
+	@include tabletBig {
+		top: 220px;
+		left: 40px;
+	}
+
+	@include tabletSmall {
+		top: 133px;
+	}
+
+	@include mobile {
+		top: 108px;
+		left: 15px;
+	}
+	p {
+		overflow: hidden;
+		border-right: 1px solid $blue-main;
+		white-space: nowrap; 
+		animation: typing 3s steps(30, end), 
+							blink-caret .666s step-end infinite;
+	}
+
+	span {
+		font-size: 14px;
+	}
+}
+
+
+.idea-tabs {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 10px;
+	
+
+	&__btn {
+		background: #161616;
+		color: #fff;
+		padding: 5px 15px;
+		text-transform: uppercase;
+		
+		&[data-active="true"] {
+			background: #000;
+			color: $blue-main;
+		}
+	}
+}
+
+.idea-overflow {
+	overflow: hidden;
 	height: 100%;
 	overflow: auto;
 	padding-right: 30px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .4s;
+
+	&[data-content="true"] {
+		opacity: 1;
+		visibility: visible;
+	}
 
 	&::-webkit-scrollbar {
 		width: 3px;
