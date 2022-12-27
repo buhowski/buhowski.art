@@ -4,17 +4,17 @@ export default function IdeaRu() {
       <div>
         <div className="idea-block">
           <h2 className="idea-block__title h2">Коротко о главном:</h2>
-          <h3 className="h3">Application:</h3>
+          <h3 className="h3">Стартап:</h3>
           <p className="idea-block__text">
             Приложение примера укомплектованного многофункционального журнала с
             возможностью ведения и развития любой производственной деятельности
-            или же служащее для поиска информации, развлечения, беззаботного
+            или же служащееЦ для поиска информации, развлечения, беззаботного
             времяпрепровождения.
           </p>
         </div>
 
         <div className="idea-block">
-          <h3 className="h3">Video Game:</h3>
+          <h3 className="h3">Компьютерная игра:</h3>
           <p className="idea-block__text">
             Предлагаю вашему вниманию нелинейную ролевую игру с открытым миром –
             Казаки РПГ. Простыми словами нужно всего лишь сделать то, что поляки
@@ -31,7 +31,7 @@ export default function IdeaRu() {
         </div>
 
         <div className="idea-block">
-          <h3 className="h3">Scenarios:</h3>
+          <h3 className="h3">Сценари для экранизаций:</h3>
           <p className="idea-block__text">
             Разного рода идеи фильмов, сериалов, мультфильмов бурлящие в голове,
             записанные в блокнот, ждущие предложений для реализации!
