@@ -1,4 +1,8 @@
 @import '../../styles/variables.scss';
+@import '../../styles/animation.scss';
+.h2 {
+	font-weight: 500;
+}
 
 .wrapper--idea {
 	height: calc(100% - 100px - 4rem);
@@ -7,7 +11,6 @@
 		height: auto;
 	}
 }
-
 
 .nav-link--underline {
 	display: inline-block;
@@ -42,46 +45,105 @@
 .idea-section {
 	background: $dark;
 	padding: 70px;
+	padding-top: 0;
 	display: flex;
 	// height: calc(100% - (4rem + 24px + 2.5vw));
 	height: inherit;
+	position: relative;
 
 	@include tabletBig {
 		// position: static;
 		flex-direction: column-reverse;
 		padding: 40px;
+		padding-bottom: 60px;
 		height: auto;
 		margin-bottom: 40px;
 	}
 
 	@include mobile {
-		padding: 20px;
+		padding: 15px;
 		padding-bottom: 35px;
 	}
 }
 
 .idea-info {
-	max-width: 600px;
-	width: 100%;
-	overflow: hidden;
-	flex-shrink: 0;
+	width: calc(50% + 2px);
 	margin-right: 40px;
+	flex-shrink: 0;
+	padding-top: 70px;
+	position: relative;
+	
 
 	@include tabletBig {
-		max-width: 100%;
+		width: 100%;
 		margin-right: 0;
-		margin-top: 30px;
+		padding-top: 25px;
 		flex-shrink: unset;
 	}
 }
 
-.idea-text {
+
+.idea-copy {
+	display: inline-block;
+	font-size: 10px;
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	p {
+		overflow: hidden;
+		border-right: 1px solid $blue-main;
+		white-space: nowrap; 
+		animation: typing 3s steps(30, end), 
+							blink-caret .666s step-end infinite;
+	}
+
+	span {
+		font-size: 14px;
+	}
+}
+
+
+.idea-tabs {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 10px;
+	@include tabletBig {
+		top: 0;
+	}
+	
+
+	&__btn {
+		background: $darker;
+		color: $snow;
+		padding: 2px 15px;
+		text-transform: uppercase;
+		
+		&[data-active="true"] {
+			background: $black;
+			color: $blue-main;
+		}
+	}
+}
+
+.idea-overflow {
+	overflow: hidden;
 	height: 100%;
 	overflow: auto;
 	padding-right: 30px;
+	display: none;
+	opacity: 0;
+	transition: opacity .4s;
+
+	&[data-content="true"] {
+		display: block;
+		opacity: 1;
+	}
 
 	&::-webkit-scrollbar {
-		width: 2px;
+		width: 3px;
 	}
 
 	&::-webkit-scrollbar-track {
@@ -93,42 +155,144 @@
 	}
 }
 
+.idea-concept {
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.idea-block {
+	font-family: $Montserrat;
+	font-size: 13px;
+	// line-height: normal;
+	letter-spacing: normal;
+	color: $textGrey;
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.h2 {
+		color: $blue-main;
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+
+	.h3 {
+		font-size: 14px;
+		font-weight: 500;
+		color: $snow;
+		margin: 10px 0;
+	}
+
+	&__text {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	li {
+		margin-bottom: 5px;
+		position: relative;
+		display: flex;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 3px;
+			height: 3px;
+			border-radius: 50%;
+			background: $snow;
+			margin-right: 10px;
+			margin-top: 6.5px;
+			flex-shrink: 0;
+		}
+
+		.idea-block__star {
+			margin-left: 6px;
+		}
+	}
+
+	&__star {
+		color: $starYellow;
+	}
+
+	&__desc {
+		font-size: 10px;
+		margin: 10px 0;
+	}
+
+	&--features {
+		p {
+			margin-bottom: 5px;
+		}
+
+		span {
+			color: $starYellow;
+			display: inline-block;
+			align-items: start;
+		}
+
+		li {
+			display: block;
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
+
 // Slider default style
 .slider-container {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	margin-top: -110px;
+	margin-top: -45px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	@include tabletBig {
 		margin-top: -75px;
-		height: 120px;
-
 		.nav-link {
 			display: none;
 		}
 	}
 
 	@include tabletSmall {
-		margin-top: -62px;
+		margin-top: -60px;
 	}
 
 	@include mobile {
-		margin-top: -42px;
+		margin-top: -33px;
 	}
 }
 
 .slider-js {
+	width: 100%;
 	display: flex;
 	max-height: 400px;
 	height: calc(100% - 122px);
 	transition: transform .4s ease-in;
 
 	@include tabletBig {
-		height: 100%;
+		height: 250px;
+	}
+
+	@include tabletSmall {
+		height: 150px;
+	}
+
+	@include mobile {
+		height: 130px;
 	}
 }
 

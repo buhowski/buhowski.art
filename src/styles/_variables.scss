@@ -1,3 +1,4 @@
+$Montserrat: 'Montserrat', sans-serif;
 $ui: 'Segoe UI', sans-serif;
 $ui-medium: 'Segoe UI Medium', sans-serif;
 $lg: "Louis George Caf", sans-serif;
@@ -7,9 +8,13 @@ $cs: "Coming Soon", cursive;
 
 $bg-color: #252525;
 $dark: #202020;
+$darker: #161616;
 $blue-main: #4758fc;
 $snow: #ffffff;
 $red: #af0303;
+$black: #000000;
+$textGrey: #dddddd;
+$starYellow: #e3b716;
 
 @mixin fullHD {
 	@media screen and (max-width: 1920px) {
