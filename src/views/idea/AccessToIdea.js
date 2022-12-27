@@ -6,7 +6,7 @@ import SliderContainer from "./Slider";
 export default function Idea() {
   return (
     <div className="wrapper wrapper--idea">
-      <h1 className="base-title">Idea title</h1>
+      <h1 className="base-title">???</h1>
 
       <div className="idea-section">
         {/* Copyright */}
