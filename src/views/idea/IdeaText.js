@@ -2,22 +2,22 @@ import React, { useState } from "react";
 import IdeaRu from "./IdeaRu";
 
 export default function IdeaText() {
-  const [currentTab, setCurrentTab] = useState("1");
+  const [currentTab, setCurrentTab] = useState("2");
   const tabs = [
     {
       id: 1,
+      title: "en",
+      content: "en",
+    },
+    {
+      id: 2,
       title: "ru",
       content: <IdeaRu />,
     },
     {
-      id: 2,
-      title: "en",
-      content: "2222",
-    },
-    {
       id: 3,
       title: "ua",
-      content: "3333",
+      content: "ua",
     },
   ];
 
@@ -27,13 +27,6 @@ export default function IdeaText() {
 
   return (
     <div className="idea-info">
-      {/* Copyright */}
-      <div className="idea-copy">
-        <p>
-          {new Date().getFullYear()} <span>&copy;</span> A. Tsiomakh
-        </p>
-      </div>
-
       <div className="idea-tabs">
         {tabs.map((tab, i) => (
           <button

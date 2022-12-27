@@ -55,6 +55,7 @@
 		// position: static;
 		flex-direction: column-reverse;
 		padding: 40px;
+		padding-bottom: 60px;
 		height: auto;
 		margin-bottom: 40px;
 	}
@@ -66,8 +67,7 @@
 }
 
 .idea-info {
-	max-width: 600px;
-	width: 100%;
+	width: calc(50% + 2px);
 	margin-right: 40px;
 	flex-shrink: 0;
 	padding-top: 70px;
@@ -75,9 +75,9 @@
 	
 
 	@include tabletBig {
-		max-width: 100%;
+		width: 100%;
 		margin-right: 0;
-		margin-top: 35px;
+		padding-top: 25px;
 		flex-shrink: unset;
 	}
 }
@@ -85,24 +85,16 @@
 
 .idea-copy {
 	display: inline-block;
-	font-size: 12px;
+	font-size: 10px;
 	position: absolute;
-	top: 32px;
-	left: 0;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
 
 	@include tabletBig {
-		top: 220px;
-		left: 40px;
+		
 	}
 
-	@include tabletSmall {
-		top: 133px;
-	}
-
-	@include mobile {
-		top: 108px;
-		left: 15px;
-	}
 	p {
 		overflow: hidden;
 		border-right: 1px solid $blue-main;
@@ -122,16 +114,19 @@
 	top: 0;
 	right: 0;
 	font-size: 10px;
+	@include tabletBig {
+		top: 0;
+	}
 	
 
 	&__btn {
-		background: #161616;
-		color: #fff;
-		padding: 5px 15px;
+		background: $darker;
+		color: $snow;
+		padding: 2px 15px;
 		text-transform: uppercase;
 		
 		&[data-active="true"] {
-			background: #000;
+			background: $black;
 			color: $blue-main;
 		}
 	}
@@ -174,7 +169,7 @@
 .idea-block {
 	font-family: $Montserrat;
 	font-size: 13px;
-	line-height: normal;
+	// line-height: normal;
 	letter-spacing: normal;
 	color: $textGrey;
 	margin-bottom: 30px;
@@ -192,7 +187,7 @@
 	.h3 {
 		font-size: 14px;
 		font-weight: 500;
-		color: $titlePink;
+		color: $snow;
 		margin: 10px 0;
 	}
 
@@ -219,7 +214,7 @@
 			width: 3px;
 			height: 3px;
 			border-radius: 50%;
-			background: $titlePink;
+			background: $snow;
 			margin-right: 10px;
 			margin-top: 6.5px;
 			flex-shrink: 0;
@@ -264,26 +259,24 @@
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	margin-top: -110px;
+	margin-top: -45px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	@include tabletBig {
 		margin-top: -75px;
-		// height: 120px;
-
 		.nav-link {
 			display: none;
 		}
 	}
 
 	@include tabletSmall {
-		margin-top: -62px;
+		margin-top: -60px;
 	}
 
 	@include mobile {
-		margin-top: -42px;
+		margin-top: -33px;
 	}
 }
 

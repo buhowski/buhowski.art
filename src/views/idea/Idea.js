@@ -53,6 +53,13 @@ class Idea extends Component {
         <h1 className="base-title">Idea title</h1>
 
         <div className="idea-section">
+          {/* Copyright */}
+          <div className="idea-copy">
+            <p>
+              {new Date().getFullYear()} <span>&copy;</span> A. Tsiomakh
+            </p>
+          </div>
+
           <IdeaText />
 
           <div className="slider-container">
