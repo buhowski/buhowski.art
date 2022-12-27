@@ -3,7 +3,6 @@ import IdeaRu from "./IdeaRu";
 
 export default function IdeaText() {
   const [currentTab, setCurrentTab] = useState("1");
-
   const tabs = [
     {
       id: 1,
