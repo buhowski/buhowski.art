@@ -1,9 +1,9 @@
-import ideaData from "./ideaData";
+import textData from "./textData";
 
 export default function IdeaRu() {
   return (
     <div className="idea-text">
-      {ideaData.map((data, i) => (
+      {textData.map((data, i) => (
         <div key={i}>
           <div className="idea-block">
             <h2 className="idea-block__title h2">{data.basicRu}</h2>

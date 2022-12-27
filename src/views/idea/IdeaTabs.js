@@ -28,6 +28,7 @@ export default function IdeaText() {
   return (
     <div className="idea-info">
       <div className="idea-tabs">
+        {/* Here goes tab items*/}
         {tabs.map((tab, i) => (
           <button
             className="idea-tabs__btn"
@@ -42,6 +43,7 @@ export default function IdeaText() {
         ))}
       </div>
 
+      {/* Here goes tabs content */}
       {tabs.map((tab, i) => (
         <div
           className="idea-overflow"

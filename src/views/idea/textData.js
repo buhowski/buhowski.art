@@ -1,4 +1,4 @@
-const ideaData = [
+const textData = [
   {
     basicRu: `Basic. Главное в целом:`,
     basicEn: ``,
@@ -99,4 +99,4 @@ const ideaData = [
   },
 ];
 
-export default ideaData;
+export default textData;
