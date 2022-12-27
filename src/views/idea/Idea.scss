@@ -91,10 +91,6 @@
 	left: 50%;
 	transform: translateX(-50%);
 
-	@include tabletBig {
-		
-	}
-
 	p {
 		overflow: hidden;
 		border-right: 1px solid $blue-main;
