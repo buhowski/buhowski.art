@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import IdeaRu from "./IdeaRu";
 
-export default function IdeaText() {
+export default function IdeaTabs() {
   const [currentTab, setCurrentTab] = useState("2");
   const tabs = [
     {

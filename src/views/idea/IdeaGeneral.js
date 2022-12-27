@@ -1,6 +1,6 @@
 import React from "react";
 import "./Idea.scss";
-import IdeaText from "./IdeaTabs";
+import IdeaTabsGeneral from "./idea-general/IdeaTabsGeneral";
 import SliderContainer from "./Slider";
 
 export default function Idea() {
@@ -15,7 +15,7 @@ export default function Idea() {
             {new Date().getFullYear()} <span>&copy;</span> A. Tsiomakh
           </p>
         </div>
-        <IdeaText />
+        <IdeaTabsGeneral />
 
         <SliderContainer />
       </div>
