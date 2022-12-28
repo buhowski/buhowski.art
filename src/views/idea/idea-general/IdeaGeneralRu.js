@@ -1,39 +1,28 @@
+import React from "react";
+import textData from "../textData";
+
 export default function IdeaRu() {
   return (
     <div className="idea-text">
-      <div>
-        <div className="idea-block">
-          <h2 className="idea-block__title h2">Коротко о главном:</h2>
-          <h3 className="h3">Application:</h3>
-          <p className="idea-block__text">
-            Приложение примера укомплектованного многофункционального журнала с
-            возможностью ведения и развития любой производственной деятельности
-            или же служащее для поиска информации, развлечения, беззаботного
-            времяпрепровождения.
-          </p>
-        </div>
+      {textData.map((text, i) => (
+        <div key={i}>
+          <div className="idea-block">
+            <h2 className="idea-block__title h2">{text.mainTitleRu}</h2>
+            <h3 className="h3">{text.startupTitleRu}</h3>
+            <p className="idea-block__text">{text.appSampleRu}</p>
+          </div>
 
-        <div className="idea-block">
-          <h3 className="h3">Video Game:</h3>
-          <p className="idea-block__text">
-            Идея видеоигры украинского производства, смесь реальных исторических
-            событий с добавкой небольшого, но не лишнего, количества магии,
-            добротного остроумия и мистически пугающих моментов. Совокупность
-            лучших, уже имеющихся, историй и работ. С правильным подходом к
-            реализации и продакшену, и без давки ненужного маркетинга игра
-            гарантированно попадает в топ лучших. А после первого тизера
-            занимает позицию самая ожидаемая игра.
-          </p>
-        </div>
+          <div className="idea-block">
+            <h3 className="h3">{text.gameTitleRu}</h3>
+            <p className="idea-block__text">{text.gameTextRu}</p>
+          </div>
 
-        <div className="idea-block">
-          <h3 className="h3">Scenarios:</h3>
-          <p className="idea-block__text">
-            Разного рода идеи фильмов, сериалов, мультфильмов бурлящие в голове,
-            записанные в блокнот, ждущие реализации!
-          </p>
+          <div className="idea-block">
+            <h3 className="h3">{text.scenarioTitleRu}</h3>
+            <p className="idea-block__text">{text.scenarioTextRu}</p>
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }
