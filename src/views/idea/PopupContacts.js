@@ -2,14 +2,14 @@ import React, { Component } from "react";
 
 const dataContacts = [
   {
+    name: "Telegram:",
+    url: "https://t.me/buhowski",
+    linkTitle: "Text Me",
+  },
+  {
     name: "Gmail:",
     url: "mailto:a.tsiomakh@gmail.com",
     linkTitle: "a.tsiomakh@gmail.com",
-  },
-  {
-    name: "Telegram:",
-    url: "https://t.me/buhowski",
-    linkTitle: "text me",
   },
   {
     name: "LinkedIn:",
@@ -46,7 +46,10 @@ class PopupContacts extends Component {
           <div className="idea-contacts__list-items">
             {dataContacts.map((item, i) => (
               <p key={i}>
-                {item.name} <a href={item.url}>{item.linkTitle}</a>
+                {item.name}{" "}
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  {item.linkTitle}
+                </a>
               </p>
             ))}
           </div>

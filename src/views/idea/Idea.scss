@@ -57,7 +57,7 @@
 		border-radius: 10px;
 		background: rgba($color: $black, $alpha: .8);
 		color: $textGrey;
-		font-size: 12px;
+		font-size: 13px;
 		
 		display: inline-block;
 		width: max-content;
@@ -86,7 +86,7 @@
 
 	&[data-active] {
 		.idea-contacts__list {
-			height: 96px;
+			height: 100px;
 			&::after {
 				transform: translate(-50%, 0) scale(1, 1);
 			}
