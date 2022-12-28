@@ -1,43 +1,28 @@
+import React from "react";
+import textData from "../textData";
+
 export default function IdeaRu() {
   return (
     <div className="idea-text">
-      <div>
-        <div className="idea-block">
-          <h2 className="idea-block__title h2">Коротко о главном:</h2>
-          <h3 className="h3">Стартап:</h3>
-          <p className="idea-block__text">
-            Приложение примера укомплектованного многофункционального журнала с
-            возможностью ведения и развития любой производственной деятельности
-            или же служащее для поиска информации, развлечения, беззаботного
-            времяпрепровождения.
-          </p>
-        </div>
+      {textData.map((text, i) => (
+        <div key={i}>
+          <div className="idea-block">
+            <h2 className="idea-block__title h2">{text.mainTitleRu}</h2>
+            <h3 className="h3">{text.startupTitleRu}</h3>
+            <p className="idea-block__text">{text.appSampleRu}</p>
+          </div>
 
-        <div className="idea-block">
-          <h3 className="h3">Компьютерная игра:</h3>
-          <p className="idea-block__text">
-            Предлагаю вашему вниманию нелинейную ролевую игру с открытым миром –
-            Казаки РПГ. Простыми словами нужно всего лишь сделать то, что поляки
-            сделали с Ведьмаком (в частности третья часть серии). Реализовать
-            казаков для популяризации нового видения, тех казаков что
-            запорожская сечь, дерзких, свободолюбивых, алкоголь употребляющих,
-            из за чего и бесстрашных, разбойников и беспредельщиков, танцующих
-            гопачок (гопак) как боевое искусство заменяющее капоэйра, ездящих на
-            лошадях и ловких паркуристов. Реализовать красочные виды Украины тех
-            времен и образ настоящего казака. Совместить реальные факты и
-            события с мистикой и юмором произведений Гоголя и других источников
-            с казаками или подобной мистикой схожей эпохи.
-          </p>
-        </div>
+          <div className="idea-block">
+            <h3 className="h3">{text.gameTitleRu}</h3>
+            <p className="idea-block__text">{text.gameTextRu}</p>
+          </div>
 
-        <div className="idea-block">
-          <h3 className="h3">Сценари для экранизаций:</h3>
-          <p className="idea-block__text">
-            Разного рода идеи фильмов, сериалов, мультфильмов бурлящие в голове,
-            записанные в блокнот, ждущие предложений для реализации!
-          </p>
+          <div className="idea-block">
+            <h3 className="h3">{text.scenarioTitleRu}</h3>
+            <p className="idea-block__text">{text.scenarioTextRu}</p>
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }

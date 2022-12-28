@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import IdeaRu from "./IdeaGeneralRu";
+import IdeaEN from "./IdeaGeneralEn";
+import IdeaUa from "./IdeaGeneralUa";
 
 export default function IdeaGeneral() {
   const [currentTab, setCurrentTab] = useState("2");
@@ -7,7 +9,7 @@ export default function IdeaGeneral() {
     {
       id: 1,
       title: "en",
-      content: "en",
+      content: <IdeaEN />,
     },
     {
       id: 2,
@@ -17,7 +19,7 @@ export default function IdeaGeneral() {
     {
       id: 3,
       title: "ua",
-      content: "ua",
+      content: <IdeaUa />,
     },
   ];
 
