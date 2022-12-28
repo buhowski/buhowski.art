@@ -4,9 +4,9 @@ const textData = [
     basicEn: ``,
     basicUa: ``,
 
-    appSampleRu: `Приложение примера укомплектованного многофункционального журнала с возможностью ведения и развития любой производственной деятельности или же служащее для поиска информации, развлечения и беззаботного времяпрепровождения.`,
+    appSampleRu: `Приложение примера укомплектованного, многофункционального журнала с возможностью ведения и развития любой производственной деятельности или же служащее для поиска информации, развлечения и беззаботного времяпрепровождения.`,
     appSampleEn: `The application is an example of a complete multifunctional magazine with the ability to maintain and develop any production activity or to search for information, entertainment and carefree pastime.`,
-    appSampleUa: ``,
+    appSampleUa: `Додаток прикладу укомплектованого, багатофункціонального журналу з можливістю вести і розвивати будь яку діяльність або для пошуку інформації, розваг і безтурботного проведення часу.`,
 
     possibilitiesTitleRu: `Возможности:`,
     possibilitiesTitleEn: ``,
@@ -24,16 +24,20 @@ const textData = [
       `Live streaming`,
     ],
     possibilitiesEn: `Imageboard and anonymous web forum`,
-    possibilitiesStarUa: [``, ``, ``],
-    possibilitiesUa: ``,
+    possibilitiesStarUa: [
+      `Соціальна мережа, ведення фото/відео/текстового мікроблогінгу`,
+      `Онлайн кінотеатр/відеохостинг`,
+      `Відеострімінг`,
+    ],
+    possibilitiesUa: `Іміджборд та анонімний веб-форум`,
 
     branchDescRu: `ветвь имеет свою производственную деятельность: Журналистика. Кино/мульт производство. Создание компьютерных игр.`,
     branchDescEn: `the branch has its own production activity: Journalism. Cinema production. Video game development.`,
-    branchDescUa: ``,
+    branchDescUa: `галузь має власну виробничу діяльність: Журналістика. Кіно/мульт виробництво. Створення комп'ютерних ігор.`,
 
     designRu: `Для представления примера главной страницы входа в приложение служат яркие/провокационные/сильные обложки журналов: Time, The New Yorker, National Geographic, etc. Будут создаваться и меняться в зависимости от текущего инфоповода для массового обсуждения.`,
     designEn: `To represent an example of the main page of the application, use bright/provocative/strong magazine covers like Time, The New Yorker, National Geographic, etc. Will be created and changed depending on the current newsbreak for public discussion.`,
-    designUa: ``,
+    designUa: `Щоб представити приклад головної сторінки входу в додаток є яскраві/провокативні/сильні обкладинки журналів: Time, The New Yorker, National Geographic, etc. Створюватимуться і змінюватимуться залежно від поточного інфоприводу для масового обговорення.`,
 
     conceptTitleRu: `Main Concepts. Идеи к рубрикам:`,
     conceptTitleEn: ``,
@@ -46,14 +50,18 @@ const textData = [
     journalistInfoRu: [
       `Новое повествование современного дыхания, разнообразные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры, с характером стиля письменности Хантера Томпсона, Буковски, Паланика, etc.`,
       `Рассмотреть обзоры на: реклама, политика, бюрократия, вопрос цензуры, насилие, воспитание поколений, проблемы глобализма, развитие, перенаселение планеты, религия, эффект массы, состояние общества, etc.`,
-      `Гонзо журналистика (разобрать суть, реинкарнировать). Ведение повествования от первого лица (группы лиц) - текст/видео-дневников. Нырять в самое пекло идиотизма проблемы изучая её изнутри или создавать определенные условия для её появления (смесь психологических экспериментов поведения, внедрения в секты, церемония аяуаски, посещение burning man, etc).`,
+      `Гонзо журналистика (разобрать суть, реинкарнировать). Ведение повествования от первого лица (группы лиц) - текст/видео-дневников. Нырять в самое пекло идиотизма проблемы, изучая её изнутри, или создавать определенные условия для её появления (смесь психологических экспериментов поведения, внедрения в секты, церемония аяуаски, посещение burning man, etc).`,
     ],
     journalistInfoEn: [
       `A new narrative of modern breathing, diverse opinions, truth and dirty realism. A peculiar presentation of information without censorship, with the nature of the writing style of Hunter Thompson, Bukowski, Palahniuk, etc.`,
       `Consider reviews on: advertising, politics, bureaucracy, the issue of censorship, violence, upbringing generations, globalization problems, overpopulation, religion, etc.`,
       `Gonzo journalism (rethink the essence, reincarnate). Conducting narration in the first person or groups of people - text / video diaries. Dive deep into idiocy problems by studying it from the inside or creating certain conditions for its appearance (a mix of psychological behavioral experiments, infiltration into sects, an ayahuasca ceremony, the burning man, etc.).`,
     ],
-    journalistInfoUa: [``, ``, ``],
+    journalistInfoUa: [
+      `Новаторська оповідь сучасного дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури, з характером стилю писемності Хантера Томпсона, Буковськи, Паланіка, etc.`,
+      `Розглянути огляд на: реклама, політика, бюрократія, питання цензури, насильство, виховання поколінь, проблеми глобалізму, перенаселення планети, релігія, ефект маси, etc.`,
+      `Гонзо журналістика (переглянути суть, реінкарнувати). Вести розповідь від першої особи чи групи лиць – текст/відео-щоденників. Пірнати в саме пекло ідіотизму проблеми, вивчаючи її зсередини, або створювати певні умови для її появи (суміш психологічних експериментів поведінки, огляд сект із середини, церемонія аяуаски, відвідування burning man, etc.).`,
+    ],
 
     filmTitleRu: `Игры/кино/мульт производство:`,
     filmTitleEn: ``,
