@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import sliderImg1 from "./images/bm-l.jpg";
 
 let ideaLinkText = "Contact Me To Know More";
-let ideaLinkURL = "/";
 const dataImgs = [
   {
     imgSrc: sliderImg1,
@@ -18,6 +17,7 @@ class SliderContainer extends Component {
   // Simple react slider
   state = {
     activeIndex: 0,
+    setContacts: null,
   };
 
   // for randoming picture when loads(just for fun)
@@ -42,6 +42,19 @@ class SliderContainer extends Component {
       this.setState({ activeIndex: this.state.activeIndex - 1 });
     } else {
       this.setState({ activeIndex: dataImgs.length - 1 });
+    }
+  };
+
+  toggleShowContacts = (e) => {
+    const clickMe = e.target.id;
+    if (this.state.setContacts === clickMe) {
+      this.setState({
+        setContacts: null,
+      });
+    } else {
+      this.setState({
+        setContacts: clickMe,
+      });
     }
   };
 
@@ -84,14 +97,32 @@ class SliderContainer extends Component {
           ></button>
         </div>
 
-        <a
-          className="a nav-link nav-link--underline"
-          href={ideaLinkURL}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {ideaLinkText}
-        </a>
+        <div className="idea-contacts" data-active={this.state.setContacts}>
+          <div className="idea-contacts__list">
+            <div className="idea-contacts__list-items">
+              <p>
+                gmail: <a href="mailto:">a.tsiomakh@gmail.com</a>
+              </p>
+              <p>
+                telegram: <a href="https://t.me/buhowski">write me</a>
+              </p>
+              <p>
+                linkedIn:{" "}
+                <a href="https://www.linkedin.com/in/buhowski">
+                  Alexander Tsiomakh
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <button
+            onClick={this.toggleShowContacts}
+            type="button"
+            className="a nav-link nav-link--underline"
+          >
+            {ideaLinkText}
+          </button>
+        </div>
       </div>
     );
   }
