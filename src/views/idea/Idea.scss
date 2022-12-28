@@ -15,8 +15,6 @@
 }
 // underline link effect
 .nav-link--underline {
-	display: inline-block;
-	margin-top: auto;
 	z-index: unset;
 	&::after {
 		z-index: unset;
@@ -47,13 +45,17 @@
 .idea-contacts {
 	position: relative;
 	user-select: text;
+	display: inline-block;
+	margin-top: auto;
 
 	&__list {
 		position: absolute;
 		bottom: 45px;
 		left: 50%;
 		transform: translateX(-50%);
-		
+		box-shadow: 0px 3px 15px rgba(0, 0, 0, .7);
+		border-radius: 10px;
+		background: rgba($color: $black, $alpha: .8);
 		color: $textGrey;
 		font-size: 12px;
 		
@@ -65,8 +67,6 @@
 
 		&-items {
 			padding: 15px 20px;
-			border-radius: 10px;
-			background: rgba($color: $black, $alpha: .7);
 		}
 
 		p {

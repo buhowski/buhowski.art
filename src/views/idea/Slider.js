@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import sliderImg1 from "./images/bm-l.jpg";
+import PopupContacts from "./PopupContacts";
 
-let ideaLinkText = "Contact Me To Know More";
 const dataImgs = [
   {
     imgSrc: sliderImg1,
@@ -17,7 +17,6 @@ class SliderContainer extends Component {
   // Simple react slider
   state = {
     activeIndex: 0,
-    setContacts: null,
   };
 
   // for randoming picture when loads(just for fun)
@@ -45,20 +44,8 @@ class SliderContainer extends Component {
     }
   };
 
-  toggleShowContacts = (e) => {
-    const clickMe = e.target.id;
-    if (this.state.setContacts === clickMe) {
-      this.setState({
-        setContacts: null,
-      });
-    } else {
-      this.setState({
-        setContacts: clickMe,
-      });
-    }
-  };
-
   render() {
+    const { contactBtnTitle } = this.props;
     let sliderStyle = {
       transform: `translateX(${this.state.activeIndex * -100}%)`,
     };
@@ -97,32 +84,7 @@ class SliderContainer extends Component {
           ></button>
         </div>
 
-        <div className="idea-contacts" data-active={this.state.setContacts}>
-          <div className="idea-contacts__list">
-            <div className="idea-contacts__list-items">
-              <p>
-                gmail: <a href="mailto:">a.tsiomakh@gmail.com</a>
-              </p>
-              <p>
-                telegram: <a href="https://t.me/buhowski">write me</a>
-              </p>
-              <p>
-                linkedIn:{" "}
-                <a href="https://www.linkedin.com/in/buhowski">
-                  Alexander Tsiomakh
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <button
-            onClick={this.toggleShowContacts}
-            type="button"
-            className="a nav-link nav-link--underline"
-          >
-            {ideaLinkText}
-          </button>
-        </div>
+        <PopupContacts contactBtnTitle={contactBtnTitle} />
       </div>
     );
   }
