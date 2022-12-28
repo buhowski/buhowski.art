@@ -69,15 +69,19 @@ const textData = [
 
     filmInfoRu: [
       `Поднимаем киноиндустрию и геймдев с колен. Пустить в ход множество собственных идей/сценариев/недоработок. Собрать воедино крутых, безгранично понимающих, критически мыслящих специалистов и начать творить новую историю культуры, искусства и технологического развития в стране.`,
-      `Идея игры: Предлагаю вашему вниманию нелинейную ролевую игру с открытым миром – Казаки РПГ. Простыми словами нужно всего лишь сделать то, что поляки сделали с Ведьмаком (в частности третья часть серии игр). Реализовать казаков для популяризации нового видения, тех казаков что запорожская сечь, дерзких, свободолюбивых, алкоголь употребляющих, из за чего и бесстрашных, разбойников и беспредельщиков, танцующих гопачок (гопак) как боевое искусство, ездящих на лошадях и ловких паркуристов. Реализовать красочные виды, архитектуру Украины тех времен и образ настоящего казака. Совместить реальные факты и события с мистикой и юмором произведений Гоголя или других источников с подобной мистикой схожей эпохи.`,
+      `Идея игры: Предлагаю вашему вниманию нелинейную ролевую игру с открытым миром – Казаки РПГ. Простыми словами нужно всего лишь сделать то, что поляки сделали с серией игр Ведьмак. Реализовать казаков для популяризации нового видения, тех казаков что запорожская сечь, дерзких, свободолюбивых, алкоголь употребляющих, из за чего и бесстрашных, разбойников и беспредельщиков, танцующих гопак как боевое искусство, ездящих на лошадях и ловких паркуристов. Реализовать красочные виды, архитектуру Украины тех времен и образ настоящего казака. Совместить реальные факты и события с мистикой и юмором произведений Гоголя и других источников с подобной мистикой схожей эпохи.`,
       `Дополнительно: студию правильного перевода (рус, укр, eng, “смешной перевод” - гоблин).`,
     ],
     filmInfoEn: [
       `Raising the film industry and gamedev from its knees. Start working on a lot of your own ideas/scenarios/shortcomings. Bring together cool, infinitely understanding, critically thinking specialists and start creating a new history of culture, art and technological development in the country.`,
-      `Game idea: I bring to your attention a non-linear role-playing game with an open world - Cossacks RPG. In simple words, we just need to do what the Poles did with The Witcher (in particular, the third part of the game series). Implement Cossacks to popularize a new vision. Those Cossacks that are Zaporizhzhya Sich, daring, freedom-loving people dancing hopak as a martial art, riding horses and dexterous parkourists. Realize colorful views, the architecture of Ukraine of those times and character of a real Cossack. Combine real facts and events with the mysticism and humor of Gogol's works or other sources with similar mysticism of a similar era.`,
+      `Game idea: I bring to your attention a non-linear role-playing game with an open world - Cossacks RPG. In simple words, we just need to do what the Poles did with The Witcher (The Witcher game series). Implement Cossacks to popularize a new vision. Those Cossacks that are Zaporizhzhya Sich, daring, freedom-loving people dancing hopak as a martial art, riding horses and dexterous parkourists. Realize colorful views, the architecture of Ukraine of those times and character of a real Cossack. Combine real facts and events with the mysticism and humor of Gogol's works or other sources with similar mysticism of a similar era.`,
       `Additionally: studio of exact translation (rus, ukr, eng, “funny translation” - goblin).`,
     ],
-    filmInfoUa: ``,
+    filmInfoUa: [
+      `Піднімаємо кіноіндустрію та геймдев з колін. Запустити безліч власних ідей/сценаріїв/недоробок. Зібрати воєдино крутих, безмежно розуміючих, критично мислячих фахівців і почати творити нову історію культури, мистецтва та технологічного розвитку в країні.`,
+      `Ідея гри: Пропоную до вашої уваги нелінійну рольову гру з відкритим світом – Козаки РПГ. Простими словами потрібно лише зробити те, що поляки зробили із серією ігор Відьмак. Реалізувати козаків для популяризації нового бачення, тих козаків що запорізька січ, зухвалих, волелюбних, алкоголь вживаючих, через що і безстрашних, розбійників і безмежників, танцюючих гопак як бойове мистецтво, що їздять на конях і спритно переміщаються паркуром. Реалізувати барвисті краєвиди, архітектуру України тих часів та образ справжнього козака. Поєднати реальні факти та події з містикою та гумором творів Гоголя і інших джерел з подібною містикою схожої епохи.`,
+      `Додатково: студія правильного перекладу (рус, укр, eng, “смішний переклад” – гоблін).`,
+    ],
 
     excursusTitleRu: `Excursus. Начальное производство.`,
     excursusTitleEn: ``,
@@ -85,7 +89,7 @@ const textData = [
 
     excursusInfoRu: `Первичный запуск задействует рубрику Журналистика и рабочий имиджборд с идеями, рекламой и продвижением остального, что должно способствовать начальному толчку, набору аудитории и дальнейшему развитию.`,
     excursusInfoEn: `The first launch will use the Journalism scenario and working Imageboard with feature ideas and promotion of the rest, which should help for initial push, capture audience and further development.`,
-    excursusInfoUa: ``,
+    excursusInfoUa: `Для першого запуску задіяти рубрику Журналістика і робочий Іміджборд з ідеями, рекламою та просуванням остального, що має сприяти початковому поштовху, набору аудиторії та подальшому розвитку.`,
 
     whyTitleRu: `Почему(?):`,
     whyTitleEn: ``,
@@ -93,15 +97,19 @@ const textData = [
 
     whyInfoRu: [
       `Все текущие социальные сети превратились или превращаются в “телевизоры былой эпохи”, где вокруг сплошная цензура и поток нескончаемой рекламы. Выбор просматриваемого контента всё реже остается за пользователем. Поэтому и нужна новая свободная площадка, свежий воздух.`,
-      `Для Украины это будет первое, своего рода, место для раскрытия творческого потенциала, создании и реализации личности, открытости и совершенно нового виденья. В этом приложении и будут собраны лучшие возможности воедино, без лишней мишуры и ненужных функций, с умопомрачительным минималистически-модернистским дизайном, футуристическим ответвлением и максимальной отзывчивостью к потребителю.`,
-      `В процессе дальнейшего развития Украины такое место идеально займет свою нишу производства всего вышеперечисленного.`,
+      `Для Украины это будет первое, своего рода место для раскрытия творческого потенциала, создании и реализации личности, открытости и совершенно нового виденья. В этом приложении и будут собраны лучшие возможности воедино, без лишней мишуры и ненужных функций, с умопомрачительным минималистически-модернистским дизайном, футуристическим ответвлением и максимальной отзывчивостью к потребителю.`,
+      `В процессе дальнейшего формирования это место идеально займет свою нишу производства всего вышеперечисленного и популяризацией развития в Украине.`,
     ],
     whyInfoEn: [
       `All current social networks have turned into “bygone era TVs”. Everywhere continuous censorship and a stream of endless advertising. The choice of viewed content is less often to be left for the user. Therefore, we need a new free platform with fresh air.`,
       `For Ukraine it will be the first kind of place for the disclosure of creative potential, the creation and realization of personality, openness and a completely new vision. This application will bring the best features together, without unnecessary functions and useless things, with a breathtaking modern minimalist design, futuristic branch and maximum responsiveness to the consumer.`,
       `In the process of further evolution of Ukraine, such a place will ideally occupy its niche for the production of all above listed.`,
     ],
-    whyInfoUa: [``, ``, ``],
+    whyInfoUa: [
+      `Усі поточні соціальні мережі перетворилися чи перетворюються на “телевізори минувшої епохи”, де довкола суцільна цензура і потік нескінченної реклами. Вибір контенту, що переглядається, все рідше залишається за користувачем. Для цього і потрібен новий, вільний майданчик, свіже повітря.`,
+      `Для України це буде перше, свого роду місце для розвитку творчого потенціалу, створення та реалізації особистості, відкритості та абсолютно нового бачення. У цьому додатку і будуть зібрані найкращі можливості воєдино, без зайвої мішури та непотрібних функцій, з дивовижним мінімалістично-модерністським дизайном, футуристичним відгалуженням та максимальним відгуком до споживача.`,
+      `У процесі подальшого формування це місце ідеально займатиме свою нішу виробництва всього вищепереліченого та популяризацією розвитку в Україні.`,
+    ],
 
     // Features ideas - not needed for now
     // featuresTitleRu: `Misc features. Наработки деталей ресурса:`,
