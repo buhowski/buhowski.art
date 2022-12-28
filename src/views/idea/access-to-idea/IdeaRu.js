@@ -60,7 +60,8 @@ export default function IdeaRu() {
             ))}
           </div>
 
-          <div className="idea-block idea-block--features">
+          {/* Features ideas - not needed for now */}
+          {/* <div className="idea-block idea-block--features">
             <h2 className="h2">{data.featuresTitleRu}</h2>
             <ul>
               {data.featuresItemRu.map((feature, c) => (
@@ -69,7 +70,7 @@ export default function IdeaRu() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
       ))}
     </div>

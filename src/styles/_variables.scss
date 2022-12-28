@@ -17,7 +17,7 @@ $textGrey: #dddddd;
 $starYellow: #e3b716;
 
 @mixin fullHD {
-	@media screen and (max-width: 1920px) {
+	@media screen and (max-width: 2020px) {
 		@content;
 	}
 }
