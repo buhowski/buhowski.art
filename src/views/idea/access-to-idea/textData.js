@@ -89,7 +89,7 @@ const textData = [
 
     excursusInfoRu: `Первичный запуск задействует рубрику Журналистика и рабочий имиджборд с идеями, рекламой и продвижением остального, что должно способствовать начальному толчку, набору аудитории и дальнейшему развитию.`,
     excursusInfoEn: `The first launch will use the Journalism scenario and working Imageboard with feature ideas and promotion of the rest, which should help for initial push, capture audience and further development.`,
-    excursusInfoUa: `Для першого запуску задіяти рубрику Журналістика і робочий Іміджборд з ідеями, рекламою та просуванням остального, що має сприяти початковому поштовху, набору аудиторії та подальшому розвитку.`,
+    excursusInfoUa: `Для першого запуску потрыбно задіяти рубрику Журналістика і робочий Іміджборд з ідеями, рекламою та просуванням остального, що має сприяти початковому поштовху, набору аудиторії та подальшому розвитку.`,
 
     whyTitleRu: `Почему(?):`,
     whyTitleEn: ``,
