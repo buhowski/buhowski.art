@@ -4,6 +4,8 @@ import IdeaTabsGeneral from "./idea-general/IdeaTabsGeneral";
 import SliderContainer from "./Slider";
 
 export default function Idea() {
+  const contactBtnTitle = "Contact";
+
   return (
     <div className="wrapper wrapper--idea">
       <div className="title-height">
@@ -19,7 +21,7 @@ export default function Idea() {
         </div>
         <IdeaTabsGeneral />
 
-        <SliderContainer />
+        <SliderContainer contactBtnTitle={contactBtnTitle} />
       </div>
     </div>
   );

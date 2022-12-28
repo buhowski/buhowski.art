@@ -13,10 +13,8 @@
 		height: auto;
 	}
 }
-
+// underline link effect
 .nav-link--underline {
-	display: inline-block;
-	margin-top: auto;
 	z-index: unset;
 	&::after {
 		z-index: unset;
@@ -41,6 +39,69 @@
 
 	&:hover::before {
 		transform: scale(1, 1);
+	}
+}
+
+.idea-contacts {
+	position: relative;
+	user-select: text;
+	display: inline-block;
+	margin-top: auto;
+
+	&__list {
+		position: absolute;
+		bottom: 45px;
+		left: 50%;
+		transform: translateX(-50%);
+		box-shadow: 0px 3px 15px rgba(0, 0, 0, .7);
+		border-radius: 10px;
+		background: rgba($color: $black, $alpha: .8);
+		color: $textGrey;
+		font-size: 13px;
+		
+		display: inline-block;
+		width: max-content;
+		height: 0;
+		overflow: hidden;
+		transition: height .4s;
+
+		&-items {
+			padding: 15px 20px;
+		}
+
+		p {
+			margin-bottom: 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		a {
+			color: $blue-main;
+			&:hover {
+				transform: translateY(30px);
+			}
+		}
+	}
+
+	&[data-active] {
+		.idea-contacts__list {
+			height: 100px;
+			&::after {
+				transform: translate(-50%, 0) scale(1, 1);
+			}
+		}
+
+		.nav-link--underline {
+			&:after {
+				transform: scale(0, 1);
+				height: 2px;
+			}
+		
+			&:before {
+				transform: scale(1, 1);
+			}
+		}
 	}
 }
 
@@ -258,9 +319,6 @@
 
 	@include tabletBig {
 		margin-top: -75px;
-		.nav-link {
-			display: none;
-		}
 	}
 
 	@include tabletSmall {

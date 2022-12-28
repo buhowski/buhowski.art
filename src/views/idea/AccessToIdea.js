@@ -4,6 +4,8 @@ import IdeaTabs from "./access-to-idea/IdeaTabs";
 import SliderContainer from "./Slider";
 
 export default function Idea() {
+  const contactBtnTitle = "Access";
+
   return (
     <div className="wrapper wrapper--idea">
       <h1 className="base-title">???</h1>
@@ -17,7 +19,7 @@ export default function Idea() {
         </div>
         <IdeaTabs />
 
-        <SliderContainer />
+        <SliderContainer contactBtnTitle={contactBtnTitle} />
       </div>
     </div>
   );

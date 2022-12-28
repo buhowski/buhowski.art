@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import sliderImg1 from "./images/bm-l.jpg";
+import PopupContacts from "./PopupContacts";
 
-let ideaLinkText = "Contact Me To Know More";
-let ideaLinkURL = "/";
 const dataImgs = [
   {
     imgSrc: sliderImg1,
@@ -46,6 +45,7 @@ class SliderContainer extends Component {
   };
 
   render() {
+    const { contactBtnTitle } = this.props;
     let sliderStyle = {
       transform: `translateX(${this.state.activeIndex * -100}%)`,
     };
@@ -84,14 +84,7 @@ class SliderContainer extends Component {
           ></button>
         </div>
 
-        <a
-          className="a nav-link nav-link--underline"
-          href={ideaLinkURL}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {ideaLinkText}
-        </a>
+        <PopupContacts contactBtnTitle={contactBtnTitle} />
       </div>
     );
   }
