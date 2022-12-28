@@ -86,12 +86,12 @@ const textData = [
     whyInfoRu: [
       `Все текущие социальные сети превратились или превращаются в “телевизоры былой эпохи”, где вокруг сплошная цензура и поток нескончаемой рекламы. Выбор просматриваемого контента всё реже остается за пользователем. Поэтому и нужна новая свободная площадка, свежий воздух.`,
       `Для Украины это будет первое, своего рода, место для раскрытия творческого потенциала, создании и реализации личности, открытости и совершенно нового виденья. В этом приложении и будут собраны лучшие возможности воедино, без лишней мишуры и ненужных функций, с умопомрачительным минималистически-модернистским дизайном, футуристическим ответвлением и максимальной отзывчивостью к потребителю.`,
-      `На фоне текущей войны в стране и после очевидной победы Украины такое место идеально займет свою нишу производства всего вышеперечисленного.`,
+      `В процессе дальнейшего развития Украины такое место идеально займет свою нишу производства всего вышеперечисленного.`,
     ],
     whyInfoEn: [
       `All current social networks have turned into “bygone era TVs”. Everywhere continuous censorship and a stream of endless advertising. The choice of viewed content is less often to be left for the user. Therefore, we need a new free platform with fresh air.`,
       `For Ukraine it will be the first kind of place for the disclosure of creative potential, the creation and realization of personality, openness and a completely new vision. This application will bring the best features together, without unnecessary functions and useless things, with a breathtaking modern minimalist design, futuristic branch and maximum responsiveness to the consumer.`,
-      `Against the backdrop of the current war in the country and after the obvious victory of Ukraine, such a place will ideally occupy its niche for the production of all above listed.`,
+      `In the process of further evolution of Ukraine, such a place will ideally occupy its niche for the production of all above listed.`,
     ],
     whyInfoUa: [``, ``, ``],
 
