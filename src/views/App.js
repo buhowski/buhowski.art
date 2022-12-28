@@ -8,7 +8,7 @@ import Home from "./home/Home";
 import About from "./about/About";
 import Projects from "./projects/Projects";
 // Gallery page with funny photos TODO: comment page
-import Gallery from "./gallery/Gallery";
+// import Gallery from "./gallery/Gallery";
 import IdeaGeneral from "./idea/IdeaGeneral";
 import AccessToIdea from "./idea/AccessToIdea";
 
@@ -25,10 +25,10 @@ const routesData = [
     pathTo: "projects",
     pageComponent: <Projects />,
   },
-  {
-    pathTo: "gallery",
-    pageComponent: <Gallery />,
-  },
+  // {
+  //   pathTo: "gallery",
+  //   pageComponent: <Gallery />,
+  // },
   {
     pathTo: "idea",
     pageComponent: <IdeaGeneral />,

@@ -13,13 +13,13 @@ const linksData = [
     pageLink: "projects",
     pageName: "Projects",
   },
-  {
-    pageLink: "gallery",
-    pageName: "Gallery",
-  },
+  // {
+  //   pageLink: "gallery",
+  //   pageName: "Gallery",
+  // },
   {
     pageLink: "/idea",
-    pageName: "Idea",
+    pageName: "Offer",
   },
   // {
   //   pageLink: "/access-to-idea",
