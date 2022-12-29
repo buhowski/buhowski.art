@@ -1,15 +1,21 @@
 import React from "react";
 import "./Idea.scss";
-import IdeaTabsGeneral from "./idea-general/IdeaTabsGeneral";
+import IdeaTabs from "./IdeaTabs";
+import IdeaRu from "./idea-general/IdeaGeneralRu";
+import IdeaEn from "./idea-general/IdeaGeneralEn";
+import IdeaUa from "./idea-general/IdeaGeneralUa";
 import SliderContainer from "./Slider";
 
 export default function Idea() {
-  const contactBtnTitle = "Contact";
+  const contactBtnTitle = "Contacts For Details";
+  const IdeaTabRu = IdeaRu;
+  const IdeaTabEn = IdeaEn;
+  const IdeaTabUa = IdeaUa;
 
   return (
     <div className="wrapper wrapper--idea">
       <div className="title-height">
-        <h1 className="base-title">I have an offer for You!</h1>
+        <h1 className="base-title">I Have An Offer For You!</h1>
       </div>
 
       <div className="idea-section">
@@ -19,7 +25,11 @@ export default function Idea() {
             {new Date().getFullYear()} <span>&copy;</span> A. Tsiomakh
           </p>
         </div>
-        <IdeaTabsGeneral />
+        <IdeaTabs
+          IdeaTabRu={IdeaTabRu}
+          IdeaTabEn={IdeaTabEn}
+          IdeaTabUa={IdeaTabUa}
+        />
 
         <SliderContainer contactBtnTitle={contactBtnTitle} />
       </div>

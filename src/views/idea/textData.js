@@ -1,6 +1,6 @@
 const textData = [
   {
-    // Text For general idea page
+    // ################## TEXT FOR GENERAL IDEA PAGE
     mainTitleRu: `Коротко о главном:`,
     mainTitleEn: `Briefly about the main:`,
     mainTitleUa: `Коротко про головне:`,
@@ -26,7 +26,7 @@ const textData = [
     scenarioTextEn: `All sorts of ideas for films, TV shows, cartoons bubbling in my head, written down in a notes, waiting for proposals for implementation!`,
     scenarioTextUa: `Різного роду ідеї фільмів, серіалів та мультфільмів вируючих в голові, записані в блокнот, чекають на пропозиції для реалізації!`,
 
-    // Access Idea page text
+    // ################## ACCESS IDEA PAGE TEXT
     basicRu: `Basic. Главное в целом:`,
     basicEn: `Basic. The main in general:`,
     basicUa: `Basic. Ключове загалом:`,

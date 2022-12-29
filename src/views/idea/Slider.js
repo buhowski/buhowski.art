@@ -51,37 +51,41 @@ class SliderContainer extends Component {
     };
 
     return (
-      <div className="slider-container">
-        <div className="idea-slider slider-js" style={sliderStyle}>
-          {dataImgs.map(({ imgSrc, imgAlt }, i) => (
-            <div
-              className="slider-item-js"
-              data-active={i === this.state.activeIndex}
-              key={i}
-            >
-              <img src={imgSrc} alt={imgAlt} />
-            </div>
-          ))}
-        </div>
+      <div className="slider-with-btn">
+        <div className="slider-container">
+          <div className="idea-slider slider-js" style={sliderStyle}>
+            {dataImgs.map(({ imgSrc, imgAlt }, i) => (
+              <div
+                className="slider-item-js"
+                data-active={i === this.state.activeIndex}
+                key={i}
+              >
+                <img src={imgSrc} alt={imgAlt} />
+              </div>
+            ))}
+          </div>
 
-        <span className="slides-number">
-          {`${this.state.activeIndex + 1 < 10 ? "0" : ""}${
-            this.state.activeIndex + 1
-          } / ${dataImgs.length < 10 ? "0" : ""}${dataImgs.length}`}
-        </span>
+          <span className="slides-number">
+            {`${this.state.activeIndex + 1 < 10 ? "0" : ""}${
+              this.state.activeIndex + 1
+            } / ${dataImgs.length < 10 ? "0" : ""}${dataImgs.length}`}
+          </span>
 
-        <div className="slider-actions">
-          <button
-            className="slider-btn-js slider-btn-js-prev"
-            type="button"
-            onClick={this.clickPrev}
-          ></button>
+          <div className="slider-actions">
+            <button
+              className="slider-btn-js slider-btn-js-prev"
+              type="button"
+              onClick={this.clickPrev}
+            ></button>
 
-          <button
-            className="slider-btn-js slider-btn-js-next"
-            type="button"
-            onClick={this.clickNext}
-          ></button>
+            <button
+              className="slider-btn-js slider-btn-js-next"
+              type="button"
+              onClick={this.clickNext}
+            ></button>
+          </div>
+
+          <PopupContacts contactBtnTitle={contactBtnTitle} />
         </div>
 
         <PopupContacts contactBtnTitle={contactBtnTitle} />

@@ -24,24 +24,26 @@ class PopupContacts extends Component {
     setContacts: null,
   };
 
-  toggleShowContacts = (e) => {
-    const clickMe = e.target.id;
-    if (this.state.setContacts === clickMe) {
-      this.setState({
-        setContacts: null,
-      });
-    } else {
-      this.setState({
-        setContacts: clickMe,
-      });
-    }
+  toggleShowContacts = () => {
+    this.setState({
+      setContacts: "show",
+    });
+  };
+
+  toggleShowContactsHide = () => {
+    this.setState({
+      setContacts: "",
+    });
   };
 
   render() {
     const { contactBtnTitle } = this.props;
 
     return (
-      <div className="idea-contacts" data-active={this.state.setContacts}>
+      <div
+        className={`idea-contacts ${this.state.setContacts}`}
+        onMouseLeave={this.toggleShowContactsHide}
+      >
         <div className="idea-contacts__list">
           <div className="idea-contacts__list-items">
             {dataContacts.map((item, i) => (
@@ -56,7 +58,7 @@ class PopupContacts extends Component {
         </div>
 
         <button
-          onClick={this.toggleShowContacts}
+          onMouseOver={this.toggleShowContacts}
           type="button"
           className="a nav-link nav-link--underline"
         >
