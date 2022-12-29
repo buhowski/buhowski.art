@@ -1,10 +1,16 @@
 import React from "react";
 import "./Idea.scss";
-import IdeaTabs from "./access-to-idea/IdeaTabs";
+import IdeaTabs from "./IdeaTabs";
+import IdeaRu from "./access-to-idea/IdeaRu";
+import IdeaEn from "./access-to-idea/IdeaEn";
+import IdeaUa from "./access-to-idea/IdeaUa";
 import SliderContainer from "./Slider";
 
 export default function Idea() {
   const contactBtnTitle = "Access";
+  const IdeaTabRu = IdeaRu;
+  const IdeaTabEn = IdeaEn;
+  const IdeaTabUa = IdeaUa;
 
   return (
     <div className="wrapper wrapper--idea">
@@ -17,7 +23,11 @@ export default function Idea() {
             {new Date().getFullYear()} <span>&copy;</span> A. Tsiomakh
           </p>
         </div>
-        <IdeaTabs />
+        <IdeaTabs
+          IdeaTabRu={IdeaTabRu}
+          IdeaTabEn={IdeaTabEn}
+          IdeaTabUa={IdeaTabUa}
+        />
 
         <SliderContainer contactBtnTitle={contactBtnTitle} />
       </div>
