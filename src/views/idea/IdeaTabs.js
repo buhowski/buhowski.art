@@ -1,5 +1,4 @@
 import React from "react";
-import PopupContacts from "./PopupContacts";
 
 class IdeaGeneral extends React.Component {
   state = {
@@ -80,8 +79,6 @@ class IdeaGeneral extends React.Component {
             {this.state.currentTab === `${tab.id}` && tab.content}
           </div>
         ))}
-
-        {/* <PopupContacts contactBtnTitle={contactBtnTitle} /> */}
       </div>
     );
   }
