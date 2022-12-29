@@ -84,7 +84,7 @@
 		}
 	}
 
-	&[data-active] {
+	&.show {
 		.idea-contacts__list {
 			height: 100px;
 			&::after {
