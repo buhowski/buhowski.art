@@ -4,6 +4,15 @@ class IdeaGeneral extends React.Component {
   state = {
     currentTab: "2",
     setCurrentTab: "2",
+    user: "",
+    rememberMe: false,
+  };
+
+  handleChange = (event) => {
+    const input = event.target;
+    const value = input.type === "checkbox" ? input.checked : input.value;
+
+    this.setState({ [input.name]: value });
   };
 
   handleTabClick = (e) => {
@@ -11,7 +20,18 @@ class IdeaGeneral extends React.Component {
       currentTab: e.target.id,
       setCurrentTab: e.target.id,
     });
+
+    localStorage.setItem("currentIndex", e.target.id);
   };
+
+  componentDidMount() {
+    const currentIndex = localStorage.getItem("currentIndex");
+
+    this.setState({
+      currentTab: currentIndex,
+      setCurrentTab: currentIndex,
+    });
+  }
 
   render() {
     const { IdeaTabRu, IdeaTabEn, IdeaTabUa } = this.props;
