@@ -7,7 +7,7 @@ import IdeaUa from "./idea-general/IdeaGeneralUa";
 import SliderContainer from "./Slider";
 
 export default function Idea() {
-  const contactBtnTitle = "Contact";
+  const contactBtnTitle = "Contact Me For Details";
   const IdeaTabRu = IdeaRu;
   const IdeaTabEn = IdeaEn;
   const IdeaTabUa = IdeaUa;
@@ -15,7 +15,7 @@ export default function Idea() {
   return (
     <div className="wrapper wrapper--idea">
       <div className="title-height">
-        <h1 className="base-title">I have an offer for You!</h1>
+        <h1 className="base-title">I Have An Offer For You!</h1>
       </div>
 
       <div className="idea-section">

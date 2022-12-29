@@ -47,6 +47,7 @@
 	user-select: text;
 	display: inline-block;
 	margin-top: auto;
+	width: max-content;
 
 	&__list {
 		position: absolute;
@@ -55,16 +56,14 @@
 		transform: translateX(-50%);
 		box-shadow: 0px 3px 15px rgba(0, 0, 0, .7);
 		border-radius: 10px;
-		background: rgba($color: $black, $alpha: .8);
+		background: rgba($color: $black, $alpha: .9);
 		color: $textGrey;
 		font-size: 13px;
-		
 		display: inline-block;
-		width: max-content;
 		height: 0;
 		overflow: hidden;
 		transition: height .4s;
-
+		width: max-content;
 		&-items {
 			padding: 15px 20px;
 		}
@@ -105,6 +104,29 @@
 	}
 }
 
+.slider-with-btn {
+	.idea-contacts {
+		display: none;
+		
+		@include tabletBig {
+			position: absolute;
+			bottom: 75px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: inline-block;
+		}
+	}
+
+	.slider-container {
+		.idea-contacts {
+			display: inline-block;
+			@include tabletBig {
+				display: none;
+			}
+		}
+	}
+}
+
 .idea-section {
 	background: $dark;
 	padding: 70px;
@@ -116,13 +138,13 @@
 	@include tabletBig {
 		flex-direction: column-reverse;
 		padding: 40px;
-		padding-bottom: 60px;
+		padding-bottom: 150px;
 		max-height: 100%;
 	}
 
 	@include mobile {
 		padding: 15px;
-		padding-bottom: 65px;
+		padding-bottom: 150px;
 	}
 }
 
