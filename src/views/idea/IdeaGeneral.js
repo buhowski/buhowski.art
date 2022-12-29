@@ -7,7 +7,7 @@ import IdeaUa from "./idea-general/IdeaGeneralUa";
 import SliderContainer from "./Slider";
 
 export default function Idea() {
-  const contactBtnTitle = "Contact Me For Details";
+  const contactBtnTitle = "Contacts For Details";
   const IdeaTabRu = IdeaRu;
   const IdeaTabEn = IdeaEn;
   const IdeaTabUa = IdeaUa;

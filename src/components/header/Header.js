@@ -19,7 +19,7 @@ const linksData = [
   // },
   {
     pageLink: "/idea",
-    pageName: "Offer",
+    pageName: "My Idea",
   },
   // {
   //   pageLink: "/access-to-idea",
