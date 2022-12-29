@@ -4,8 +4,6 @@ class IdeaGeneral extends React.Component {
   state = {
     currentTab: "2",
     setCurrentTab: "2",
-    user: "",
-    rememberMe: false,
   };
 
   handleChange = (event) => {
@@ -28,8 +26,8 @@ class IdeaGeneral extends React.Component {
     const currentIndex = localStorage.getItem("currentIndex");
 
     this.setState({
-      currentTab: currentIndex,
-      setCurrentTab: currentIndex,
+      currentTab: currentIndex ? currentIndex : "2",
+      setCurrentTab: currentIndex ? currentIndex : "2",
     });
   }
 
