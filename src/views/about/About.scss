@@ -7,9 +7,7 @@
 	height: calc(100% - 100px);
 	.base-title {
 		margin-bottom: 0;
-		@include mobile {
-			margin-bottom: 30px;
-		}
+		padding-bottom: 15px;
 	}
 }
 

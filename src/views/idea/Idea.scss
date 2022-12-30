@@ -51,7 +51,7 @@
 
 	&__list {
 		position: absolute;
-		bottom: 45px;
+		bottom: 46px;
 		left: 50%;
 		transform: translateX(-50%);
 		box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
@@ -62,7 +62,8 @@
 		display: inline-block;
 		height: 0;
 		overflow: hidden;
-		transition: height 0.4s;
+		visibility: hidden;
+		transition: height 0.4s, visibility 0.4s;
 		width: max-content;
 		&-items {
 			padding: 15px 20px;
@@ -88,6 +89,7 @@
 	&.show {
 		.idea-contacts__list {
 			height: 100px;
+			visibility: visible;
 			&::after {
 				transform: translate(-50%, 0) scale(1, 1);
 			}
