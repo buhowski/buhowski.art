@@ -10,22 +10,31 @@
 	}
 	.base-title {
 		line-height: 1.6;
-		margin: 6rem 0 3rem;
+		padding: 0;
+		margin-bottom: 3rem;
 		@include tabletSmall {
-			margin-top: 3rem;
+			margin-bottom: 25px;
 		}
 	}
 }
+
 .name-container {
+	align-self: center;
+	margin-bottom: 100px;
 	width: 40%;
 	@include tabletSmall {
-		width: 100%; 
+		width: 100%;
+		margin-bottom: 0;
+		margin-top: 30px;
 	}
 	.tag-color {
 		font-size: 21px;
 		margin-bottom: 3rem;
 		font-family: $lg;
 		letter-spacing: 1.5px;
+		@include tabletSmall {
+			margin-bottom: 30px;
+		}
 	}
 }
 
@@ -49,7 +58,7 @@ canvas {
 	}
 	@include tabletSmall {
 		width: 100%;
-		margin-top: 40px;
+		margin-top: 30px;
 	}
 }
 .drawCanvas {

@@ -1,9 +1,9 @@
 const textData = [
 	{
 		// ################## TEXT FOR GENERAL IDEA PAGE
-		mainTitleRu: `Коротко о главном`,
-		mainTitleEn: `Briefly about the main`,
-		mainTitleUa: `Коротко про головне`,
+		mainTitleRu: `Коротко о главном:`,
+		mainTitleEn: `Briefly about the main:`,
+		mainTitleUa: `Коротко про головне:`,
 
 		startupTitleRu: `Стартап`,
 		startupTitleEn: `Startup`,

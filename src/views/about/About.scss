@@ -2,6 +2,9 @@
 
 .about-wrapper {
 	margin-bottom: -80px;
+	display: flex;
+	flex-direction: column;
+	height: calc(100% - 100px);
 	.base-title {
 		margin-bottom: 0;
 		@include mobile {
@@ -15,7 +18,7 @@
 	color: $blue-main;
 	max-width: 450px;
 	width: 100%;
-	margin: 0 auto;
+	margin: auto;
 	@include mobile {
 		max-width: 250px;
 	}
@@ -34,15 +37,15 @@
 	.ball {
 		position: absolute;
 	}
-	.show{
+	.show {
 		opacity: 0;
-		transition: all .4s;
+		transition: all 0.4s;
 	}
 	.ball {
 		width: 25px;
 		height: 25px;
 		z-index: 5;
-		transition: all .1s;
+		transition: all 0.1s;
 		border-radius: 50%;
 		&:after {
 			content: '';
@@ -59,7 +62,7 @@
 			opacity: 1;
 		}
 	}
-	.brain{
+	.brain {
 		.ball {
 			left: 51%;
 			top: 7.4%;
@@ -75,7 +78,7 @@
 			text-align: center;
 			@include mobile {
 				top: 3%;
-				right: -15%
+				right: -15%;
 			}
 			@include mobileSmall {
 				top: 0%;
@@ -116,7 +119,7 @@
 			top: 43%;
 			@include mobile {
 				left: 27%;
-				top: 41%;       
+				top: 41%;
 			}
 		}
 		.title {
@@ -151,7 +154,7 @@
 			@include mobile {
 				bottom: 27%;
 				right: -20%;
-				transform: rotate(12deg);     
+				transform: rotate(12deg);
 			}
 			@include mobileSmall {
 				bottom: 29%;
