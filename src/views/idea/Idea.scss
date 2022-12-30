@@ -179,7 +179,7 @@
 
 	p {
 		overflow: hidden;
-		border-right: 1px solid $blue-main;
+		border-right: 1.5px solid $blue-main;
 		white-space: nowrap;
 		width: 0;
 		animation: typing 2.5s steps(18, end) 2s forwards,
@@ -219,7 +219,6 @@
 	overflow: auto;
 	padding-right: 30px;
 	display: none;
-	transition: opacity 0.4s;
 
 	&[data-content='true'] {
 		display: block;
@@ -293,7 +292,7 @@
 			width: 3px;
 			height: 3px;
 			border-radius: 50%;
-			background: $snow;
+			background: $titlePink;
 			margin-right: 10px;
 			margin-top: 10px;
 		}
