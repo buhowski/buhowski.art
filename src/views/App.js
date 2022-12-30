@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation, Route, Routes } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "./App.scss";
@@ -40,6 +40,15 @@ const routesData = [
 ];
 
 const App = () => {
+  useEffect(() => {
+    if (window.innerWidth <= 720) {
+      window.addEventListener("resize", () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      });
+    }
+  });
+
   const location = useLocation();
 
   return (
