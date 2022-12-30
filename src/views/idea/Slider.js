@@ -35,15 +35,6 @@ class SliderContainer extends Component {
 		activeIndex: Math.floor(Math.random() * (dataImgs.length - 0) + 0),
 	};
 
-	// for randoming picture when loads(just for fun)
-	// componentDidMount() {
-	// 	const min = 0;
-	// 	const max = dataImgs.length;
-	// 	const random = Math.floor(Math.random() * (max - min) + min);
-	// 	this.setState({ activeIndex: random });
-	// }
-	// end
-
 	clickNext = () => {
 		if (this.state.activeIndex < dataImgs.length - 1) {
 			this.setState({ activeIndex: this.state.activeIndex + 1 });
