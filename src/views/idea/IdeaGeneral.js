@@ -14,9 +14,7 @@ export default function Idea() {
 
   return (
     <div className="wrapper wrapper--idea">
-      <div className="title-height">
-        <h1 className="base-title">I Have An Offer For You!</h1>
-      </div>
+      <h1 className="base-title">I Have An Offer For You!</h1>
 
       <div className="idea-section">
         {/* Copyright */}
