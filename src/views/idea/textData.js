@@ -27,9 +27,9 @@ const textData = [
 		scenarioTextUa: `Різного роду ідеї фільмів, серіалів та мультфільмів вируючих в голові, записані в блокнот, чекають на пропозиції для реалізації!`,
 
 		// ################## ACCESS IDEA PAGE TEXT
-		basicRu: `Basic. Главное в целом`,
-		basicEn: `Basic. The main in general`,
-		basicUa: `Basic. Ключове загалом`,
+		basicRu: `Basic: Главное в целом`,
+		basicEn: `Basic: The main in general`,
+		basicUa: `Basic: Ключове загалом`,
 
 		appSampleRu: `Приложение примера укомплектованного, многофункционального журнала с возможностью ведения и развития любой производственной деятельности или же служащее для поиска информации, развлечения и беззаботного времяпрепровождения.`,
 		appSampleEn: `The application is an example of a complete multifunctional magazine with the ability to maintain and develop any production activity or to search for information, entertainment and carefree pastime.`,
@@ -66,9 +66,9 @@ const textData = [
 		designEn: `To represent an example of the main page of the application, use bright/provocative/strong magazine covers like Time, The New Yorker, National Geographic, etc. Will be created and changed depending on the current newsbreak for public discussion.`,
 		designUa: `Щоб представити приклад головної сторінки входу в додаток є яскраві/провокативні/сильні обкладинки журналів: Time, The New Yorker, National Geographic, etc. Створюватимуться і змінюватимуться залежно від поточного інфоприводу для масового обговорення.`,
 
-		conceptTitleRu: `Concepts. Идеи к рубрикам`,
-		conceptTitleEn: `Concepts. Main Ideas`,
-		conceptTitleUa: `Concepts. Ідеї для рубрик`,
+		conceptTitleRu: `Concepts: Идеи к рубрикам`,
+		conceptTitleEn: `Concepts: Heading Ideas`,
+		conceptTitleUa: `Concepts: Ідеї для рубрик`,
 
 		journalistRu: `Журналистика`,
 		journalistEn: `Journalism`,
@@ -110,17 +110,17 @@ const textData = [
 			`Додатково: студія правильного перекладу (рус, укр, eng, “смішний переклад” – гоблін).`,
 		],
 
-		excursusTitleRu: `Pilot. Начальное производство`,
-		excursusTitleEn: `Pilot. Initial production`,
-		excursusTitleUa: `Pilot. Первинний запуск`,
+		excursusTitleRu: `Pilot: Начальное производство`,
+		excursusTitleEn: `Pilot: Initial production`,
+		excursusTitleUa: `Pilot: Первинний запуск`,
 
 		excursusInfoRu: `Первичный запуск задействует рубрику Журналистика и рабочий имиджборд с идеями, рекламой и продвижением остального, что должно способствовать начальному толчку, набору аудитории и дальнейшему развитию.`,
 		excursusInfoEn: `The first launch will use the Journalism scenario and working Imageboard with feature ideas and promotion of the rest, which should help for initial push, capture audience and further development.`,
 		excursusInfoUa: `Для початку задіяти рубрику Журналістика і робочий Іміджборд з ідеями, рекламою та просуванням остального, що має сприяти початковому поштовху, набору аудиторії та подальшому розвитку.`,
 
-		whyTitleRu: `Why. Почему(?)`,
-		whyTitleEn: `Why. Reason(?)`,
-		whyTitleUa: `Why. Чому(?)`,
+		whyTitleRu: `Why: Почему(?)`,
+		whyTitleEn: `Why: Reason(?)`,
+		whyTitleUa: `Why: Чому(?)`,
 
 		whyInfoRu: [
 			`Все текущие социальные сети превратились или превращаются в “телевизоры былой эпохи”, где вокруг сплошная цензура и поток нескончаемой рекламы. Выбор просматриваемого контента всё реже остается за пользователем. Поэтому и нужна новая свободная площадка, свежий воздух.`,
