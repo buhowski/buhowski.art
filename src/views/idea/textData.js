@@ -31,13 +31,13 @@ const textData = [
 		basicEn: `Concept: Base`,
 		basicUa: `Concept: Основа`,
 
-		appSampleRu: `Приложение примера укомплектованного, многофункционального журнала с возможностью создания и развития любой производственной деятельности. Также местом для просмотра всевозможной информации и развлечения.`,
+		appSampleRu: `Приложение примера укомплектованного, многофункционального журнала с возможностью создания и развития любой производственной деятельности. Также место для просмотра всевозможной информации и развлечения.`,
 		appSampleEn: `Example application of a complete, feature rich magazine with the ability to create and develop any production activity. Also a place to view all sorts of information and entertainment.`,
-		appSampleUa: `Додаток прикладу укомплектованого, багатофункціонального журналу з можливістю створення та розвитку будь-якої підприємницької діяльності. Також місцем для перегляду різноманітної інформації та розваг.`,
+		appSampleUa: `Додаток прикладу укомплектованого, багатофункціонального журналу з можливістю створення та розвитку будь-якої підприємницької діяльності. Також місце для перегляду різноманітної інформації та розваг.`,
 
-		possibilitiesTitleRu: `Тип проекта:`,
-		possibilitiesTitleEn: `Project type:`,
-		possibilitiesTitleUa: `Тип проекту:`,
+		possibilitiesTitleRu: `Возможности:`,
+		possibilitiesTitleEn: `Possibilities:`,
+		possibilitiesTitleUa: `Можливості:`,
 
 		possibilitiesStarRu: [
 			`Социальная сеть, ведение микроблогинга (фото, видео, звук, текст)`,
@@ -73,15 +73,15 @@ const textData = [
 
 		journalistInfoRu: [
 			`Новое повествование современного дыхания, различные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры, с характером стиля письменности Хантера Томпсона, Буковски, Паланика, etc.`,
-			`Гонзо-журналистика. Ведение повествования от первого лица или группы лиц - текст/звук/фото/видео-дневники. Нырять в самое пекло идиотизма проблемы, изучая вопрос изнутри, или создавать определенные условия для его появления (смесь психологических экспериментов поведения, церемония аяуаски, освещение burning man, etc).`,
+			`Гонзо-журналистика. Ведение повествования от первого лица или группы лиц - текст/звук/фото/видео-дневники. Нырять в самое пекло идиотизма проблемы, изучать вопрос изнутри или создавать определенные условия для его появления (смесь психологических экспериментов поведения, церемония аяуаски, освещение burning man, etc).`,
 		],
 		journalistInfoEn: [
 			`A new narrative of modern breath, different opinions, truth and dirty realism. A peculiar presentation of information without censorship, with the nature of the writing style of Hunter Thompson, Bukowski, Palahniuk, etc.`,
 			`Gonzo Journalism. Conducting narration from the first person or groups of people – text/sound/photo/video diaries. Dive deep into the idiocy problems by studying the issue from the inside, or creating certain conditions for its appearance (a mix of psychological behavioral experiments, an ayahuasca ceremony, lighting a burning man, etc).`,
 		],
 		journalistInfoUa: [
-			`Новий погляд сучасного дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури, з характером стилю писемності Хантера Томпсона, Буковськи, Паланіка, etc.`,
-			`Гонзо журналістика. Ведення розповіді від першої особи чи групи лиць – текст/звук/фото/відео-щоденники. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини, або створювати певні умови для його появи (суміш психологічних експериментів поведінки, церемонія аяуаски, освітлення burning man, etc).`,
+			`Сучасний погляд нового дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури, з характером стилю писемності Хантера Томпсона, Буковськи, Паланіка, etc.`,
+			`Гонзо журналістика. Ведення розповіді від першої особи чи групи лиць – текст/звук/фото/відео-щоденники. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи (суміш психологічних експериментів поведінки, церемонія аяуаски, освітлення burning man, etc).`,
 		],
 
 		filmTitleRu: `Игры/Кино/Мульт производство`,
@@ -89,15 +89,15 @@ const textData = [
 		filmTitleUa: `Ігри/Кіно/Мульт виробництво`,
 
 		filmInfoRu: [
-			`Собрать воедино лучших, недооцененных, безгранично рассуждающих, критически мыслящих, желающих в развитие специалистов и творить новую историю культуры, искусства и технологического развития в стране.`,
+			`Собрать воедино лучших, недооцененных, критически мыслящих, желающих в развитие специалистов и творить новую историю культуры, искусства и технологического развития в стране.`,
 			`Дополнительно: студию правильного перевода и озвучки.`,
 		],
 		filmInfoEn: [
-			`Bring together the best, underestimated, infinitely reasoning, critically thinking, willing to grow specialists and create a new history of culture, art and technological development in the country.`,
+			`Bring together the best, underestimated, critically thinking, willing to grow specialists and create a new history of culture, art and technological development in the country.`,
 			`Additionally: studio of exact translation and voice acting.`,
 		],
 		filmInfoUa: [
-			`Зібрати воєдино кращих, недооцінених, безмежно міркуючих, критично мислячих, бажаючих у розвиток спеціалістів і творити нову історію культури, мистецтва та технологічного розвитку в країні.`,
+			`Зібрати воєдино кращих, недооцінених, критично мислячих, бажаючих у розвиток спеціалістів і творити нову історію культури, мистецтва та технологічного розвитку в країні.`,
 			`Додатково: студію правильного перекладу та озвучки.`,
 		],
 
@@ -115,21 +115,21 @@ const textData = [
 
 		whyInfoRu: [
 			`Все текущие социальные сети превратились или превращаются в “телевизоры былой эпохи”, где вокруг сплошная цензура и поток нескончаемой рекламы. Выбор просматриваемого контента всё реже остается за пользователем. Поэтому и нужна новая свободная площадка, свежий воздух.`,
-			`Для Украины это будет первое, своего рода, место для раскрытия творческого потенциала, свободного высказывания, реализации личности и продвижении современного мировоззрения.`,
-			`В этом ресурсе и будут собраны лучшие возможности воедино, без лишней мишуры и ненужных функций, с умопомрачительным минималистически-модернистским дизайном, футуристическим ответвлением и максимальной отзывчивостью к потребителю.`,
-			`В процессе формирования это место идеально займет свою нишу производства всего вышеперечисленного и популяризации развития в стране.`,
+			`Для Украины это будет первое, своего рода, место для раскрытия творческого потенциала, свободы высказывания, реализации личности и продвижения современного мировоззрения.`,
+			`В этом ресурсе и будут собраны лучшие возможности воедино, без лишней мишуры и ненужных функций, с минималистически-модернистским дизайном, футуристическим ответвлением и максимальной отзывчивостью к потребителю.`,
+			`В процессе формирования и правильным подходом к реализации это место идеально займет свою нишу производства всего вышеперечисленного и популяризации развития в стране`,
 		],
 		whyInfoEn: [
-			`All current social networks have turned into “bygone era TVs''. Where everywhere there is continuous censorship and a stream of endless advertising. The choice of viewed content is less often to be left for the user. Therefore, we need a new free platform with fresh air.`,
-			`For Ukraine it will be the first kind of place for the disclosure of creative potential, free expression, the realization of personality and the promotion of a modern worldview.`,
-			`This application will bring the best features together, without unnecessary functions and useless things, with a breathtaking modern minimalist design, a futuristic offshoot and maximum responsiveness to the consumer.`,
-			`In the process of further formation, this place will ideally occupy its niche for the production of all above listed and the promotion of development in the country.`,
+			`All current social networks have turned into “bygone era TVs''. Where everywhere there is continuous censorship and a stream of endless advertising. The choice of viewed content is less often to be left for the user. Therefore we need a new free platform with fresh air.`,
+			`For Ukraine, this will be the first, in its own way, place for the disclosure of creative potential, freedom of expression, the realization of personality and the promotion of a modern worldview.`,
+			`This application will bring the best features together, without unnecessary functions and useless things, with a modern minimalist design, a futuristic offshoot and maximum responsiveness to the consumer`,
+			`In the process of further formation and with the right approach to implementation, this place will ideally occupy its niche for the production of all above listed and the promotion of development in the country.`,
 		],
 		whyInfoUa: [
 			`Усі поточні соціальні мережі перетворилися чи перетворюються на “телевізори минувшої епохи”, де довкола суцільна цензура і потік нескінченної реклами. Вибір контенту, що переглядається, все рідше залишається за користувачем. Для цього і потрібен новий вільний майданчик, свіже повітря.`,
-			`Для України це буде перше, своєрідне місце для розкриття творчого потенціалу, вільного висловлювання, реалізації особистості та просування сучасного світогляду.`,
-			`У цьому ресурсі і будуть зібрані найкращі можливості воєдино, без зайвої мішури та непотрібних функцій, з дивовижним мінімалістично-модерністським дизайном, футуристичним відгалуженням та максимальним відгуком до споживача.`,
-			'У процесі формування це місце ідеально займатиме свою нішу виробництва всього вищепереліченого та популяризації розвитку в країні.',
+			`Для України це буде перше, свого роду, місце для розкриття творчого потенціалу, свободи висловлювання, реалізації особистості та просування сучасного світогляду. `,
+			`У цьому ресурсі і будуть зібрані найкращі можливості воєдино, без зайвої мішури та непотрібних функцій, з мінімалістично-модерністським дизайном, футуристичним відгалуженням та максимальним відгуком до споживача.`,
+			'В процесі формування та правильним підходом до реалізації це місце ідеально займатиме свою нішу виробництва всього вищепереліченого та популяризації розвитку в країні.',
 		],
 	},
 ];
