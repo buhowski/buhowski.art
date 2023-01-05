@@ -6,30 +6,32 @@ import Backpack from './images/backpack.png';
 
 const dotsData = [
 	{
-		classItem: "brain",
-		title: "IDEA THINKER",
-		img: Brain
+		classItem: 'brain',
+		title: 'IDEA THINKER',
+		img: Brain,
 	},
 	{
-		classItem: "writer",
-		title: "I like writing short screenplays and come up with new ideas",
-		img: Writer
+		classItem: 'writer',
+		// title: "I like writing short screenplays and come up with new ideas",
+		title: 'I like to write various scenario and come up with new ideas',
+		img: Writer,
 	},
 	{
-		classItem: "keyboard",
-		title: "Skills: HTML, CSS/SASS, JavaScript (React/React Native), Gulp/Webpack, Git",
-		img: Keyboard
+		classItem: 'keyboard',
+		title:
+			'Skills: HTML, CSS/SASS, JavaScript (React/React Native), Gulp/Webpack, Git',
+		img: Keyboard,
 	},
 	{
-		classItem: "backpack",
-		title: "Like to travel everywhere and go hiking",
-		img: Backpack
+		classItem: 'backpack',
+		title: 'Like to travel everywhere and go hiking',
+		img: Backpack,
 	},
 	{
-		classItem: "roots",
-		title: "BORN TO IMPROVE",
-		img: Roots
-	}
-]
+		classItem: 'roots',
+		title: 'BORN TO IMPROVE',
+		img: Roots,
+	},
+];
 
 export default dotsData;
