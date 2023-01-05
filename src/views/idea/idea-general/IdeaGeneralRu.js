@@ -10,6 +10,7 @@ export default function IdeaRu() {
 						<h2 className="idea-block__title h2">{text.mainTitleRu}</h2>
 						<h3 className="h3">{text.startupTitleRu}</h3>
 						<p className="idea-block__text">{text.appSampleRu}</p>
+						<p className="idea-block__text">{text.whyInfoRu[1]}</p>
 					</div>
 
 					<div className="idea-concept">

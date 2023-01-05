@@ -9,6 +9,11 @@
 		margin-bottom: 0;
 		padding-bottom: 15px;
 	}
+
+	@include mobile {
+		height: calc(100% - 80px);
+		padding-bottom: 45px;
+	}
 }
 
 .about-info {
