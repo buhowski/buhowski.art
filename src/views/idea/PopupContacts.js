@@ -44,12 +44,12 @@ class PopupContacts extends Component {
 				className={`idea-contacts ${this.state.setContacts}`}
 				onMouseLeave={this.toggleShowContactsHide}
 			>
-				<div className="idea-contacts__list">
-					<div className="idea-contacts__list-items">
+				<div className='idea-contacts__list'>
+					<div className='idea-contacts__list-items'>
 						{dataContacts.map((item, i) => (
 							<p key={i}>
 								{item.name}{' '}
-								<a href={item.url} target="_blank" rel="noopener noreferrer">
+								<a href={item.url} target='_blank' rel='noopener noreferrer'>
 									{item.linkTitle}
 								</a>
 							</p>
@@ -59,8 +59,8 @@ class PopupContacts extends Component {
 
 				<button
 					onMouseOver={this.toggleShowContacts}
-					type="button"
-					className="a nav-link nav-link--underline"
+					type='button'
+					className='a nav-link nav-link--underline'
 				>
 					{contactBtnTitle}
 				</button>

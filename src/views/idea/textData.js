@@ -73,15 +73,15 @@ const textData = [
 
 		journalistInfoRu: [
 			`Новое повествование современного дыхания, различные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры, с характером стиля письменности Хантера Томпсона, Буковски, Паланика, etc.`,
-			`Гонзо-журналистика. Ведение повествования от первого лица или группы лиц - текст/звук/фото/видео-дневники. Нырять в самое пекло идиотизма проблемы, изучать вопрос изнутри или создавать определенные условия для его появления (смесь психологических экспериментов поведения, церемония аяуаски, освещение burning man, etc).`,
+			`Гонзо-журналистика. Ведение повествования от первого лица или группы лиц - текст/звук/фото/видео-дневники. Нырять в самое пекло идиотизма проблемы, изучать вопрос изнутри или создавать определенные условия для его появления (смесь психологических экспериментов поведения, церемония аяуаски, освещение burning man, etc.).`,
 		],
 		journalistInfoEn: [
 			`A new narrative of modern breath, different opinions, truth and dirty realism. A peculiar presentation of information without censorship, with the nature of the writing style of Hunter Thompson, Bukowski, Palahniuk, etc.`,
-			`Gonzo Journalism. Conducting narration from the first person or groups of people – text/sound/photo/video diaries. Dive deep into the idiocy problems by studying the issue from the inside, or creating certain conditions for its appearance (a mix of psychological behavioral experiments, an ayahuasca ceremony, lighting a burning man, etc).`,
+			`Gonzo Journalism. Conducting narration from the first person or groups of people – text/sound/photo/video diaries. Dive deep into the idiocy problems by studying the issue from the inside, or creating certain conditions for its appearance (a mix of psychological behavioral experiments, an ayahuasca ceremony, lighting a burning man, etc.).`,
 		],
 		journalistInfoUa: [
 			`Сучасний погляд нового дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури, з характером стилю писемності Хантера Томпсона, Буковськи, Паланіка, etc.`,
-			`Гонзо журналістика. Ведення розповіді від першої особи чи групи лиць – текст/звук/фото/відео-щоденники. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи (суміш психологічних експериментів поведінки, церемонія аяуаски, освітлення burning man, etc).`,
+			`Гонзо журналістика. Ведення розповіді від першої особи чи групи лиць – текст/звук/фото/відео-щоденники. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи (суміш психологічних експериментів поведінки, церемонія аяуаски, освітлення burning man, etc.).`,
 		],
 
 		filmTitleRu: `Игры/Кино/Мульт производство`,

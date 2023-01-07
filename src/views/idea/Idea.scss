@@ -185,8 +185,7 @@
 		border-right: 1.5px solid $blue-main;
 		white-space: nowrap;
 		width: 0;
-		animation: typing 2.5s steps(18, end) 2s forwards,
-			blink-caret 1s step-end infinite;
+		animation: typing 2.5s steps(18, end) 2s forwards, blink-caret 1s step-end infinite;
 	}
 
 	span {

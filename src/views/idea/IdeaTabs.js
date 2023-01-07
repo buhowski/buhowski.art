@@ -52,13 +52,13 @@ class IdeaGeneral extends React.Component {
 		];
 
 		return (
-			<div className="idea-info">
-				<div className="idea-tabs">
+			<div className='idea-info'>
+				<div className='idea-tabs'>
 					{/* Here goes tab items*/}
 					{tabs.map((tab, i) => (
 						<button
-							className="idea-tabs__btn"
-							type="button"
+							className='idea-tabs__btn'
+							type='button'
 							key={i}
 							id={tab.id}
 							onClick={this.handleTabClick}
@@ -72,7 +72,7 @@ class IdeaGeneral extends React.Component {
 				{/* Here goes tabs content */}
 				{tabs.map((tab, i) => (
 					<div
-						className="idea-overflow"
+						className='idea-overflow'
 						data-content={this.state.currentTab === `${tab.id}`}
 						key={i}
 					>
