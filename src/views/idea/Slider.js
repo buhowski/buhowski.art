@@ -58,12 +58,12 @@ class SliderContainer extends Component {
 		};
 
 		return (
-			<div className="slider-with-btn">
-				<div className="slider-container">
-					<div className="idea-slider slider-js" style={sliderStyle}>
+			<div className='slider-with-btn'>
+				<div className='slider-container'>
+					<div className='idea-slider slider-js' style={sliderStyle}>
 						{dataImgs.map(({ imgSrc, imgAlt }, i) => (
 							<div
-								className="slider-item-js"
+								className='slider-item-js'
 								data-active={i === this.state.activeIndex}
 								key={i}
 							>
@@ -72,22 +72,22 @@ class SliderContainer extends Component {
 						))}
 					</div>
 
-					<span className="slides-number">
+					<span className='slides-number'>
 						{`${this.state.activeIndex + 1 < 10 ? '0' : ''}${
 							this.state.activeIndex + 1
 						} / ${dataImgs.length < 10 ? '0' : ''}${dataImgs.length}`}
 					</span>
 
-					<div className="slider-actions">
+					<div className='slider-actions'>
 						<button
-							className="slider-btn-js slider-btn-js-prev"
-							type="button"
+							className='slider-btn-js slider-btn-js-prev'
+							type='button'
 							onClick={this.clickPrev}
 						></button>
 
 						<button
-							className="slider-btn-js slider-btn-js-next"
-							type="button"
+							className='slider-btn-js slider-btn-js-next'
+							type='button'
 							onClick={this.clickNext}
 						></button>
 					</div>
