@@ -1,4 +1,4 @@
-import cvDoc from '../../assets/cv.pdf';
+// import cvDoc from '../../assets/cv.pdf';
 
 const socialData = [
 	{
@@ -9,7 +9,7 @@ const socialData = [
 		iconClass: 'icon-octopus',
 	},
 	{
-		link: 'https://t.me/buhowski',
+		link: 'https://t.me/atsiomakh',
 		targetBlank: '_blank',
 		relSecure: 'noopener noreferrer',
 		title: 'Telegram',
@@ -23,7 +23,7 @@ const socialData = [
 		iconClass: 'icon-in',
 	},
 	{
-		link: cvDoc,
+		link: 'cvDoc',
 		targetBlank: '_blank',
 		title: 'CV',
 		iconClass: 'icon-cv',
