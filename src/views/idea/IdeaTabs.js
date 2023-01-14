@@ -24,12 +24,15 @@ class IdeaGeneral extends React.Component {
 
 	componentDidMount() {
 		const currentIndex = localStorage.getItem('currentIndex');
-		document.querySelector('.nav-link.idea-icon svg').style.display = 'none';
 
 		this.setState({
 			currentTab: currentIndex ? currentIndex : '1',
 			setCurrentTab: currentIndex ? currentIndex : '1',
 		});
+
+		if (document.querySelector('.idea-icon')) {
+			document.querySelector('.idea-icon').style.display = 'none';
+		}
 	}
 
 	render() {
