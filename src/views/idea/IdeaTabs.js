@@ -24,6 +24,7 @@ class IdeaGeneral extends React.Component {
 
 	componentDidMount() {
 		const currentIndex = localStorage.getItem('currentIndex');
+		document.querySelector('.nav-link.idea-icon svg').style.display = 'none';
 
 		this.setState({
 			currentTab: currentIndex ? currentIndex : '1',
