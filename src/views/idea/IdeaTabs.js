@@ -31,7 +31,7 @@ class IdeaGeneral extends React.Component {
 		});
 
 		if (document.querySelector('.idea-icon')) {
-			document.querySelector('.idea-icon').style.display = 'none';
+			document.querySelector('.idea-icon').style.animation = 'none';
 		}
 	}
 

@@ -3,13 +3,12 @@ import { NavLink } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import Socials from '../socials/Socials';
 import './Header.scss';
-import IdeaIconSvg from './IdeaIconSvg';
 
 const linksData = [
 	{
 		pageLink: 'idea',
-		pageName: 'My Idea',
-		ideaIcon: <IdeaIconSvg />,
+		pageName: 'Proposal',
+		ideaIcon: 'idea-icon',
 	},
 	{
 		pageLink: 'about',
@@ -36,9 +35,8 @@ const Header = () => {
 	const navLinkItems = linksData.map(({ pageLink, pageName, ideaIcon }, i) => {
 		return (
 			<li className='nav-item d-flex' key={i}>
-				<NavLink className='a nav-link' to={`${pageLink}`} end>
+				<NavLink className={`a nav-link ${ideaIcon}`} to={`${pageLink}`} end>
 					{pageName}
-					{ideaIcon}
 				</NavLink>
 			</li>
 		);

@@ -31,9 +31,9 @@ const textData = [
 		basicEn: `Concept: Base`,
 		basicUa: `Concept: Основа`,
 
-		appSampleRu: `Сервис примера укомплектованного, многофункционального журнала с возможностью создания и продвижения любой производственной деятельности. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточен под мобильное приложения с расширенным и доступным веб сайтом.`,
-		appSampleEn: `Example service of a complete, feature rich magazine with the ability to create and develop any production activity. Also a place to view all sorts of information and entertainment. Mainly focused on the mobile application with an extensive and accessible website.`,
-		appSampleUa: `Сервіс прикладу укомплектованого, багатофункціонального журналу з можливістю створення та просування будь-якої підприємницької діяльності. Також місце для перегляду різноманітної інформації та розваг. В основному зосереджене під мобільний додаток з розширеним і доступним веб сайтом.`,
+		appSampleRu: `Сервис примера укомплектованного, многофункционального журнала с возможностью создания и продвижения любой деятельности. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточен под мобильное приложения с расширенным и доступным веб сайтом.`,
+		appSampleEn: `Example service of a complete, feature rich magazine with the ability to create and develop any activity. Also a place to view all sorts of information and entertainment. Mainly focused on the mobile application with an extensive and accessible website.`,
+		appSampleUa: `Сервіс прикладу укомплектованого, багатофункціонального журналу з можливістю створення та просування будь-якої діяльності. Також місце для перегляду різноманітної інформації та розваг. В основному зосереджене під мобільний додаток з розширеним і доступним веб сайтом.`,
 
 		possibilitiesTitleRu: `Возможности:`,
 		possibilitiesTitleEn: `Possibilities:`,
