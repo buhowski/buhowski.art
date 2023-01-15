@@ -59,10 +59,10 @@
 	}
 
 	&.idea-icon {
-		animation: lightOn 1s ease alternate infinite;
+		animation: lightOn 1s ease-in alternate infinite;
 		&:hover,
 		&.active {
-			animation: lightOnOut 0.4s ease alternate;
+			animation: lightOnOut 0.4s ease-in alternate;
 		}
 	}
 

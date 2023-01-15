@@ -2,7 +2,7 @@
 
 .projects-container {
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 40px;
 	@include tablet {
 		grid-template-columns: repeat(2, 1fr);
@@ -22,41 +22,42 @@
 	background-size: cover;
 	background-position: center top;
 	outline: 1px solid transparent;
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 	transform-style: preserve-3d;
-	animation: bgPosition 3s cubic-bezier(.55,.1,.55,.9) alternate infinite;
+	animation: bgPosition 3s cubic-bezier(0.55, 0.1, 0.55, 0.9) alternate infinite;
 	animation-play-state: paused;
 	&:hover {
 		transform: translateY(-5px);
-		transition: all .5s ease;
-		box-shadow: 11px 8px 20px 0 rgba(0,0,0,.24);
-		animation: bgPosition 3s cubic-bezier(.55,.1,.55,.9) alternate infinite;
+		transition: all 0.5s ease;
+		box-shadow: 11px 8px 20px 0 rgba(0, 0, 0, 0.24);
+		animation: bgPosition 3s cubic-bezier(0.55, 0.1, 0.55, 0.9) alternate infinite;
 	}
-	&:after, 
+	&:after,
 	&:before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
+		z-index: -1;
 	}
 	&:before {
 		background: $blue-main;
 		z-index: -1;
 		transform: translateZ(-1px);
 		transform-origin: left bottom;
-		transition: all .3s ease .2s;
+		transition: all 0.3s ease 0.2s;
 	}
 	&:hover:before {
-		transform: translate3d(10px,10px,-1px);
+		transform: translate3d(10px, 10px, -1px);
 	}
 	&:after {
 		background: linear-gradient(0deg, $dark 20%, transparent 80%);
 		background-position: 0 -20px;
 		background-size: 1px 508px;
 		opacity: 1;
-		transition: all .4s ease-out;
+		transition: all 0.4s ease-out;
 	}
 	&:hover:after {
 		background-size: 1px 800px;
@@ -66,7 +67,7 @@
 }
 
 .project-link {
-	width: 100%; 
+	width: 100%;
 	height: 100%;
 }
 
@@ -90,5 +91,5 @@
 }
 
 .project:hover .project-name span {
-	animation: LowLine .4s infinite;
+	animation: LowLine 0.4s infinite;
 }
