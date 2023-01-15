@@ -21,6 +21,10 @@
 		z-index: unset;
 	}
 
+	&:hover {
+		cursor: default;
+	}
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -45,12 +49,12 @@
 
 .idea-contacts {
 	position: relative;
-	user-select: text;
 	display: inline-block;
 	margin-top: auto;
 	width: max-content;
 
 	&__list {
+		user-select: text;
 		position: absolute;
 		bottom: 45px;
 		left: 50%;
