@@ -1,39 +1,35 @@
 const textData = [
 	{
 		// ################## TEXT FOR GENERAL IDEA PAGE
-		mainTitleRu: `Коротко о главном:`,
-		mainTitleEn: `Briefly about the main:`,
+		mainTitleRu: `Коротко о лавном:`,
+		mainTitleEn: `The Essentials in a Nutshell:`,
 		mainTitleUa: `Коротко про головне:`,
 
 		startupTitleRu: `Стартап`,
 		startupTitleEn: `Startup`,
 		startupTitleUa: `Стартап`,
 
-		gameTitleRu: `Компьютерная игра`,
+		gameTitleRu: `Видеоигра`,
 		gameTitleEn: `Video Game`,
-		gameTitleUa: `Комп'ютерна гра`,
+		gameTitleUa: `Відеогра`,
 
-		gameTextRu: `Идея видеоигры украинского производства, смесь реальных исторических событий с добавкой небольшого, но не лишнего, количества магии, добротного остроумия и мистически пугающих моментов. Совокупность лучших, уже имеющихся, историй и работ. С правильным подходом к реализации и продакшену, и без давки ненужного маркетинга игра гарантированно попадает в топ лучших. А после первого тизера сможет посоревноваться за место самой ожидаемой игры.`,
-		gameTextEn: `The idea of a Ukrainian-made video game, a mixture of real historical events with the addition of a small, but not superfluous, amount of magic, good wit and mystically frightening moments. A collection of the best, already available, stories and works. With the right approach to implementation and production, and without the crush of unnecessary marketing, the game is guaranteed to hit the top rating in the Game Awards. And after the first teaser will be able fight for the place of the most anticipated game.`,
-		gameTextUa: `Ідея відеоігри українського виробництва, суміш реальних історичних подій з добавкою невеликої, але не зайвої, магії, добротної дотепності та містично лякаючих моментів. Сукупність кращих, вже існуючих, історій та робіт. З правильним підходом до реалізації і продакшену, і без тисняви непотрібного маркетингу гра гарантовано потрапляє у топ найкращих. А після першого тизера зможе позмагатися за позицію найочікуванішої гри.`,
-
-		scenarioTitleRu: `Сценарии для экранизаций`,
+		scenarioTitleRu: `Сценарии`,
 		scenarioTitleEn: `Scenarios`,
-		scenarioTitleUa: `Сценарії для екранізацій`,
+		scenarioTitleUa: `Сценарії`,
 
 		scenarioTextRu: `Разного рода идеи фильмов, сериалов и мультфильмов бурлящие в голове,
     записанные в блокнот, ждущие предложений для реализации!`,
 		scenarioTextEn: `All sorts of ideas for films, TV shows, cartoons bubbling in my head, written down in a notes, waiting for proposals for implementation!`,
-		scenarioTextUa: `Різного роду ідеї фільмів, серіалів та мультфільмів вируючих в голові, записані в блокнот, чекають на пропозиції для реалізації!`,
+		scenarioTextUa: `Різного роду ідеї фільмів, серіалів та мультфільмів вируючих в голові, записані в блокнот, чекають на пропозиції для реалізацій!`,
 
 		// ################## ACCESS IDEA PAGE TEXT
 		basicRu: `Основа`,
 		basicEn: `Base`,
 		basicUa: `Основа`,
 
-		appSampleRu: `Сервис примера укомплектованного, многофункционального журнала с возможностью создания и продвижения любого рода деятельность. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточен под мобильное приложения с расширенным и доступным веб сайтом.`,
-		appSampleEn: `Service example of a staffed, feature-rich magazine with the ability to create and promote any kind of activity. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site.`,
-		appSampleUa: `Сервіс прикладу укомплектованого, багатофункціонального журналу з можливістю створення та просування будь якого виду діяльність. Також місце для перегляду різноманітної інформації та розваг. В основному зосереджене під мобільний додаток з розширеним і доступним веб сайтом.`,
+		appSampleRu: `Сервис примера укомплектованного, многофункционального журнала с возможностью создания и продвижения любой деятельности. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточен под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал желающий присоединиться к месту компании двигателя прогресса.`,
+		appSampleEn: `Service example of a staffed, feature-rich magazine with the ability to create and promote any kind of activity. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside - a huge potential of wanting to join the company's place as the engine of progress.`,
+		appSampleUa: `Сервіс прикладу укомплектованого, багатофункціонального журналу з можливістю створення та просування будь-якої діяльності. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджений під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал, що бажає приєднатися до місця компанії двигуна прогресу.`,
 
 		possibilitiesTitleRu: `Возможности:`,
 		possibilitiesTitleEn: `Possibilities:`,
@@ -81,7 +77,7 @@ const textData = [
 		],
 		journalistInfoUa: [
 			`Сучасний погляд нового дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури, з характером стилю писемності Хантера Томпсона, Буковськи, Паланіка, etc.`,
-			`Гонзо журналістика. Ведення сюжетних щоденників від першої особи чи групи лиць. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи (суміш психологічних експериментів поведінки в різних сферах життєдіяльності, освітлення burning man, церемонію аяуаски, etc.).`,
+			`Гонзо-журналістика. Ведення сюжетних щоденників від першої особи чи групи лиць. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи (суміш психологічних експериментів поведінки в різних сферах життєдіяльності, освітлення burning man, церемонію аяуаски, etc.).`,
 		],
 
 		filmTitleRu: `Творческое производство`,
@@ -91,7 +87,7 @@ const textData = [
 		filmInfoRu: [
 			`Собрать из разных сфер деятельности лучших своего жанра и желающих в развитие специалистов, соединить воедино в профессиональный коллектив критически мыслящих идейников и энтузиастов, чтобы творить новую историю культуры, искусства и технологического развития в стране.`,
 			`Интересует создание кино, мультфильмов, компьютерных игр. Дополнительно: студия правильного перевода и озвучки.`,
-			`Для начала могу представить вашему вниманию идею нелинейной ролевой игры с открытым миром – Казаки РПГ. Простыми словами нужно сделать то, что поляки сотворили с игровой серией Ведьмак и что украинские GSC Game World не сделали со своими казаками (сделать из стратегии полноценное РПГ). Показать казаков для популяризации нового видения, тех казаков что запорожская сечь. Реализовать красочные виды, архитектуру Украины тех времен и образ настоящего казака с боевым танцем гопак и паркуром на лошадях... Совместить реальные факты и события с мистикой и юмором произведений Гоголя и получить довольно интересную серию игр об украинской культуре тогдашней эпохи.`,
+			`Для начала могу представить вашему вниманию идею нелинейной ролевой игры с открытым миром – Казаки РПГ. Простыми словами нужно сделать то, что поляки сотворили с игровой серией Ведьмак и что украинские GSC Game World не сделали со своими казаками (сделать из стратегии полноценное РПГ). Показать казаков для популяризации нового видения, тех казаков, что запорожская сечь. Реализовать красочные виды, архитектуру Украины тех времен и образ настоящего казака с боевым танцем гопак и паркуром на лошадях... Совместить реальные факты и события с мистикой и юмором произведений Гоголя и получить довольно интересную серию игр об украинской культуре тогдашней эпохи.`,
 		],
 		filmInfoEn: [
 			`From different fields of activity gather the best of their genre specialists who wish to grow, unite together to a professional team of critical thinkers, enthusiasts and create a new history of culture, art and technological development in the country.`,
@@ -111,7 +107,7 @@ const textData = [
 
 		excursusInfoRu: `Первоначальный запуск задействует рубрику Журналистика и рабочий Имиджборд с идеями, рекламой и продвижением остального, что должно способствовать начальному толчку для набора аудитории и дальнейшему развитию.`,
 		excursusInfoEn: `The initial launch will use the Journalism rubric and a working Imageboard with feature ideas, advertising and promotion of the rest, which should help for the first push to gain an audience and further development.`,
-		excursusInfoUa: `Для початку задіяти рубрику Журналістика і робочий Іміджборд з ідеями, рекламою та просуванням остального, що має сприяти початковому поштовху, набору аудиторії та подальшому розвитку.`,
+		excursusInfoUa: `Початковий запуск залучає рубрику Журналістика та робочий Іміджборд з ідеями, рекламою та просуванням решти, що має сприяти початковому поштовху для набору аудиторії та подальшого розвитку.`,
 
 		whyTitleRu: `Why(?): Мотив`,
 		whyTitleEn: `Why(?): Motive`,
@@ -125,7 +121,7 @@ const textData = [
 		],
 		whyInfoEn: [
 			`All current social networks have turned or are turning into “bygone era TVs'', with censorship and a stream of endless advertising all around. The choice of what content to view is less and less left to the user. That's why we need a new free platform with fresh air.`,
-			`For Ukraine, this will be the first of its kind, a place to discover creative potential, freedom of expression, realization of personality and promotion of modern worldview.`,
+			`For Ukraine it will be the first kind of place to unleash creative potential, freedom of expression, realization of personality and promotion of modern worldview.`,
 			`This application will bring the best features together, without unnecessary functions and useless things, with a modern minimalist design, a futuristic offshoot and maximum responsiveness to the consumer.`,
 			`In the process of further formation and with the right approach to implementation, this place will ideally occupy its niche for the production of all above listed and voicing the desire to popularize development in the country.`,
 		],

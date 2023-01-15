@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const dataContacts = [
 	{
 		name: 'Telegram:',
-		url: 'https://t.me/buhowski',
+		url: 'https://t.me/atsiomakh',
 		linkTitle: 'Write To Me',
 	},
 	{
