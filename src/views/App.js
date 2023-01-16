@@ -30,11 +30,11 @@ const routesData = [
 	//   pageComponent: <Gallery />,
 	// },
 	{
-		pathTo: 'idea',
+		pathTo: 'proposal',
 		pageComponent: <IdeaGeneral />,
 	},
 	{
-		pathTo: 'access-to-idea',
+		pathTo: 'idea',
 		pageComponent: <AccessToIdea />,
 	},
 ];
@@ -53,19 +53,14 @@ const App = () => {
 
 	return (
 		<TransitionGroup>
-			<CSSTransition key={location.key} classNames="slide" timeout={1700}>
-				<div id="page" className="page">
-					<div className="page-container">
+			<CSSTransition key={location.key} classNames='slide' timeout={1700}>
+				<div id='page' className='page'>
+					<div className='page-container'>
 						<Header />
 						<Routes location={location}>
 							{routesData.map(({ pathTo, pageComponent }, i) => {
 								return (
-									<Route
-										path={`/${pathTo}`}
-										end
-										element={pageComponent}
-										key={i}
-									/>
+									<Route path={`/${pathTo}`} end element={pageComponent} key={i} />
 								);
 							})}
 						</Routes>
