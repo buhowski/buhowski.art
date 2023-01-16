@@ -51,9 +51,9 @@ const textData = [
 		],
 		possibilitiesUa: `Іміджборд та анонімний веб-форум`,
 
-		branchDescRu: `с целью заполнения контентом, раздел имеет свою сферу деятельности: Журналистика. Игры/Кино/Мульт индустрия.`,
-		branchDescEn: `to fill with content, the section has its own field of activity: Journalism. Movies/Cartoons/Games Industry.`,
-		branchDescUa: `з метою наповнення контентом, розділ має свою сферу діяльності: Журналістика. Ігри/Кіно/Мульт індустрія.`,
+		branchDescRu: `с целью заполнения контентом раздел имеет свою сферу деятельности: Журналистика. Игры/Кино/Мульт индустрия.`,
+		branchDescEn: `in order to fill with content the section has its own field of activity: Journalism. Movies/Cartoons/Games Industry.`,
+		branchDescUa: `з метою наповнення контентом розділ має свою сферу діяльності: Журналістика. Ігри/Кіно/Мульт індустрія.`,
 
 		designRu: `Для представления главной страницы входа в приложение служат яркие примеры обложек журналов Time, National Geographic, etc. Будут создаваться и меняться в зависимости от текущего инфоповода, вызывающие разные эмоции для массового обсуждения.`,
 		designEn: `To represent an example of the main page of the application, there are vivid examples of magazine covers like Time, National Geographic, etc. Will be created and changed depending on the current newsbreak, causing different emotions for public discussion.`,
