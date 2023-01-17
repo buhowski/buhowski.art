@@ -1,7 +1,9 @@
-# title
+# My Website
 
-text [link](https://github.com/facebook/create-react-app).
+Here's my idea, that might be interesting [Offer Description](https://buhowski.info/proposal). For more info please contact me.
 
-## subtitle
+## The website is made using:
 
-### `command`
+ReactJS 18, Dart Sass, react-router-dom 6, NodeJS 18.
+
+### commands: `npm start`, `npm run build`
