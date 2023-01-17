@@ -1,4 +1,4 @@
-// import cvDoc from '../../assets/cv.pdf';
+import cvDoc from '../../assets/cv.pdf';
 
 const socialData = [
 	{
@@ -23,7 +23,7 @@ const socialData = [
 		iconClass: 'icon-in',
 	},
 	{
-		link: 'cvDoc',
+		link: cvDoc,
 		targetBlank: '_blank',
 		title: 'CV',
 		iconClass: 'icon-cv',
