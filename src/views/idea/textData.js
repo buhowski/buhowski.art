@@ -5,17 +5,17 @@ const textData = [
 		mainTitleEn: `The Essentials in a Nutshell:`,
 		mainTitleUa: `Коротко про головне:`,
 
-		startupTitleRu: `Стартап`,
-		startupTitleEn: `Startup`,
-		startupTitleUa: `Стартап`,
+		startupTitleRu: `Про стартап:`,
+		startupTitleEn: `About Startup:`,
+		startupTitleUa: `Щодо стартапу:`,
 
-		gameTitleRu: `Видеоигра`,
-		gameTitleEn: `Video Game`,
-		gameTitleUa: `Відеогра`,
+		gameTitleRu: `Видеоигра например:`,
+		gameTitleEn: `Video Game for example:`,
+		gameTitleUa: `Відеогра наприклад:`,
 
-		scenarioTitleRu: `Сценарии`,
-		scenarioTitleEn: `Scenarios`,
-		scenarioTitleUa: `Сценарії`,
+		scenarioTitleRu: `И еще сценарии:`,
+		scenarioTitleEn: `And more scenarios:`,
+		scenarioTitleUa: `І ще сценарії:`,
 
 		scenarioTextRu: `Разного рода идеи фильмов, сериалов и мультфильмов бурлящие в голове,
     записанные в блокнот, ждущие предложений для реализации!`,
