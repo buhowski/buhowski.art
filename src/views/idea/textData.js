@@ -31,9 +31,9 @@ const textData = [
 		appSampleEn: `Service example of a staffed, feature-rich magazine with the ability to create and promote any kind of activity. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside - a huge potential of wanting to join the company's place as the engine of progress.`,
 		appSampleUa: `Сервіс прикладу укомплектованого, багатофункціонального журналу з можливістю створення та просування будь-якої діяльності. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджений під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал, що бажає приєднатися до місця компанії двигуна прогресу.`,
 
-		possibilitiesTitleRu: `Возможности:`,
-		possibilitiesTitleEn: `Possibilities:`,
-		possibilitiesTitleUa: `Можливості:`,
+		possibilitiesTitleRu: `Разновидность платформы:`,
+		possibilitiesTitleEn: `Platform types:`,
+		possibilitiesTitleUa: `Різновид платформи:`,
 
 		possibilitiesStarRu: [
 			`Социальная сеть, ведение микроблогинга (фото, видео, звук, текст)`,
@@ -55,9 +55,9 @@ const textData = [
 		branchDescEn: `in order to fill with content the section has its own field of activity: Journalism. Movies/Cartoons/Games Industry.`,
 		branchDescUa: `з метою наповнення контентом розділ має свою сферу діяльності: Журналістика. Ігри/Кіно/Мульт індустрія.`,
 
-		designRu: `Для представления главной страницы входа в приложение служат яркие примеры обложек журналов Time, National Geographic, etc. Будут создаваться и меняться в зависимости от текущего инфоповода, вызывающие разные эмоции для массового обсуждения.`,
-		designEn: `To represent an example of the main page of the application, there are vivid examples of magazine covers like Time, National Geographic, etc. Will be created and changed depending on the current newsbreak, causing different emotions for public discussion.`,
-		designUa: `Для представлення головної сторінки входу в додаток являються яскраві приклади обкладинок журналів Time, National Geographic, etc. Створюватимуться і змінюватимуться залежно від поточного інфоприводу, що викликатимуть різні емоції для масового обговорення.`,
+		designRu: `Для вау-эффекта и представления главной страницы входа в приложение служат яркие примеры обложек журналов Time, National Geographic, etc. Будут создаваться и меняться в зависимости от текущего инфоповода, вызывающие различные эмоции для массового обсуждения.`,
+		designEn: `For the wow effect and how to represent an example of the main page of the application, there are vivid examples of magazine covers like Time, National Geographic, etc. Will be created and changed depending on the current newsbreak, causing different emotions for public discussion.`,
+		designUa: `Для вау-ефекту та представлення головної сторінки входу в додаток являються яскраві приклади обкладинок журналів Time, National Geographic, etc. Створюватимуться і змінюватимуться залежно від поточного інфоприводу, що викликатимуть різноманітні емоції для масового обговорення.`,
 
 		conceptTitleRu: `Сферы деятельности`,
 		conceptTitleEn: `Fields of activity`,
@@ -80,23 +80,23 @@ const textData = [
 			`Гонзо-журналістика. Ведення сюжетних щоденників від першої особи чи групи лиць. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи (суміш психологічних експериментів поведінки в різних сферах життєдіяльності, освітлення burning man, церемонію аяуаски, etc.).`,
 		],
 
-		filmTitleRu: `Творческое производство`,
+		filmTitleRu: `Творческая индустрия`,
 		filmTitleEn: `Creative production`,
-		filmTitleUa: `Творчий продакшн`,
+		filmTitleUa: `Творча індустрія`,
 
 		filmInfoRu: [
 			`Собрать из разных сфер деятельности лучших своего жанра и желающих в развитие специалистов, соединить воедино в профессиональный коллектив критически мыслящих идейников и энтузиастов, чтобы творить новую историю культуры, искусства и технологического развития в стране.`,
-			`Интересует создание кино, мультфильмов, компьютерных игр. Дополнительно: студия правильного перевода и озвучки.`,
+			`Основные интересы: создание кино, мультфильмов, компьютерных игр. Дополнительно: студия правильного перевода и озвучки.`,
 			`Для начала могу представить вашему вниманию идею нелинейной ролевой игры с открытым миром – Казаки РПГ. Простыми словами нужно сделать то, что поляки сотворили с игровой серией Ведьмак и что украинские GSC Game World не сделали со своими казаками (сделать из стратегии полноценное РПГ). Показать казаков для популяризации нового видения, тех казаков, что запорожская сечь. Реализовать красочные виды, архитектуру Украины тех времен и образ настоящего казака с боевым танцем гопак и паркуром на лошадях. Совместить реальные факты и события с мистикой и юмором произведений Гоголя и получить довольно интересную серию игр о казаках и украинской культуре тогдашней эпохи.`,
 		],
 		filmInfoEn: [
 			`From different fields of activity gather the best of their genre specialists who wish to grow, unite together to a professional team of critical thinkers, enthusiasts and create a new history of culture, art and technological development in the country.`,
-			`Interested in making movies, cartoons, computer games. Additionally: studio of exact translation and voice acting.`,
+			`Main interests: making movies, cartoons, computer games. Additionally: studio of exact translation and voice acting.`,
 			`To begin with, I can present to your attention the idea of a non-linear role-playing game with an open world - Cossacks RPG. In simple words, we need to do what the Poles have done with The Witcher game series and what the Ukrainian GSC Game World did not do with their Cossacks (make a full-fledged RPG from the strategy). Show Cossacks to popularize a new vision, those Cossacks that Zaporizhzhya Sich. To implement colorful views, the architecture of Ukraine of those times and the image of a real Cossack with a combat dance Gopak and parkour on horsebacks. Combine real facts and events with the mysticism and humor of Gogol's works and get quite an interesting game series about Cossacks and Ukrainian culture of that era.`,
 		],
 		filmInfoUa: [
 			`Зібрати з різних сфер діяльності найкращих свого жанру та бажаючих у розвиток спеціалістів, поєднати воєдино у професійний колектив критично мислячих ідейників та ентузіастів, щоб творити нову історію культури, мистецтва та технологічного розвитку в країні.`,
-			`Цікавить створення кіно, мультфільмів, комп'ютерних ігор. Додатково: студія правильного перекладу та озвучки.`,
+			`Основні інтереси: створення кіно, мультфільмів, комп'ютерних ігор. Додатково: студія правильного перекладу та озвучки.`,
 			`Для початку можу представити вашій увазі ідею нелінійної рольової гри з відкритим світом – Козаки РПГ. Простими словами потрібно зробити те, що поляки зробили з ігровою серією Відьмак і що українські GSC Game World не зробили зі своїми козаками (створити зі стратегії повноцінне РПГ). Показати козаків для популяризації нового бачення, тих козаків, що запорізька січ. Реалізувати барвисті краєвиди, архітектуру України тих часів та образ справжнього козака з бойовим танцем гопак та паркуром на конях. Поєднати реальні факти та події з містикою та гумором творів Гоголя та отримати досить цікаву серію ігор про козаків і українську культуру тогочасної епохи.`,
 		],
 
