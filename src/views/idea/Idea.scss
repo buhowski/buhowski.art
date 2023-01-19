@@ -151,6 +151,9 @@
 		padding: 40px;
 		padding-bottom: 150px;
 		max-height: unset;
+		max-width: 777px;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	@include mobile {
