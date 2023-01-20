@@ -5,9 +5,9 @@ const textData = [
 		mainTitleEn: `The Essentials in a Nutshell:`,
 		mainTitleUa: `Коротко про головне:`,
 
-		startupTitleRu: `Про стартап:`,
-		startupTitleEn: `About Startup:`,
-		startupTitleUa: `Щодо стартапу:`,
+		startupTitleRu: `Про стартап`,
+		startupTitleEn: `About Startup`,
+		startupTitleUa: `Щодо стартапу`,
 
 		gameTitleRu: `Видеоигра например:`,
 		gameTitleEn: `Video Game for example:`,

@@ -14,7 +14,7 @@ export default function IdeaEn() {
 					</div>
 
 					<div className='idea-concept'>
-						<h3 className='h3'>{text.filmTitleEn}</h3>
+						<h3 className='h3'>{text.filmTitleEn}:</h3>
 						{text.filmInfoEn.map((filmInfo, f) => (
 							<p key={f} className='idea-block__text'>
 								{filmInfo}
