@@ -14,6 +14,14 @@ export default function IdeaUa() {
 					</div>
 
 					<div className='idea-concept'>
+						<h3 className='h3'>{text.filmTitleUa}</h3>
+						{text.filmInfoUa.map((filmInfo, f) => (
+							<p key={f} className='idea-block__text'>
+								{filmInfo}
+							</p>
+						))}
+					</div>
+					{/* <div className='idea-concept'>
 						<h3 className='h3'>{text.gameTitleUa}</h3>
 						<p className='idea-block__text'>{text.filmInfoUa[2]}</p>
 					</div>
@@ -21,7 +29,7 @@ export default function IdeaUa() {
 					<div className='idea-concept'>
 						<h3 className='h3'>{text.scenarioTitleUa}</h3>
 						<p className='idea-block__text'>{text.scenarioTextUa}</p>
-					</div>
+					</div> */}
 				</div>
 			))}
 		</div>

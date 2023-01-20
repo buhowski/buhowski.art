@@ -14,13 +14,12 @@ export default function IdeaEn() {
 					</div>
 
 					<div className='idea-concept'>
-						<h3 className='h3'>{text.gameTitleEn}</h3>
-						<p className='idea-block__text'>{text.filmInfoEn[2]}</p>
-					</div>
-
-					<div className='idea-concept'>
-						<h3 className='h3'>{text.scenarioTitleEn}</h3>
-						<p className='idea-block__text'>{text.scenarioTextEn}</p>
+						<h3 className='h3'>{text.filmTitleEn}</h3>
+						{text.filmInfoEn.map((filmInfo, f) => (
+							<p key={f} className='idea-block__text'>
+								{filmInfo}
+							</p>
+						))}
 					</div>
 				</div>
 			))}

@@ -14,13 +14,12 @@ export default function IdeaRu() {
 					</div>
 
 					<div className='idea-concept'>
-						<h3 className='h3'>{text.gameTitleRu}</h3>
-						<p className='idea-block__text'>{text.filmInfoRu[2]}</p>
-					</div>
-
-					<div className='idea-concept'>
-						<h3 className='h3'>{text.scenarioTitleRu}</h3>
-						<p className='idea-block__text'>{text.scenarioTextRu}</p>
+						<h3 className='h3'>{text.filmTitleRu}</h3>
+						{text.filmInfoRu.map((filmInfo, f) => (
+							<p key={f} className='idea-block__text'>
+								{filmInfo}
+							</p>
+						))}
 					</div>
 				</div>
 			))}
