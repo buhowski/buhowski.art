@@ -8,24 +8,20 @@ import SliderContainer from './Slider';
 import Copyright from './Copyright';
 
 export default function Idea() {
-	const contactBtnTitle = 'Contacts For Details';
+	const contactBtnTitle = 'To Know More';
 	const IdeaTabRu = IdeaRu;
 	const IdeaTabEn = IdeaEn;
 	const IdeaTabUa = IdeaUa;
 
 	return (
-		<div className="wrapper wrapper--idea">
-			<h1 className="base-title">I Have An Offer For You!</h1>
+		<div className='wrapper wrapper--idea'>
+			<h1 className='base-title'>I Have An Offer For You!</h1>
 
-			<div className="idea-section">
+			<div className='idea-section'>
 				{/* Copyright */}
 				<Copyright />
 
-				<IdeaTabs
-					IdeaTabRu={IdeaTabRu}
-					IdeaTabEn={IdeaTabEn}
-					IdeaTabUa={IdeaTabUa}
-				/>
+				<IdeaTabs IdeaTabRu={IdeaTabRu} IdeaTabEn={IdeaTabEn} IdeaTabUa={IdeaTabUa} />
 
 				<SliderContainer contactBtnTitle={contactBtnTitle} />
 			</div>
