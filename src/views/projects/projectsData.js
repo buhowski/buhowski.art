@@ -9,64 +9,76 @@ import bgMensch from './images/mensch.jpg';
 import bgMeNotebooks from './images/notebooks.jpg';
 import bgPalms from './images/rooms.jpg';
 import bgEnde from './images/ende.jpg';
+import bgFaber from './images/faber.jpg';
+import bgBentley from './images/bentley.jpg';
 
 const projectsData = [
 	{
+		img: `url(${bgFaber})`,
+		url: 'https://faberacademy.com/',
+		name: 'Faber Academy',
+	},
+	{
+		img: `url(${bgBentley})`,
+		url: 'https://www.bentley-skinner.co.uk/',
+		name: 'Bentley & Skinner',
+	},
+	{
 		img: `url(${bgEnde})`,
 		url: 'https://www-somosende-com.vercel.app',
-		name: 'Somos ENDE'
+		name: 'Somos ENDE',
 	},
 	{
 		img: `url(${BgDrinkHaus})`,
 		url: 'https://drink-haus.vercel.app',
-		name: 'Drink Haus'
+		name: 'Drink Haus',
 	},
 	{
 		img: `url(${bgMensch})`,
 		url: 'https://mensch.vercel.app',
-		name: 'Mensch'
+		name: 'Mensch',
 	},
 	{
 		img: `url(${BgSprey})`,
 		url: 'https://spraybox.vercel.app',
-		name: 'Spraybox Magazine'
+		name: 'Spraybox Magazine',
 	},
 	{
 		img: `url(${BgNakashima})`,
 		url: 'https://nakashima-woods.vercel.app',
-		name: 'Nakashima Woodworkers'
+		name: 'Nakashima Woodworkers',
 	},
 	{
 		img: `url(${BgFoundation})`,
 		url: 'https://tse-foundation-org.vercel.app',
-		name: 'TSE Foundation'
+		name: 'TSE Foundation',
 	},
 	{
 		img: `url(${BgArchitect})`,
 		url: 'https://www-williamslester-com.vercel.app',
-		name: 'Architects'
+		name: 'Architects',
 	},
 	{
 		img: `url(${BgBottleService})`,
 		url: 'https://www-youngspirits-co-uk.vercel.app',
-		name: 'Young Spirits'
+		name: 'Young Spirits',
 	},
 	{
 		img: `url(${bgInfiniteFood})`,
 		url: 'https://infinityfoodsretail-coop.vercel.app',
-		name: 'Infinite Food'
+		name: 'Infinite Food',
 	},
 	{
 		img: `url(${bgMeNotebooks})`,
 		url: 'https://modnotebooks-com.vercel.app',
 		name: 'Mode Notebooks',
-		keyId: 10
+		keyId: 10,
 	},
 	{
 		img: `url(${bgPalms})`,
 		url: 'https://twobunchpalms-com.vercel.app',
-		name: 'Two Bunch Palms'
-	}
-]
+		name: 'Two Bunch Palms',
+	},
+];
 
 export default projectsData;

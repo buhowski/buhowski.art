@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import projectsData from './projectsData';
 import './Projects.scss';
 
@@ -15,9 +14,9 @@ const Projects = () => {
 							style={{ backgroundImage: img }}
 							key={i}
 						>
-							<Link
+							<a
 								className='a project-link'
-								to={{ pathname: url }}
+								href={url}
 								target='_blank'
 								rel='noopener noreferrer'
 							>
@@ -27,7 +26,7 @@ const Projects = () => {
 										<span>_</span>
 									</h3>
 								</div>
-							</Link>
+							</a>
 						</article>
 					);
 				})}
