@@ -7,25 +7,30 @@ import textData from './textData';
 
 export default function Idea() {
 	const contactBtnTitle = 'Get In Touch';
-
 	const textItems = textData.map((data, i) => (
 		<div key={i}>
 			<div className='idea-block'>
 				<h2 className='idea-block__title h2'>{data.basic}</h2>
 				<p className='idea-block__text'>{data.appSample}</p>
 				<h3 className='h3'>{data.possibilitiesTitle}</h3>
+
 				<ul>
-					{data.possibilitiesStar.map((item, a) => (
+					{data.possibilitiesStar.slice(0, 2).map((item, a) => (
 						<li key={a}>
 							{item}
 							<span className='idea-block__star'> *</span>
 						</li>
 					))}
-					<li>{data.possibilities}</li>
+
+					{data.possibilitiesStar.slice(2).map((item, a) => (
+						<li key={a}>{item}</li>
+					))}
 				</ul>
+
 				<p className='idea-block__desc'>
 					<span className='idea-block__star'>* </span> &ndash; {data.branchDesc}
 				</p>
+
 				<p className='idea-block__info'>{data.design}</p>
 			</div>
 

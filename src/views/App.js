@@ -7,10 +7,10 @@ import Header from '../components/header/Header';
 import Home from './home/Home';
 import About from './about/About';
 import Projects from './projects/Projects';
-// Gallery page with funny photos TODO: comment page
+// Gallery page with funny photos
 // import Gallery from "./gallery/Gallery";
-import IdeaGeneral from './idea/IdeaGeneral';
-import AccessToIdea from './idea/AccessToIdea';
+import Proposal from './idea/Proposal';
+import Idea from './idea/Idea';
 
 const routesData = [
 	{
@@ -31,11 +31,11 @@ const routesData = [
 	// },
 	{
 		pathTo: 'proposal',
-		pageComponent: <IdeaGeneral />,
+		pageComponent: <Proposal />,
 	},
 	{
 		pathTo: 'idea',
-		pageComponent: <AccessToIdea />,
+		pageComponent: <Idea />,
 	},
 ];
 

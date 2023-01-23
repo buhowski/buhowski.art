@@ -6,7 +6,7 @@ import Copyright from './Copyright';
 import textData from './textData';
 
 export default function Idea() {
-	const contactBtnTitle = 'To Know More';
+	const contactBtnTitle = 'Read Full Presentation';
 
 	const textItems = textData.map((text, i) => {
 		return (
