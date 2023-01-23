@@ -37,21 +37,22 @@ class IdeaGeneral extends React.Component {
 
 	render() {
 		const { IdeaTabRu, IdeaTabEn, IdeaTabUa } = this.props;
+
 		const tabs = [
 			{
 				id: 1,
 				title: 'en',
-				content: <IdeaTabEn />,
+				content: IdeaTabEn,
 			},
 			{
 				id: 2,
 				title: 'ru',
-				content: <IdeaTabRu />,
+				content: IdeaTabRu,
 			},
 			{
 				id: 3,
 				title: 'ua',
-				content: <IdeaTabUa />,
+				content: IdeaTabUa,
 			},
 		];
 
