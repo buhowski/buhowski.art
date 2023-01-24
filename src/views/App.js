@@ -41,7 +41,7 @@ const routesData = [
 
 const App = () => {
 	useEffect(() => {
-		if (window.innerWidth <= 720) {
+		if (window.innerWidth <= 768) {
 			let vh = window.innerHeight * 0.01;
 			document.documentElement.style.setProperty('--vh', `${vh}px`);
 
