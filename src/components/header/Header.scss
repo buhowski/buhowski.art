@@ -76,12 +76,18 @@
 }
 
 @include tabletSmall {
-	.header.header-overflow ~ .wrapper:not(.about-wrapper) {
-		height: calc(100vh - 80px);
-		overflow: hidden;
-		transition: all 0.3s;
-		@include mobile {
-			height: calc(100vh - 137px);
+	.header.header-overflow {
+		~ .wrapper:not(.about-wrapper) {
+			height: calc(100vh - 80px);
+			overflow: hidden;
+			transition: all 0.3s;
+			@include mobile {
+				height: calc(100vh - 137px);
+			}
+		}
+
+		~ .wrapper--idea {
+			padding-right: calc(4% + 1px);
 		}
 	}
 	.header {
@@ -243,15 +249,6 @@
 		}
 		.contact-menu {
 			margin-top: 55px;
-		}
-	}
-}
-
-@include mobile {
-	.header {
-		.mobile-menu {
-			height: calc(var(--vh, 1vh) * 100);
-			// min-height: -webkit-fill-available;
 		}
 	}
 }
