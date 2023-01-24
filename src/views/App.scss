@@ -15,9 +15,9 @@
 		min-height: -webkit-fill-available;
 	}
 	&.slide-exit {
-	transform: translateY(-100%);
-	transition: .1s linear;
-	transition-delay: 1.056s;
+		transform: translateY(-100%);
+		transition: 0.1s linear;
+		transition-delay: 1.056s;
 	}
 	&:after {
 		content: '';
