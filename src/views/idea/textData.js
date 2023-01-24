@@ -32,7 +32,7 @@ const textData = [
 		],
 
 		excursusTitle: `Разработка`,
-		excursusInfo: `Первоначальный запуск задействует рубрику Журналистика и рабочий Имиджборд с идеями и продвижением остального, что должно способствовать начальному толчку для набора аудитории и дальнейшему развитию.`,
+		excursusInfo: `Первоначальный запуск задействует рубрику Журналистика, готовую функцию доната и рабочий Имиджборд с идеями и продвижением остального, что должно способствовать начальному толчку для набора аудитории и дальнейшему развитию.`,
 
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
@@ -76,7 +76,7 @@ const textData = [
 		],
 
 		excursusTitle: `Development`,
-		excursusInfo: `The initial launch will use the Journalism rubric and a working Imageboard with feature ideas and promotion of the rest, which should help for the first push to gain an audience and further development.`,
+		excursusInfo: `The initial launch will use the Journalism rubric, a ready-made donation function, and a working Imageboard with feature ideas and promotion of the rest, which should help for the first push to gain an audience and further development.`,
 
 		whyTitle: `Why(?): Motive`,
 		whyInfo: [
@@ -120,7 +120,7 @@ const textData = [
 		],
 
 		excursusTitle: `Розробка`,
-		excursusInfo: `Початковий запуск залучає рубрику Журналістика та робочий Іміджборд з ідеями та просуванням решти, що має сприяти початковому поштовху для набору аудиторії та подальшого розвитку.`,
+		excursusInfo: `Початковий запуск залучає рубрику Журналістика, готову функцію донату та робочий Іміджборд з ідеями та просуванням решти, що має сприяти початковому поштовху для набору аудиторії та подальшого розвитку.`,
 
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
