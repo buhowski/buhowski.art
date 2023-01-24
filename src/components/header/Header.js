@@ -68,11 +68,6 @@ const Header = () => {
 					<LogoNavLink />
 					<div
 						className='mobile-menu-btn'
-						onMouseOver={() => {
-							document
-								.querySelector('.page-container')
-								.scrollTo({ top: 0, behavior: 'smooth' });
-						}}
 						onClick={() => {
 							const pageContainer = document.querySelector('.page-container');
 							pageContainer.scrollTo({ top: 0, behavior: 'smooth' });
