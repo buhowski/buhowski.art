@@ -7,19 +7,18 @@ import Backpack from './images/backpack.png';
 const dotsData = [
 	{
 		classItem: 'brain',
-		title: 'IDEA THINKER',
+		title: 'IDEAS THINKER',
 		img: Brain,
 	},
 	{
 		classItem: 'writer',
 		// title: "I like writing short screenplays and come up with new ideas",
-		title: 'I like to write various scenario and come up with new ideas',
+		title: 'I like to write a different scenarios and come up with new ideas',
 		img: Writer,
 	},
 	{
 		classItem: 'keyboard',
-		title:
-			'Skills: HTML, CSS/SASS, JavaScript (React/React Native), Gulp/Webpack, Git',
+		title: 'Skills: HTML, CSS/SASS, JavaScript (React/React Native), Gulp/Webpack, Git',
 		img: Keyboard,
 	},
 	{

@@ -5,10 +5,6 @@
 	display: flex;
 	flex-direction: column;
 	height: calc(100% - 100px);
-	.base-title {
-		margin-bottom: 0;
-		padding-bottom: 15px;
-	}
 
 	@include mobile {
 		height: calc(100% - 80px);
@@ -103,8 +99,8 @@
 			left: -23%;
 			transform: rotate(-15deg);
 			@include mobile {
-				top: 32%;
-				left: -16%;
+				top: 34%;
+				left: -19%;
 				transform: rotate(17deg);
 			}
 			@include mobileSmall {
@@ -130,13 +126,12 @@
 			left: -14%;
 			transform: rotate(-9deg);
 			@include mobile {
-				top: -5%;
+				top: -7%;
 				left: -13%;
 				transform: rotate(-11deg);
 			}
 			@include mobileSmall {
-				top: -3%;
-				left: -7%;
+				left: -8%;
 				transform: rotate(-8deg);
 			}
 		}
