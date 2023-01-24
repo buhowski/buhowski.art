@@ -186,7 +186,7 @@
 			}
 			&.open {
 				height: 100vh;
-				height: calc(var(--vh, 1vh) * 100);
+				// height: calc(var(--vh, 1vh) * 100);
 				opacity: 1;
 				visibility: visible;
 				transform-style: preserve-3d;
