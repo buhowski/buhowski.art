@@ -34,8 +34,8 @@ class About extends React.Component {
 							<div className={`pos-abs about-item ${classItem}`} key={i}>
 								<div
 									id={classItem}
-									onClick={this.addActiveClass}
-									onMouseOver={this.addActiveClass}
+									// onClick={this.addActiveClass}
+									onMouseEnter={this.addActiveClass}
 									className={`d-flex-c-c ball${
 										this.state.active === classItem ? ' active' : ''
 									}`}
