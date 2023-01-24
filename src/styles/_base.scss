@@ -61,7 +61,7 @@ img {
 	padding: 4rem 0;
 	font-family: $lg-bold;
 	line-height: normal;
-	@media screen and (max-width: 1366px) {
+	@media screen and (max-width: 1600px) {
 		font-size: calc(24px + 1.6vw);
 	}
 	@include tabletSmall {

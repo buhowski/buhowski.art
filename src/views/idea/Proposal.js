@@ -1,12 +1,11 @@
 import React from 'react';
 import './Idea.scss';
 import IdeaTabs from './IdeaTabs';
-import SliderContainer from './Slider';
-import Copyright from './Copyright';
 import textData from './textData';
 
 export default function Idea() {
 	const contactBtnTitle = 'Read Full Presentation';
+	const baseTitle = 'I Have An Offer For You!';
 
 	const textItems = textData.map((text, i) => {
 		return (
@@ -31,20 +30,12 @@ export default function Idea() {
 	});
 
 	return (
-		<div className='wrapper wrapper--idea'>
-			<h1 className='base-title'>I Have An Offer For You!</h1>
-			<div className='idea-section'>
-				{/* Copyright */}
-				<Copyright />
-
-				<IdeaTabs
-					IdeaTabRu={textItems[0]}
-					IdeaTabEn={textItems[1]}
-					IdeaTabUa={textItems[2]}
-				/>
-
-				<SliderContainer contactBtnTitle={contactBtnTitle} />
-			</div>
-		</div>
+		<IdeaTabs
+			IdeaTabRu={textItems[0]}
+			IdeaTabEn={textItems[1]}
+			IdeaTabUa={textItems[2]}
+			baseTitle={baseTitle}
+			contactBtnTitle={contactBtnTitle}
+		/>
 	);
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+import Copyright from './Copyright';
+import SliderContainer from './Slider';
 
 class IdeaGeneral extends React.Component {
 	state = {
@@ -36,7 +38,7 @@ class IdeaGeneral extends React.Component {
 	}
 
 	render() {
-		const { IdeaTabRu, IdeaTabEn, IdeaTabUa } = this.props;
+		const { IdeaTabRu, IdeaTabEn, IdeaTabUa, baseTitle, contactBtnTitle } = this.props;
 
 		const tabs = [
 			{
@@ -57,33 +59,42 @@ class IdeaGeneral extends React.Component {
 		];
 
 		return (
-			<div className='idea-info'>
-				<div className='idea-tabs'>
-					{/* Here goes tab items*/}
-					{tabs.map((tab, i) => (
-						<button
-							className='idea-tabs__btn'
-							type='button'
-							key={i}
-							id={tab.id}
-							onClick={this.handleTabClick}
-							data-active={this.state.currentTab === `${tab.id}`}
-						>
-							{tab.title}
-						</button>
-					))}
-				</div>
+			<div className='wrapper wrapper--idea'>
+				<h1 className='base-title'>{baseTitle}</h1>
+				<div className='idea-section'>
+					<Copyright />
 
-				{/* Here goes tabs content */}
-				{tabs.map((tab, i) => (
-					<div
-						className='idea-overflow'
-						data-content={this.state.currentTab === `${tab.id}`}
-						key={i}
-					>
-						{this.state.currentTab === `${tab.id}` && tab.content}
+					<div className='idea-info'>
+						<div className='idea-tabs'>
+							{/* Here goes tab items*/}
+							{tabs.map((tab, i) => (
+								<button
+									className='idea-tabs__btn'
+									type='button'
+									key={i}
+									id={tab.id}
+									onClick={this.handleTabClick}
+									data-active={this.state.currentTab === `${tab.id}`}
+								>
+									{tab.title}
+								</button>
+							))}
+						</div>
+
+						{/* Here goes tabs content */}
+						{tabs.map((tab, i) => (
+							<div
+								className='idea-overflow'
+								data-content={this.state.currentTab === `${tab.id}`}
+								key={i}
+							>
+								{this.state.currentTab === `${tab.id}` && tab.content}
+							</div>
+						))}
 					</div>
-				))}
+
+					<SliderContainer contactBtnTitle={contactBtnTitle} />
+				</div>
 			</div>
 		);
 	}

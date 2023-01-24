@@ -11,7 +11,6 @@
 
 	@include tabletBig {
 		height: auto;
-		padding-bottom: 20px;
 	}
 }
 // underline link effect
@@ -145,7 +144,11 @@
 	display: flex;
 	position: relative;
 	max-height: calc(100% - 8rem - (24px + 2.5vw + 15px));
-	box-shadow: 0px 2px 16px rgba($color: $black, $alpha: 0.6);
+	box-shadow: 0px 2px 16px rgba($color: $black, $alpha: 0.5);
+
+	@media screen and (max-width: 1600px) {
+		max-height: calc(100% - 8rem - (24px + 1.6vw + 15px));
+	}
 
 	@include tabletBig {
 		flex-direction: column-reverse;
@@ -380,11 +383,7 @@
 	}
 
 	@include tabletSmall {
-		height: 150px;
-	}
-
-	@include mobile {
-		height: 130px;
+		height: 160px;
 	}
 }
 
