@@ -76,16 +76,6 @@
 }
 
 @include tabletSmall {
-	.header.header-overflow {
-		~ .wrapper:not(.about-wrapper) {
-			height: calc(100vh - 80px);
-			overflow: hidden;
-			transition: all 0.3s;
-			@include mobile {
-				height: calc(100vh - 137px);
-			}
-		}
-	}
 	.header {
 		height: 80px;
 		.wrapper {
@@ -199,6 +189,7 @@
 
 			&.open {
 				height: 100vh;
+				// height: calc(var(--vh, 1vh) * 100);
 				opacity: 1;
 				visibility: visible;
 				transform-style: preserve-3d;

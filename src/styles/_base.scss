@@ -9,7 +9,7 @@ body {
 	overflow: hidden;
 	scrollbar-width: 3px;
 	scrollbar-color: $blue-main $dark;
-	@include mobile {
+	@include tabletSmall {
 		scrollbar-width: 1px;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
@@ -19,7 +19,7 @@ body {
 ::-webkit-scrollbar {
 	width: 5px;
 
-	@include mobile {
+	@include tabletSmall {
 		width: 1px;
 	}
 }
@@ -32,7 +32,7 @@ body {
 	border-radius: 10px;
 }
 .a {
-	color: #fff;
+	color: $snow;
 	padding: 0.75rem 1rem;
 }
 img {

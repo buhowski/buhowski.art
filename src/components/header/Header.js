@@ -69,6 +69,12 @@ const Header = () => {
 					<div
 						className='mobile-menu-btn'
 						onClick={() => {
+							if (document.querySelector('.page-container')) {
+								document.querySelector('.page-container').style.overflowY = `${
+									menuOpen ? 'auto' : 'hidden'
+								}`;
+							}
+
 							setMenuOpen((o) => !o);
 						}}
 					>
