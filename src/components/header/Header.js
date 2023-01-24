@@ -69,6 +69,9 @@ const Header = () => {
 					<div
 						className='mobile-menu-btn'
 						onClick={() => {
+							document.querySelector('.page-container').style.paddingRight = `${
+								menuOpen ? '0' : '1px'
+							}`;
 							setMenuOpen((o) => !o);
 						}}
 					>
