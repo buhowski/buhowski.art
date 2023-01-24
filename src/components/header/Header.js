@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import Socials from '../socials/Socials';
+import Copyright from '../../views/idea/Copyright';
 import './Header.scss';
 
 const linksData = [
@@ -89,6 +90,7 @@ const Header = () => {
 							<div>
 								<ul className='nav'>{navLinkItems}</ul>
 								<Socials />
+								<Copyright />
 							</div>
 						</div>
 					</nav>
