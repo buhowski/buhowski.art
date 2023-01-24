@@ -145,6 +145,7 @@
 	display: flex;
 	position: relative;
 	max-height: calc(100% - 8rem - (24px + 2.5vw + 15px));
+	box-shadow: 0px 2px 16px rgba($color: $black, $alpha: 0.7);
 
 	@include tabletBig {
 		flex-direction: column-reverse;
