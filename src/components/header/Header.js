@@ -68,9 +68,14 @@ const Header = () => {
 					<LogoNavLink />
 					<div
 						className='mobile-menu-btn'
+						onMouseOver={() => {
+							document
+								.querySelector('.page-container')
+								.scrollTo({ top: 0, behavior: 'smooth' });
+						}}
 						onClick={() => {
 							const pageContainer = document.querySelector('.page-container');
-							!menuOpen && pageContainer.scrollTo({ top: 0, behavior: 'smooth' });
+							pageContainer.scrollTo({ top: 0, behavior: 'smooth' });
 
 							pageContainer.style.overflowY = `${menuOpen ? 'auto' : 'hidden'}`;
 
