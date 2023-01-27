@@ -5,7 +5,7 @@ const textData = [
 		startupTitle: `Про стартап`,
 
 		basic: `Основа: Сервис`,
-		appSample: `Пример укомплектованного, многофункционального журнала с возможностью создания и продвижения любой деятельности. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал, желающий присоединиться к компаниям, что двигают прогресс.`,
+		appSample: `Пример укомплектованного, многофункционального журнала с возможностью создания и продвижения любой деятельности со встроенной функцией доната. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал, желающий присоединиться к компаниям, что двигают прогресс.`,
 
 		possibilitiesTitle: `Разновидности платформы:`,
 		possibilitiesStar: [
@@ -32,7 +32,7 @@ const textData = [
 		],
 
 		excursusTitle: `Разработка`,
-		excursusInfo: `Первоначальный запуск задействует рубрику Журналистика, готовую функцию доната и рабочий Имиджборд с идеями и продвижением остального, что должно способствовать начальному толчку для набора аудитории и дальнейшему развитию.`,
+		excursusInfo: `Первоначальный запуск задействует рубрику Журналистика и рабочий Имиджборд с идеями и продвижением остального, что должно способствовать начальному толчку для набора аудитории и дальнейшему развитию.`,
 
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
@@ -49,7 +49,7 @@ const textData = [
 		startupTitle: `About Startup`,
 
 		basic: `Base: Service`,
-		appSample: `An example of a staffed, feature-rich magazine with the ability to create and promote any kind of activity. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside - a huge potential of wanting to join the companies that are moving progress.`,
+		appSample: `An example of a staffed, feature-rich magazine with the ability to create and promote any kind of activity with a built-in donation feature. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside - a huge potential of wanting to join the companies that are moving progress.`,
 
 		possibilitiesTitle: `Platform Types:`,
 		possibilitiesStar: [
@@ -72,11 +72,11 @@ const textData = [
 		filmInfo: [
 			`From different fields of activity gather the best of their genre specialists who wish to grow, unite together to a professional team of critical thinkers, enthusiasts and create a new history of culture, art and technological development in the country.`,
 			`Main interests: making movies, cartoons, computer games. Additionally: studio of exact translation and voice acting.`,
-			`To begin with, I can present to your attention the idea of a non-linear role-playing game with an open world - Cossacks RPG. In simple words, we need to do what the Poles have done with The Witcher game series and what the Ukrainian GSC Game World did not do with their Cossacks (make a full-fledged RPG from the strategy). Show Cossacks to popularize a new vision, those Cossacks that Zaporizhzhya Sich. To implement colorful views, the architecture of Ukraine of those times and the image of a real Cossack with a combat dance Gopak and parkour on horsebacks. Combine real facts and events with the mysticism and humor of Gogol's works and get quite an interesting game series about Cossacks and Ukrainian culture of that era.`,
+			`For a short example I can present to your attention the idea of a non-linear role-playing game with an open world - Cossacks RPG. In simple words, we need to do what the Poles have done with The Witcher game series and what the Ukrainian GSC Game World did not do with their Cossacks (make a full-fledged RPG from the strategy). Show Cossacks to popularize a new vision, those Cossacks that Zaporizhzhya Sich. To implement colorful views, the architecture of Ukraine of those times and the image of a real Cossack with a combat dance Gopak and parkour on horsebacks. Combine real facts and events with the mysticism and humor of Gogol's works and get quite an interesting game series about Cossacks and Ukrainian culture of that era.`,
 		],
 
 		excursusTitle: `Development`,
-		excursusInfo: `The initial launch will use the Journalism rubric, a ready-made donation function, and a working Imageboard with feature ideas and promotion of the rest, which should help for the first push to gain an audience and further development.`,
+		excursusInfo: `The initial launch will use the Journalism rubric and a working Imageboard with feature ideas and promotion of the rest, which should help for the first push to gain an audience and further development.`,
 
 		whyTitle: `Why(?): Motive`,
 		whyInfo: [
@@ -93,7 +93,7 @@ const textData = [
 		startupTitle: `Щодо стартапу`,
 
 		basic: `Основа: Сервіс`,
-		appSample: `Приклад укомплектованого, багатофункціонального журналу з можливістю створення та просування будь-якої діяльності. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал, що бажає приєднатися до компаній, які сприяють прогресу.`,
+		appSample: `Приклад укомплектованого, багатофункціонального журналу з можливістю створення та просування будь-якої діяльності із вбудованою функцією доната. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал, що бажає приєднатися до компаній, які сприяють прогресу.`,
 
 		possibilitiesTitle: `Різновиди платформи:`,
 		possibilitiesStar: [
@@ -120,7 +120,7 @@ const textData = [
 		],
 
 		excursusTitle: `Розробка`,
-		excursusInfo: `Початковий запуск залучає рубрику Журналістика, готову функцію донату та робочий Іміджборд з ідеями та просуванням решти, що має сприяти початковому поштовху для набору аудиторії та подальшого розвитку.`,
+		excursusInfo: `Початковий запуск залучає рубрику Журналістика та робочий Іміджборд з ідеями та просуванням решти, що має сприяти початковому поштовху для набору аудиторії та подальшого розвитку.`,
 
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
