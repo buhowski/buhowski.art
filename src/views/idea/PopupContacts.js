@@ -16,6 +16,12 @@ const dataContacts = [
 		url: 'https://www.linkedin.com/in/buhowski',
 		linkTitle: 'Alexander Tsiomakh',
 	},
+	{
+		name: 'Support My Inner Creator:',
+		url: 'https://coindrop.to/buhowski',
+		linkTitle: 'Donate',
+		supportClass: 'support-link',
+	},
 ];
 
 class PopupContacts extends Component {
@@ -47,7 +53,7 @@ class PopupContacts extends Component {
 				<div className='idea-contacts__list'>
 					<div className='idea-contacts__list-items'>
 						{dataContacts.map((item, i) => (
-							<p key={i}>
+							<p key={i} className={item.supportClass}>
 								{item.name}{' '}
 								<a href={item.url} target='_blank' rel='noopener noreferrer'>
 									{item.linkTitle}

@@ -78,6 +78,10 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
+
+			// &.support-link {
+			// 	text-align: center;
+			// }
 		}
 
 		a {
@@ -92,7 +96,7 @@
 
 	&.show {
 		.idea-contacts__list {
-			height: 100px;
+			height: 128px;
 			visibility: visible;
 			&::after {
 				transform: translate(-50%, 0) scale(1, 1);
