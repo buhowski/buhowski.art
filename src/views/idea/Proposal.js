@@ -29,9 +29,9 @@ export default function Idea() {
 				<div className='idea-block idea-block--ps'>
 					<p className='idea-block__text'>
 						<span className='idea-block-colored'>P.S. </span>
-						This project needs an investor or any help in development!
+						{text.ps1}
 						<br />
-						If you're interested, contact me!
+						{text.ps2}
 					</p>
 				</div>
 			</div>

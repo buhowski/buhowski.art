@@ -41,6 +41,9 @@ const textData = [
 			`В этом приложении и будут собраны лучшие возможности одновременно, без лишней мишуры и ненужных функций, с минималистически-модернистским дизайном, футуристическим ответвлением и максимальной отзывчивостью к потребителю.`,
 			`В процессе формирования и правильным подходом к реализации это место идеально займет свою нишу производства всего вышеперечисленного и озвучит желание популяризировать развитие в стране.`,
 		],
+
+		ps1: `Этому проекту нужен инвестор или любая помощь в разработке!`,
+		ps2: `Если Вы заинтересованы, свяжитесь со мной!`,
 	},
 
 	// ################# ENGLISH
@@ -85,6 +88,9 @@ const textData = [
 			`This application will bring the best features together, without unnecessary functions and useless things, with a modern minimalist design, a futuristic offshoot and maximum responsiveness to the consumer.`,
 			`In the process of further formation and with the right approach to implementation, this place will ideally occupy its niche for the production of all above listed and voice the desire to popularize development in the country.`,
 		],
+
+		ps1: `This project needs an investor or any help in development!`,
+		ps2: `If You're interested, contact me!`,
 	},
 
 	// ################# UKRAINE
@@ -129,6 +135,9 @@ const textData = [
 			`У цьому додатку і будуть зібрані найкращі можливості воєдино, без зайвої мішури та непотрібних функцій, з мінімалістично-модерністським дизайном, футуристичним відгалуженням та максимальним відгуком до споживача.`,
 			'В процесі формування та правильним підходом до реалізації це місце ідеально займатиме свою нішу виробництва всього вищепереліченого та висловить бажання популяризувати розвиток у країні.',
 		],
+
+		ps1: `Цей проект потребує інвестора або будь-якої допомоги в розробці!`,
+		ps2: `Якщо Ви зацікавлені, зв'яжіться зі мною!`,
 	},
 ];
 
