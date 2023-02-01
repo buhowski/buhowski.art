@@ -10,6 +10,7 @@ import bgMeNotebooks from './images/notebooks.jpg';
 import bgPalms from './images/rooms.jpg';
 import bgEnde from './images/ende.jpg';
 import bgFaber from './images/faber.jpg';
+import bgFaberBooks from './images/faber-books.jpg';
 import bgBentley from './images/bentley.jpg';
 
 const projectsData = [
@@ -17,6 +18,11 @@ const projectsData = [
 		img: `url(${bgFaber})`,
 		url: 'https://faberacademy.com/',
 		name: 'Faber Academy',
+	},
+	{
+		img: `url(${bgFaberBooks})`,
+		url: 'https://www.faber.co.uk/',
+		name: 'Faber',
 	},
 	{
 		img: `url(${bgBentley})`,

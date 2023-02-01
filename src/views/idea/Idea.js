@@ -68,6 +68,14 @@ export default function Idea() {
 					</p>
 				))}
 			</div>
+			<div className='idea-block idea-block--ps'>
+				<p className='idea-block__text'>
+					<span className='idea-block-colored'>P.S. </span>
+					This project needs an investor or any help in development!
+					<br />
+					If you're interested, contact me!
+				</p>
+			</div>
 		</div>
 	));
 
