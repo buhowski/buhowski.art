@@ -78,10 +78,6 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
-
-			// &.support-link {
-			// 	text-align: center;
-			// }
 		}
 
 		a {
@@ -89,14 +85,13 @@
 			transition: color 0.3s;
 			&:hover {
 				color: $titlePink;
-				transform: translateY(30px);
 			}
 		}
 	}
 
 	&.show {
 		.idea-contacts__list {
-			height: 128px;
+			height: 101px;
 			visibility: visible;
 			&::after {
 				transform: translate(-50%, 0) scale(1, 1);
@@ -358,6 +353,16 @@
 
 	&-colored {
 		color: $blue-main;
+	}
+
+	&__support {
+		a {
+			color: $blue-main;
+			transition: color 0.3s;
+			&:hover {
+				color: $titlePink;
+			}
+		}
 	}
 }
 

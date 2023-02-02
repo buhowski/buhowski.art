@@ -76,6 +76,17 @@ export default function Idea() {
 					<br />
 					{data.ps2}
 				</p>
+
+				<p className='idea-block__support'>
+					{data.supportText}
+					<a
+						href='https://coindrop.to/buhowski'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						Donate
+					</a>
+				</p>
 			</div>
 		</div>
 	));

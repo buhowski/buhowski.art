@@ -16,12 +16,13 @@ const dataContacts = [
 		url: 'https://www.linkedin.com/in/buhowski',
 		linkTitle: 'Alexander Tsiomakh',
 	},
-	{
-		name: 'Support My Inner Creator:',
-		url: 'https://coindrop.to/buhowski',
-		linkTitle: 'Donate',
-		supportClass: 'support-link',
-	},
+	// Donation link
+	// {
+	// 	name: 'Support My Inner Creator:',
+	// 	url: 'https://coindrop.to/buhowski',
+	// 	linkTitle: 'Donate',
+	// 	supportClass: 'support-link',
+	// },
 ];
 
 class PopupContacts extends Component {
