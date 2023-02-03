@@ -16,7 +16,7 @@ export default function Idea() {
 
 				<ul>
 					{data.possibilitiesStar.slice(0, 2).map((item, a) => (
-						<li key={a}>
+						<li key={a} className='idea-block__stared'>
 							{item}
 							<span className='idea-block__star'> *</span>
 						</li>
