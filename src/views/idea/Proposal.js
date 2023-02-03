@@ -4,7 +4,7 @@ import IdeaTabs from './IdeaTabs';
 import textData from './textData';
 
 export default function Idea() {
-	const contactBtnTitle = 'Read Full Presentation';
+	const contactBtnTitle = 'For Full Presentation';
 	const baseTitle = 'I Have An Offer For You!';
 
 	const textItems = textData.map((text, i) => {
