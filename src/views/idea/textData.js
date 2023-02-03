@@ -56,7 +56,7 @@ const textData = [
 		startupTitle: `About Startup`,
 
 		basic: `Base: Service`,
-		appSample: `An example of a staffed, feature-rich magazine with the ability to create and promote any kind of activity with a built-in donation feature. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside - a huge potential of wanting to join the companies that are moving progress.`,
+		appSample: `An example of a staffed, feature-rich magazine with the ability to create and promote any kind of activity with a built-in donation feature. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
 
 		possibilitiesTitle: `Platform Types:`,
 		possibilitiesStar: [
