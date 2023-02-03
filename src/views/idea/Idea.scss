@@ -283,6 +283,7 @@
 
 	&__text {
 		margin-bottom: 10px;
+		white-space: pre-line;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -352,7 +353,7 @@
 	}
 
 	&-colored {
-		color: $blue-main;
+		color: $titlePink;
 	}
 
 	&__support {

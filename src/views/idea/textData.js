@@ -27,12 +27,14 @@ const textData = [
 		filmTitle: `Творческая индустрия`,
 		filmInfo: [
 			`Собрать из разных сфер деятельности лучших своего жанра и желающих в развитие специалистов, соединить воедино в профессиональный коллектив критически мыслящих идейников и энтузиастов, чтобы творить новую историю культуры, искусства и технологического развития в стране.`,
-			`Основные интересы: создание кино, мультфильмов, компьютерных игр. Дополнительно: студия правильного перевода и озвучки.`,
+			`Основные интересы: создание кино, мультфильмов, компьютерных игр.
+			Дополнительно: студия правильного перевода и озвучки.`,
+			`В общем и целом моя перспектива сфокусирована на развитии масштаба, коллаборации разных сфер деятельности, от технологического развития до креативного самовыражения, от робототехники до музыкальной индустрии, от создания собственной метавселенной до продажи кастомных интернет магазинов. И если собрать всё лучшее и давно известное в одном месте, то скачок эволюционного процесса произойдет сам собой.`,
 			`Для начала могу предложить вашему вниманию идею нелинейной ролевой игры с открытым миром – Казаки РПГ. Простыми словами нужно сделать то, что поляки сотворили с игровой серией Ведьмак и что украинские GSC Game World не сделали со своими казаками (сделать из стратегии полноценное РПГ). Показать казаков для популяризации нового видения, тех казаков, что Запорожская Сечь. Реализовать красочные виды, архитектуру Украины тех времен и образ настоящего казака с боевым танцем гопак и паркуром на лошадях. Совместить реальные факты и события с мистикой и юмором произведений Гоголя и получить довольно интересную серию игр о казаках и украинской культуре тогдашней эпохи.`,
 		],
 
-		excursusTitle: `Разработка`,
-		excursusInfo: `Первоначальный запуск задействует рубрику Журналистика и рабочий Имиджборд с идеями и продвижением остального, что должно способствовать начальному толчку для набора аудитории и дальнейшему развитию.`,
+		excursusTitle: `Разработка: Minimal Viable Product`,
+		excursusInfo: `Первоначальный запуск задействует рубрику Журналистика и рабочий Имиджборд с идеями и продвижением остального, что будет способствовать начальному толчку для набора аудитории и дальнейшему развитию.`,
 
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
@@ -76,12 +78,14 @@ const textData = [
 		filmTitle: `Creative Production`,
 		filmInfo: [
 			`From different fields of activity gather the best of their genre specialists who wish to grow, unite together to a professional team of critical thinkers, enthusiasts and create a new history of culture, art and technological development in the country.`,
-			`Main interests: making movies, cartoons, computer games. Additionally: studio of exact translation and voice acting.`,
+			`Main interests: making movies, cartoons, computer games. 
+			Additionally: studio of exact translation and voice acting.`,
+			`In general, my perspective is focused on the development of scale, the collaboration of different spheres of activity, from technological development to creative self-expression, from cybernetics to the music industry, from the creation of my own metaverse to the selling of custom online stores. And if you gather all the best and long-known things in one place, a jump in evolutionary process will happen all by itself.`,
 			`For a short example I can present to your attention the idea of a non-linear role-playing game with an open world - Cossacks RPG. In simple words, we need to do what the Poles have done with The Witcher game series and what the Ukrainian GSC Game World did not do with their Cossacks (make a full-fledged RPG from the strategy). Show Cossacks to popularize a new vision, those Cossacks that Zaporizhzhya Sich. To implement colorful views, the architecture of Ukraine of those times and the image of a real Cossack with a combat dance Gopak and parkour on horsebacks. Combine real facts and events with the mysticism and humor of Gogol's works and get quite an interesting game series about Cossacks and Ukrainian culture of that era.`,
 		],
 
-		excursusTitle: `Development`,
-		excursusInfo: `The initial launch will use the Journalism rubric and a working Imageboard with feature ideas and promotion of the rest, which should help for the first push to gain an audience and further development.`,
+		excursusTitle: `Development: Minimal Viable Product`,
+		excursusInfo: `The initial launch will use the Journalism rubric and a working Imageboard with feature ideas and promotion of the rest, which will help for the first push to gain an audience and further development.`,
 
 		whyTitle: `Why(?): Motive`,
 		whyInfo: [
@@ -125,12 +129,14 @@ const textData = [
 		filmTitle: `Творча індустрія`,
 		filmInfo: [
 			`Зібрати з різних сфер діяльності найкращих свого жанру та бажаючих у розвиток спеціалістів, поєднати воєдино у професійний колектив критично мислячих ідейників та ентузіастів, щоб творити нову історію культури, мистецтва та технологічного розвитку в країні.`,
-			`Основні інтереси: створення кіно, мультфільмів, комп'ютерних ігор. Додатково: студія правильного перекладу та озвучки.`,
+			`Основні інтереси: створення кіно, мультфільмів, комп'ютерних ігор. 
+			Додатково: студія правильного перекладу та озвучки.`,
+			`Загалом моя перспектива сфокусована на розвитку масштабу, колаборації різних сфер діяльності, від технологічного розвитку до креативного самовираження, від робототехніки до музичної індустрії, від створення власного метавсесвіту до продажу кастомних інтернет-магазинів. І якщо зібрати все найкраще і давно відоме в одному місці, то стрибок еволюційного процесу відбудеться сам собою.`,
 			`Для початку можу презентувати вашій увазі ідею нелінійної рольової гри з відкритим світом – Козаки РПГ. Простими словами потрібно зробити те, що поляки зробили з ігровою серією Відьмак і що українські GSC Game World не зробили зі своїми козаками (створити зі стратегії повноцінне РПГ). Показати козаків для популяризації нового бачення, тих козаків, що Запорізька Січ. Реалізувати барвисті краєвиди, архітектуру України тих часів та образ справжнього козака з бойовим танцем гопак та паркуром на конях. Поєднати реальні факти та події з містикою та гумором творів Гоголя та отримати досить цікаву серію ігор про козаків і українську культуру тогочасної епохи.`,
 		],
 
-		excursusTitle: `Розробка`,
-		excursusInfo: `Початковий запуск залучає рубрику Журналістика та робочий Іміджборд з ідеями та просуванням решти, що має сприяти початковому поштовху для набору аудиторії та подальшого розвитку.`,
+		excursusTitle: `Розробка: Minimal Viable Product`,
+		excursusInfo: `Початковий запуск залучає рубрику Журналістика та робочий Іміджборд з ідеями та просуванням решти, що сприятиме початковому поштовху для набору аудиторії та подальшого розвитку.`,
 
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
