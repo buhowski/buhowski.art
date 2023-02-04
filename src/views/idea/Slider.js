@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
-import sliderImg1 from './images/ai.jpg';
-import sliderImg2 from './images/einstein.jpg';
-import sliderImg3 from './images/architect.jpg';
-import sliderImg4 from './images/evolution.jpg';
-import sliderImg5 from './images/mona-cat.png';
-import sliderImg6 from './images/ow.jpg';
-import sliderImg7 from './images/paint.jpg';
-import sliderImg8 from './images/paper.jpg';
-import sliderImg9 from './images/startup.jpg';
-import sliderImg10 from './images/times.jpg';
-import sliderImg11 from './images/write.jpg';
-import sliderImg12 from './images/chinking.jpg';
+import sliderImg1 from './images/barcode-art.jpg';
+import sliderImg2 from './images/bridge.jpg';
+import sliderImg3 from './images/cat.jpg';
+import sliderImg4 from './images/comp.jpg';
+import sliderImg5 from './images/einstein.jpg';
+import sliderImg6 from './images/flamingo.jpg';
+import sliderImg7 from './images/paper.jpg';
+import sliderImg8 from './images/Image-for-ai.jpg';
+import sliderImg9 from './images/machine.jpg';
+import sliderImg10 from './images/maxresdefault.jpg';
+import sliderImg12 from './images/Retro-Pineapples-Cats-Creative-Clock-Parrots-Pocket-watch.jpg';
+import sliderImg11 from './images/writer.jpg';
+import sliderImg13 from './images/sea.jpg';
+import sliderImg14 from './images/see.jpg';
+import sliderImg15 from './images/startup.jpg';
+import sliderImg16 from './images/teresa.jpg';
+import sliderImg17 from './images/time.jpg';
 import PopupContacts from './PopupContacts';
 
 const dataImgs = [
@@ -47,6 +52,10 @@ const dataImgs = [
 		imgAlt: 'paper picture',
 	},
 	{
+		imgSrc: sliderImg14,
+		imgAlt: 'chinking picture',
+	},
+	{
 		imgSrc: sliderImg9,
 		imgAlt: 'startup picture',
 	},
@@ -60,6 +69,23 @@ const dataImgs = [
 	},
 	{
 		imgSrc: sliderImg12,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg13,
+		imgAlt: 'chinking picture',
+	},
+
+	{
+		imgSrc: sliderImg15,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg16,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg17,
 		imgAlt: 'chinking picture',
 	},
 ];
