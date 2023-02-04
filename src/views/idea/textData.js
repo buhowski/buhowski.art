@@ -20,7 +20,7 @@ const textData = [
 		conceptTitle: `Сферы деятельности`,
 		journalist: `Журналистика`,
 		journalistInfo: [
-			`Новое повествование современного дыхания, различные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры, с характером стиля письменности Хантера Томпсона, Буковски, Паланика, etc.`,
+			`Новое повествование современного дыхания, различные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры, с характером стиля письменности Хантера Томпсона, Паланика, etc.`,
 			`Гонзо-журналистика. Ведение сюжетных дневников от первого лица или группы лиц. Нырять в самое пекло идиотизма проблемы, изучая вопрос изнутри или создавать определенные условия для его появления (смесь психологических экспериментов поведения в разных сферах жизнедеятельности, освещение burning man, церемонию аяуаски, etc.).`,
 		],
 
@@ -71,7 +71,7 @@ const textData = [
 		conceptTitle: `Fields of Activity`,
 		journalist: `Journalism`,
 		journalistInfo: [
-			`A new narrative of modern breathing, different opinions, truth and dirty realism. A peculiar presentation of information without censorship, with the nature of the writing style of Hunter Thompson, Bukowski, Palahniuk, etc.`,
+			`A new narrative of modern breathing, different opinions, truth and dirty realism. A peculiar presentation of information without censorship, with the nature of the writing style of Hunter Thompson, Palahniuk, etc.`,
 			`Gonzo Journalism. Making story diaries from the first person or group of people. Dive deep into the idiocy problems by studying the issue from the inside or creating certain conditions for its appearance (a mix of psychological behavioral experiments in different areas of life, lighting an ayahuasca ceremony, burning man, etc).`,
 		],
 
@@ -122,7 +122,7 @@ const textData = [
 		conceptTitle: `Сфери діяльності`,
 		journalist: `Журналістика`,
 		journalistInfo: [
-			`Сучасний погляд нового дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури, з характером стилю писемності Хантера Томпсона, Буковськи, Паланіка, etc.`,
+			`Сучасний погляд нового дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури, з характером стилю писемності Хантера Томпсона,  Паланіка, etc.`,
 			`Гонзо-журналістика. Ведення сюжетних щоденників від першої особи чи групи лиць. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи (суміш психологічних експериментів поведінки в різних сферах життєдіяльності, освітлення burning man, церемонію аяуаски, etc.).`,
 		],
 
