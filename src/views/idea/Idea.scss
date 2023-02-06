@@ -23,7 +23,7 @@
 	&:hover {
 		cursor: default;
 
-		@include tabletBig {
+		@include mobile {
 			cursor: pointer;
 		}
 	}
@@ -95,7 +95,7 @@
 
 	&.show {
 		.idea-contacts__list {
-			height: 101px;
+			// height: 101px;
 			visibility: visible;
 			&::after {
 				transform: translate(-50%, 0) scale(1, 1);

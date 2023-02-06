@@ -29,12 +29,29 @@ class PopupContacts extends Component {
 	state = {
 		activeIndex: 0,
 		setContacts: null,
+		setHeight: 0,
 	};
 
 	toggleShowContacts = () => {
-		this.setState({
-			setContacts: 'show',
-		});
+		if (window.innerWidth > 1280) {
+			const elHeight = document.querySelector(
+				'.slider-container .idea-contacts__list-items'
+			).offsetHeight;
+
+			this.setState({
+				setContacts: 'show',
+				setHeight: `${elHeight}px`,
+			});
+		} else {
+			const elHeight = document.querySelector(
+				'.slider-container ~ .idea-contacts .idea-contacts__list-items'
+			).offsetHeight;
+
+			this.setState({
+				setContacts: 'show',
+				setHeight: `${elHeight}px`,
+			});
+		}
 	};
 
 	toggleShowContactsHide = () => {
@@ -52,7 +69,10 @@ class PopupContacts extends Component {
 				className={`idea-contacts ${this.state.setContacts}`}
 				onMouseLeave={this.toggleShowContactsHide}
 			>
-				<div className='idea-contacts__list'>
+				<div
+					className='idea-contacts__list'
+					style={{ height: `${this.state.setHeight}` }}
+				>
 					<div className='idea-contacts__list-items'>
 						{dataContacts.map((item, i) => (
 							<p key={i} className={item.supportClass}>
