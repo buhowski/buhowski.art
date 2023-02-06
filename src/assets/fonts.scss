@@ -68,6 +68,11 @@
 	color: #fff;
 }
 
+[class^='icon-']:before,
+[class*=' icon-']:before {
+	display: block;
+}
+
 .icon-cv:before {
 	content: '\e902';
 }
