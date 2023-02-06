@@ -58,7 +58,7 @@ class PopupContacts extends Component {
 			>
 				<div
 					className='idea-contacts__list'
-					style={{ height: `${this.state.setHeight}` }}
+					// style={{ height: `${this.state.setHeight}` }}
 				>
 					<div className='idea-contacts__list-items'>
 						{dataContacts.map((item, i) => (
