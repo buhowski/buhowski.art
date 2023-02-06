@@ -23,7 +23,7 @@
 	&:hover {
 		cursor: default;
 
-		@include mobile {
+		@include tabletBig {
 			cursor: pointer;
 		}
 	}
