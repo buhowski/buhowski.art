@@ -16,7 +16,7 @@ const dataContacts = [
 		url: 'https://www.linkedin.com/in/buhowski',
 		linkTitle: 'Alexander Tsiomakh',
 	},
-	// Donation link
+	// // Donation link
 	// {
 	// 	name: 'Support My Inner Creator:',
 	// 	url: 'https://coindrop.to/buhowski',
@@ -29,17 +29,22 @@ class PopupContacts extends Component {
 	state = {
 		activeIndex: 0,
 		setContacts: null,
+		setHeight: 0,
 	};
 
 	toggleShowContacts = () => {
+		const elHeight = document.querySelector('.idea-contacts__list-items').offsetHeight;
+
 		this.setState({
 			setContacts: 'show',
+			setHeight: `${elHeight}px`,
 		});
 	};
 
 	toggleShowContactsHide = () => {
 		this.setState({
 			setContacts: '',
+			setHeight: 0,
 		});
 	};
 
@@ -51,7 +56,10 @@ class PopupContacts extends Component {
 				className={`idea-contacts ${this.state.setContacts}`}
 				onMouseLeave={this.toggleShowContactsHide}
 			>
-				<div className='idea-contacts__list'>
+				<div
+					className='idea-contacts__list'
+					style={{ height: `${this.state.setHeight}` }}
+				>
 					<div className='idea-contacts__list-items'>
 						{dataContacts.map((item, i) => (
 							<p key={i} className={item.supportClass}>
