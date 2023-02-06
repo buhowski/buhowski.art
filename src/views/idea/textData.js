@@ -5,11 +5,11 @@ const textData = [
 		startupTitle: `Про стартап`,
 
 		basic: `Основа: Сервис`,
-		appSample: `Пример укомплектованного, многофункционального журнала с возможностью создания и продвижения любой деятельности со встроенной функцией доната. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал, желающий присоединиться к компаниям, что двигают прогресс.`,
+		appSample: `Пример укомплектованного, многофункционального журнала с возможностью создания и продвижения любой деятельности со встроенной функцией доната. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи (простое приложение для ежедневного использования), а внутри – огромный потенциал для создания чего угодно и желание присоединиться к компаниям, что двигают прогресс.`,
 
 		possibilitiesTitle: `Разновидности платформы:`,
 		possibilitiesStar: [
-			`Социальная сеть, ведение микроблогинга (фото, видео, звук, текст)`,
+			`Социальная сеть, ведение микроблогинга`,
 			`Онлайн кинотеатр, видеохостинг и лайв стриминг`,
 			`Имиджборд и анонимный веб-форум`,
 		],
@@ -26,11 +26,10 @@ const textData = [
 
 		filmTitle: `Креативная индустрия`,
 		filmInfo: [
-			`Собрать из разных сфер деятельности лучших своего жанра и желающих в развитие специалистов, соединить воедино в профессиональный коллектив критически мыслящих идейников и энтузиастов, чтобы творить новую историю культуры, искусства и технологического развития в стране.`,
-			`Основные интересы: создание кино, мультфильмов, компьютерных игр.
-			Дополнительно: студия правильного перевода и озвучки.`,
 			`В общем и целом моя перспектива сфокусирована на развитие масштаба и коллабораций разных сфер деятельности, от технологического развития до креативного самовыражения, от робототехники до музыкальной индустрии, от создания собственной метавселенной до продажи кастомных интернет магазинов. И если собрать всё лучшее и давно известное в одном месте, то скачок эволюционного процесса произойдет сам собой.`,
-			`Для начала могу предложить вашему вниманию идею нелинейной ролевой игры с открытым миром – Казаки РПГ. Простыми словами нужно сделать то, что поляки сотворили с игровой серией Ведьмак и что украинские GSC Game World не сделали со своими казаками (сделать из стратегии полноценное РПГ). Показать казаков для популяризации нового видения, тех казаков, что Запорожская Сечь. Реализовать красочные виды, архитектуру Украины тех времен и образ настоящего казака с боевым танцем гопак и паркуром на лошадях. Совместить реальные факты и события с мистикой и юмором произведений Гоголя и получить довольно интересную серию игр о казаках и украинской культуре тогдашней эпохи.`,
+			`Первоначальный замысел: создание кино, мультфильмов, компьютерных игр (на что уже есть готовые идеи для старта). 
+			Дополнительно: студия правильного перевода и озвучки.`,
+			`Для начала могу презентовать вашему вниманию идею нелинейной ролевой игры с открытым миром – Казаки РПГ. Простыми словами нужно сделать то, что поляки сотворили с игровой серией Ведьмак и что украинские GSC Game World не сделали со своими казаками (сделать из стратегии полноценное РПГ). Показать казаков для популяризации нового видения, тех казаков, что Запорожская Сечь. Реализовать красочные виды, архитектуру Украины тех времен и образ настоящего казака с боевым танцем гопак и паркуром на лошадях. Совместить реальные факты и события с мистикой и юмором произведений Гоголя и получить довольно интересную серию игр о казаках и украинской культуре тогдашней эпохи.`,
 		],
 
 		excursusTitle: `Разработка: Minimal Viable Product`,
@@ -56,11 +55,11 @@ const textData = [
 		startupTitle: `About Startup`,
 
 		basic: `Base: Service`,
-		appSample: `An example of a staffed, feature-rich magazine with the ability to create and promote any kind of activity with a built-in donation feature. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
+		appSample: `An example of a staffed, feature-rich magazine with the ability to create and promote any kind of activity with a built-in donation feature. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside (simple application for everyday use), and on the inside – a huge potential for creating anything you want and desire to join the companies that are moving progress.`,
 
 		possibilitiesTitle: `Platform Types:`,
 		possibilitiesStar: [
-			`Social network, microblogging (photo, video, sound, text)`,
+			`Social network, microblogging`,
 			`Online cinema, video hosting and live streaming`,
 			`Imageboard and anonymous web forum`,
 		],
@@ -77,10 +76,9 @@ const textData = [
 
 		filmTitle: `Creative Production`,
 		filmInfo: [
-			`From different fields of activity gather the best of their genre specialists who wish to grow, unite together to a professional team of critical thinkers, enthusiasts and create a new history of culture, art and technological development in the country.`,
-			`Main interests: making movies, cartoons, computer games. 
-			Additionally: studio of exact translation and voice acting.`,
 			`In general, my perspective is focused on the development of scale and collaboration of different spheres of activity, from technological development to creative self-expression, from cybernetics to the music industry, from the creation of my own metaverse to selling custom online stores. And if you bring all the best and long-known things in one place, a jump in evolutionary process will happen all by itself.`,
+			`Primary Plan: making movies, cartoons, computer games (there are several ideas where to start). 
+			Additionally: studio of exact translation and voice acting.`,
 			`For a short example I can present to your attention the idea of a non-linear role-playing game with an open world - Cossacks RPG. In simple words, we need to do what the Poles have done with The Witcher game series and what the Ukrainian GSC Game World did not do with their Cossacks (make a full-fledged RPG from the strategy). Show Cossacks to popularize a new vision, those Cossacks that Zaporizhzhya Sich. To implement colorful views, the architecture of Ukraine of those times and the image of a real Cossack with a combat dance Gopak and parkour on horsebacks. Combine real facts and events with the mysticism and humor of Gogol's works and get quite an interesting game series about Cossacks and Ukrainian culture of that era.`,
 		],
 
@@ -107,11 +105,11 @@ const textData = [
 		startupTitle: `Щодо стартапу`,
 
 		basic: `Основа: Сервіс`,
-		appSample: `Приклад укомплектованого, багатофункціонального журналу з можливістю створення та просування будь-якої діяльності із вбудованою функцією доната. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал, що бажає приєднатися до компаній, які сприяють прогресу.`,
+		appSample: `Приклад укомплектованого, багатофункціонального журналу з можливістю створення та просування будь-якої діяльності із вбудованою функцією доната. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні (простий застосунок для щоденного використання), а всередині – величезний потенціал для створення чого завгодно і бажання приєднатися до компаній, які сприяють прогресу.`,
 
 		possibilitiesTitle: `Різновиди платформи:`,
 		possibilitiesStar: [
-			`Соціальна мережа, ведення мікроблогінгу (фото, відео, звук, текст)`,
+			`Соціальна мережа, ведення мікроблогінгу`,
 			`Онлайн кінотеатр, відеохостинг та лайв стрімінг`,
 			`Іміджборд та анонімний веб-форум`,
 		],
@@ -128,10 +126,9 @@ const textData = [
 
 		filmTitle: `Креативна індустрія`,
 		filmInfo: [
-			`Зібрати з різних сфер діяльності найкращих свого жанру та бажаючих у розвиток спеціалістів, поєднати воєдино у професійний колектив критично мислячих ідейників та ентузіастів, щоб творити нову історію культури, мистецтва та технологічного розвитку в країні.`,
-			`Основні інтереси: створення кіно, мультфільмів, комп'ютерних ігор. 
-			Додатково: студія правильного перекладу та озвучки.`,
 			`Загалом моя перспектива сфокусована на розвиток масштабу і колаборацій різних сфер діяльності, від технологічного розвитку до креативного самовираження, від робототехніки до музичної індустрії, від створення власного метавсесвіту до продажу кастомних інтернет-магазинів. І якщо зібрати все найкраще і давно відоме в одному місці, то стрибок еволюційного процесу відбудеться сам собою.`,
+			`Початковий задум: створення кіно, мультфільмів, комп'ютерних ігор (на що вже є готові ідеї для старту). 
+			Додатково: студія правильного перекладу та озвучки.`,
 			`Для початку можу презентувати вашій увазі ідею нелінійної рольової гри з відкритим світом – Козаки РПГ. Простими словами потрібно зробити те, що поляки зробили з ігровою серією Відьмак і що українські GSC Game World не зробили зі своїми козаками (створити зі стратегії повноцінне РПГ). Показати козаків для популяризації нового бачення, тих козаків, що Запорізька Січ. Реалізувати барвисті краєвиди, архітектуру України тих часів та образ справжнього козака з бойовим танцем гопак та паркуром на конях. Поєднати реальні факти та події з містикою та гумором творів Гоголя та отримати досить цікаву серію ігор про козаків і українську культуру тогочасної епохи.`,
 		],
 
