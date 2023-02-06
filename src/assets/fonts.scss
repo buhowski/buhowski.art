@@ -58,7 +58,9 @@
 [class^='icon-'],
 [class*=' icon-'] {
 	font-family: 'icomoon' !important;
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 20px;
 	height: 20px;
 	font-size: 20px !important;
