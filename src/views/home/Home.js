@@ -12,7 +12,7 @@ const Home = () => {
 		<div className='wrapper home-wrapper d-flex'>
 			<div className='name-container'>
 				<h1 className='base-title'>Alexander Tsiomakh</h1>
-				<h2 className='tag-color'>Front-End Developer. Writer</h2>
+				<h2 className='tag-color'>Front-End Developer</h2>
 				<Socials />
 			</div>
 
