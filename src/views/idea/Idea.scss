@@ -12,6 +12,22 @@
 	@include tabletBig {
 		height: auto;
 	}
+
+	.base-title {
+		padding-bottom: 15px;
+		@include mobile {
+			padding-bottom: 5px;
+		}
+	}
+
+	.base-desc {
+		margin-bottom: 4rem;
+
+		@include mobile {
+			font-size: 14px;
+			margin-bottom: 2rem;
+		}
+	}
 }
 // underline link effect
 .nav-link--underline {
@@ -142,15 +158,15 @@
 
 .idea-section {
 	background: $dark;
-	padding: 62px;
+	padding: 60px;
 	padding-top: 0;
 	display: flex;
 	position: relative;
-	max-height: calc(100% - 8rem - (24px + 2.5vw + 15px));
+	max-height: calc(100% - 36px - 8rem - (24px + 2.5vw + 15px));
 	box-shadow: 0px 2px 16px rgba($color: $black, $alpha: 0.5);
 
 	@media screen and (max-width: 1600px) {
-		max-height: calc(100% - 8rem - (24px + 1.6vw + 15px));
+		max-height: calc(100% - 36px - 8rem - (24px + 1.6vw + 15px));
 	}
 
 	@include tabletBig {
@@ -409,7 +425,7 @@
 	}
 
 	@include tabletSmall {
-		height: 167px;
+		height: 150px;
 	}
 }
 

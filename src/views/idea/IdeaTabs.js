@@ -38,7 +38,8 @@ class IdeaGeneral extends React.Component {
 	}
 
 	render() {
-		const { IdeaTabRu, IdeaTabEn, IdeaTabUa, baseTitle, contactBtnTitle } = this.props;
+		const { IdeaTabRu, IdeaTabEn, IdeaTabUa, baseTitle, baseDesc, contactBtnTitle } =
+			this.props;
 
 		const tabs = [
 			{
@@ -61,6 +62,8 @@ class IdeaGeneral extends React.Component {
 		return (
 			<div className='wrapper wrapper--idea'>
 				<h1 className='base-title'>{baseTitle}</h1>
+				<h2 className='base-desc'>{baseDesc}</h2>
+
 				<div className='idea-section'>
 					<Copyright />
 

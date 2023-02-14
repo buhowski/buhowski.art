@@ -6,6 +6,7 @@ import textData from './textData';
 export default function Idea() {
 	const contactBtnTitle = 'Get In Touch';
 	const baseTitle = 'Pure Details';
+	const baseDesc = 'An offer to invest in huge potential!';
 
 	const textItems = textData.map((data, i) => (
 		<div key={i}>
@@ -37,18 +38,19 @@ export default function Idea() {
 			<div className='idea-block'>
 				<h2 className='h2'>{data.conceptTitle}</h2>
 				<div className='idea-concept'>
-					<h3 className='h3'>{data.journalist}</h3>
-					{data.journalistInfo.map((journalist, j) => (
-						<p key={j} className='idea-block__text'>
-							{journalist}
-						</p>
-					))}
-				</div>
-				<div className='idea-concept'>
 					<h3 className='h3'>{data.filmTitle}</h3>
 					{data.filmInfo.map((filmInfo, f) => (
 						<p key={f} className='idea-block__text'>
 							{filmInfo}
+						</p>
+					))}
+				</div>
+
+				<div className='idea-concept'>
+					<h3 className='h3'>{data.journalist}</h3>
+					{data.journalistInfo.map((journalist, j) => (
+						<p key={j} className='idea-block__text'>
+							{journalist}
 						</p>
 					))}
 				</div>
@@ -97,6 +99,7 @@ export default function Idea() {
 			IdeaTabEn={textItems[1]}
 			IdeaTabUa={textItems[2]}
 			baseTitle={baseTitle}
+			baseDesc={baseDesc}
 			contactBtnTitle={contactBtnTitle}
 		/>
 	);

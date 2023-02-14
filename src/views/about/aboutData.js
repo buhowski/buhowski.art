@@ -7,7 +7,7 @@ import Backpack from './images/backpack.png';
 const dotsData = [
 	{
 		classItem: 'brain',
-		title: 'IDEAS THINKER',
+		title: 'IDEA THINKER, ENTHUSIAST, EXPLORER',
 		img: Brain,
 	},
 	{
