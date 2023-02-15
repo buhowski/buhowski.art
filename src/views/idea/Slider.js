@@ -16,6 +16,14 @@ import sliderImg14 from './images/see.jpg';
 import sliderImg15 from './images/startup.jpg';
 import sliderImg16 from './images/teresa.jpg';
 import sliderImg17 from './images/time.jpg';
+import sliderImg18 from './images/flowers.jpg';
+import sliderImg19 from './images/guitar.jpg';
+import sliderImg20 from './images/jump.jpg';
+import sliderImg21 from './images/planet.jpg';
+import sliderImg22 from './images/robotics.jpg';
+import sliderImg23 from './images/two-sides.jpg';
+import sliderImg24 from './images/writer-sea.jpg';
+import sliderImg25 from './images/circle.jpg';
 import PopupContacts from './PopupContacts';
 
 const dataImgs = [
@@ -75,7 +83,6 @@ const dataImgs = [
 		imgSrc: sliderImg13,
 		imgAlt: 'chinking picture',
 	},
-
 	{
 		imgSrc: sliderImg15,
 		imgAlt: 'chinking picture',
@@ -86,6 +93,38 @@ const dataImgs = [
 	},
 	{
 		imgSrc: sliderImg17,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg18,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg19,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg20,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg21,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg22,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg23,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg24,
+		imgAlt: 'chinking picture',
+	},
+	{
+		imgSrc: sliderImg25,
 		imgAlt: 'chinking picture',
 	},
 ];
