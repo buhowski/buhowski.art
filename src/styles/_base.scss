@@ -58,7 +58,7 @@ img {
 .base-title {
 	font-size: calc(24px + 2.5vw);
 	letter-spacing: 10px;
-	padding: 4rem 0 2rem;
+	padding: 2rem 0 1rem;
 	font-family: $lg-bold;
 	line-height: normal;
 
@@ -68,7 +68,7 @@ img {
 
 	@include tabletSmall {
 		font-size: calc(24px + 2.5vw);
-		padding: 1rem 0;
+		padding-top: 1rem;
 		letter-spacing: 6px;
 	}
 

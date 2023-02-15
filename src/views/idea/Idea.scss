@@ -14,10 +14,7 @@
 	}
 
 	.base-title {
-		padding-bottom: 10px;
-		@include mobile {
-			padding-bottom: 5px;
-		}
+		padding-bottom: 5px;
 	}
 
 	.base-desc {
@@ -162,7 +159,7 @@
 	padding-top: 0;
 	display: flex;
 	position: relative;
-	max-height: calc(100% - 137px - 4rem);
+	max-height: calc(100% - 132px - 2rem);
 	box-shadow: 0px 2px 16px rgba($color: $black, $alpha: 0.5);
 
 	@include tabletBig {
@@ -191,7 +188,7 @@
 	@include tabletBig {
 		width: 100%;
 		margin-right: 0;
-		padding-top: 40px;
+		padding-top: 35px;
 		flex-shrink: unset;
 	}
 }
