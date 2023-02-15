@@ -68,7 +68,7 @@ img {
 
 	@include tabletSmall {
 		font-size: calc(24px + 2.5vw);
-		padding-bottom: 1.5rem;
+		padding: 1rem 0;
 		letter-spacing: 6px;
 	}
 
