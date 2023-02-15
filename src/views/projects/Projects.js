@@ -5,7 +5,7 @@ import './Projects.scss';
 const Projects = () => {
 	return (
 		<div className='wrapper wrapper-container'>
-			<h1 className='base-title'>Some Works</h1>
+			<h1 className='base-title base-title--main'>Some Works</h1>
 			<div className='projects-container'>
 				{projectsData.map(({ img, url, name }, i) => {
 					return (

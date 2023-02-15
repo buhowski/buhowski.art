@@ -14,18 +14,18 @@
 	}
 
 	.base-title {
-		padding-bottom: 15px;
+		padding-bottom: 10px;
 		@include mobile {
 			padding-bottom: 5px;
 		}
 	}
 
 	.base-desc {
-		margin-bottom: 4rem;
+		margin-bottom: 45px;
 
 		@include mobile {
 			font-size: 14px;
-			margin-bottom: 2rem;
+			margin-bottom: 40px;
 		}
 	}
 }
@@ -162,12 +162,8 @@
 	padding-top: 0;
 	display: flex;
 	position: relative;
-	max-height: calc(100% - 36px - 8rem - (24px + 2.5vw + 15px));
+	max-height: calc(100% - 137px - 4rem);
 	box-shadow: 0px 2px 16px rgba($color: $black, $alpha: 0.5);
-
-	@media screen and (max-width: 1600px) {
-		max-height: calc(100% - 36px - 8rem - (24px + 1.6vw + 15px));
-	}
 
 	@include tabletBig {
 		flex-direction: column-reverse;

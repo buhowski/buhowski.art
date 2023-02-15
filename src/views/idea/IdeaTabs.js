@@ -61,7 +61,7 @@ class IdeaGeneral extends React.Component {
 
 		return (
 			<div className='wrapper wrapper--idea'>
-				<h1 className='base-title'>{baseTitle}</h1>
+				<h1 className='base-title base-title--main'>{baseTitle}</h1>
 				<h2 className='base-desc'>{baseDesc}</h2>
 
 				<div className='idea-section'>

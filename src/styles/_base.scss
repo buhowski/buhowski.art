@@ -58,16 +58,26 @@ img {
 .base-title {
 	font-size: calc(24px + 2.5vw);
 	letter-spacing: 10px;
-	padding: 4rem 0;
+	padding: 4rem 0 2rem;
 	font-family: $lg-bold;
 	line-height: normal;
+
 	@media screen and (max-width: 1600px) {
 		font-size: calc(24px + 1.6vw);
 	}
+
 	@include tabletSmall {
 		font-size: calc(24px + 2.5vw);
-		padding: 1.5rem 0 2rem;
+		padding-bottom: 1.5rem;
 		letter-spacing: 6px;
+	}
+
+	&--main {
+		font-size: 48px;
+
+		@include mobile {
+			font-size: 32px;
+		}
 	}
 }
 .tag-color {

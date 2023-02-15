@@ -10,6 +10,14 @@
 		height: calc(100% - 80px);
 		padding-bottom: 45px;
 	}
+
+	.base-title {
+		padding-bottom: 0;
+
+		@include tabletSmall {
+			margin-bottom: 2rem;
+		}
+	}
 }
 
 .about-info {
