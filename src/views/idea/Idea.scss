@@ -246,6 +246,8 @@
 	overflow: auto;
 	padding-right: 30px;
 	display: none;
+	scrollbar-width: thin;
+	scrollbar-color: $blue-main $bg-color;
 
 	&[data-content='true'] {
 		display: block;

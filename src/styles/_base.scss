@@ -7,10 +7,9 @@ body {
 	letter-spacing: 1px;
 	user-select: none;
 	overflow: hidden;
-	scrollbar-width: 3px;
+	scrollbar-width: thin;
 	scrollbar-color: $blue-main $dark;
 	@include tabletSmall {
-		scrollbar-width: 1px;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
 	}
