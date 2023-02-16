@@ -5,11 +5,11 @@ const textData = [
 		startupTitle: `Про стартап`,
 
 		basic: `Основа: Приложение`,
-		appSample: `Пример укомплектованного, многофункционального журнала с возможностью создания и продвижения любой деятельности со встроенной функцией доната. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал желающий присоединиться к компаниям, что двигают прогресс.`,
+		appSample: `Укомплектованный, многофункциональный журнал с возможностью создания и продвижения любой деятельности со встроенной функцией доната. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал желающий присоединиться к компаниям, что двигают прогресс.`,
 
 		possibilitiesTitle: `Особенности и возможности:`,
 		possibilitiesStar: [
-			`Социальная сеть, ведение микроблогинга`,
+			`Социальная сеть, микроблогинг`,
 			`Онлайн кинотеатр, видеохостинг и лайв стриминг`,
 			`Имиджборд и анонимный веб-форум`,
 		],
@@ -20,7 +20,7 @@ const textData = [
 		conceptTitle: `Сферы деятельности`,
 		filmTitle: `Креативная индустрия`,
 		filmInfo: [
-			`В общем и целом моя перспектива сфокусирована на развитие масштаба и коллаборации разных сфер деятельности, от технологического развития до креативного самовыражения, от робототехники до музыкальной индустрии, от создания собственной метавселенной до продажи кастомных интернет магазинов. И если собрать всё лучшее и давно известное в одном месте и создать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного процесса произойдет сам собой, что позволит творить новую историю культуры, искусства и технологического развития в стране.`,
+			`В общем и целом моя перспектива сфокусирована на развитие масштаба и коллаборации разных сфер деятельности, от технологического развития до креативного самовыражения, от робототехники до музыкальной индустрии, от создания собственной метавселенной до продажи кастомных интернет магазинов. И если собрать всё лучшее и давно известное в одном месте и создать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного процесса произойдет сам собой, что позволит творить новую историю культуры, искусства и технологического развития в Украине.`,
 			`Первоначальный замысел: создание кино, мультфильмов, компьютерных игр (на что уже есть готовые идеи для старта). 
 			Дополнительно: студия правильного перевода и озвучки.`,
 		],
@@ -54,7 +54,7 @@ const textData = [
 		startupTitle: `About Startup`,
 
 		basic: `Base: Application`,
-		appSample: `An example of a staffed, feature-rich magazine with the ability to create and promote any kind of activity with a built-in donation feature. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
+		appSample: `Staffed, feature-rich magazine with the ability to create and promote any kind of activity with a built-in donation feature. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
 
 		possibilitiesTitle: `Features and Capabilities:`,
 		possibilitiesStar: [
@@ -69,7 +69,7 @@ const textData = [
 		conceptTitle: `Fields of Activity`,
 		filmTitle: `Creative Production`,
 		filmInfo: [
-			`In general, my perspective is focused on the development of scale and collaboration of different spheres of activity, from technological development to creative self-expression, from cybernetics to the music industry, from the creation of my own metaverse to selling custom online stores. And if we bring all the best and long-known things in one place and create a professional team of critical thinkers and enthusiasts, the jump in evolutionary process will happen all by itself, which will allow us to create a new history of culture, art and technological growth in the country.`,
+			`In general, my perspective is focused on the development of scale and collaboration of different spheres of activity, from technological development to creative self-expression, from cybernetics to the music industry, from the creation of my own metaverse to selling custom online stores. And if we bring all the best and long-known things in one place and create a professional team of critical thinkers and enthusiasts, the jump in evolutionary process will happen all by itself, which will allow us to create a new history of culture, art and technological growth in Ukraine.`,
 			`Primary Plan: making movies, cartoons, computer games (there are several ideas where to start). 
 			Additionally: studio of exact translation and voice acting.`,
 		],
@@ -103,11 +103,11 @@ const textData = [
 		startupTitle: `Щодо стартапу`,
 
 		basic: `Основа: Додаток`,
-		appSample: `Приклад укомплектованого, багатофункціонального журналу з можливістю створення та просування будь-якої діяльності із вбудованою функцією доната. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал охочий приєднатися до компаній, які сприяють прогресу.`,
+		appSample: `Укомплектований, багатофункціональний журнал з можливістю створення та просування будь-якої діяльності із вбудованою функцією доната. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал охочий приєднатися до компаній, які сприяють прогресу.`,
 
 		possibilitiesTitle: `Особливості та можливості:`,
 		possibilitiesStar: [
-			`Соціальна мережа, ведення мікроблогінгу`,
+			`Соціальна мережа, мікроблогінг`,
 			`Онлайн кінотеатр, відеохостинг та лайв стрімінг`,
 			`Іміджборд та анонімний веб-форум`,
 		],
@@ -118,7 +118,7 @@ const textData = [
 		conceptTitle: `Сфери діяльності`,
 		filmTitle: `Креативна індустрія`,
 		filmInfo: [
-			`Загалом моя перспектива сфокусована на розвиток масштабу і колаборації різних сфер діяльності, від технологічного розвитку до креативного самовираження, від робототехніки до музичної індустрії, від створення власного метавсесвіту до продажу кастомних інтернет-магазинів. І якщо зібрати все найкраще і давно відоме в одному місці та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного процесу відбудеться сам собою, що дасть змогу творити нову історію культури, мистецтва та технологічного розвитку в країні.`,
+			`Загалом моя перспектива сфокусована на розвиток масштабу і колаборації різних сфер діяльності, від технологічного розвитку до креативного самовираження, від робототехніки до музичної індустрії, від створення власного метавсесвіту до продажу кастомних інтернет-магазинів. І якщо зібрати все найкраще і давно відоме в одному місці та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного процесу відбудеться сам собою, що дасть змогу творити нову історію культури, мистецтва та технологічного розвитку в Україні.`,
 			`Початковий задум: створення кіно, мультфільмів, комп'ютерних ігор (на що вже є готові ідеї для старту). 
 			Додатково: студія правильного перекладу та озвучки.`,
 		],

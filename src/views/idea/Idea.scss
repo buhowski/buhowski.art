@@ -19,6 +19,7 @@
 
 	.base-desc {
 		margin-bottom: 45px;
+		font-family: $lg;
 
 		@include mobile {
 			font-size: 14px;
@@ -288,14 +289,14 @@
 		color: $blue-main;
 		font-size: 21px;
 		font-family: $ui-medium;
-		margin-bottom: 18px;
+		margin-bottom: 15px;
 	}
 
 	.h3 {
-		font-size: 18px;
+		// font-size: 18px;
 		font-family: $ui-medium;
 		color: $titlePink;
-		margin: 15px 0 10px;
+		margin: 15px 0 5px;
 	}
 
 	&__text {
