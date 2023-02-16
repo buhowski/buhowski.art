@@ -10,7 +10,7 @@
 	padding-bottom: 30px;
 
 	@include laptop {
-		padding-bottom: 20px;
+		padding-bottom: 15px;
 	}
 
 	@include tabletBig {
@@ -199,7 +199,7 @@
 	overflow: hidden;
 
 	@include laptop {
-		padding-top: 23px;
+		padding-top: 40px;
 	}
 
 	@include tabletBig {
