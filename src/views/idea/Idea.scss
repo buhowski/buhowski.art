@@ -247,8 +247,6 @@
 	overflow: auto;
 	padding-right: 30px;
 	display: none;
-	scrollbar-face-color: $bg-color; /* Firefox 63 compatibility */
-	scrollbar-track-color: $blue-main; /* Firefox 63 compatibility */
 	scrollbar-width: thin;
 	scrollbar-color: $blue-main $bg-color;
 

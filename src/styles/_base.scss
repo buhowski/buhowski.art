@@ -7,12 +7,10 @@ body {
 	letter-spacing: 1px;
 	user-select: none;
 	overflow: hidden;
-	scrollbar-face-color: $bg-color; /* Firefox 63 compatibility */
-	scrollbar-track-color: $blue-main; /* Firefox 63 compatibility */
 	scrollbar-width: thin;
 	scrollbar-color: $blue-main $dark;
 	@include tabletSmall {
-		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
 	}
 }
