@@ -10,7 +10,7 @@
 	padding-bottom: 30px;
 
 	@include laptop {
-		padding-bottom: 15px;
+		padding-bottom: 20px;
 	}
 
 	@include tabletBig {
@@ -25,6 +25,14 @@
 	.base-desc {
 		margin-bottom: 45px;
 		font-family: $lg;
+
+		@include laptop {
+			margin-bottom: 25px;
+		}
+
+		@include tabletBig {
+			margin-bottom: 40px;
+		}
 
 		@include mobile {
 			font-size: 14px;
@@ -171,6 +179,11 @@
 
 	@include laptop {
 		padding: 0 40px 45px;
+		max-height: calc(100% - 112px - 2rem);
+	}
+
+	@media screen and (max-width: 1366px) {
+		max-height: calc(100% - 98px - 2rem);
 	}
 
 	@include tabletBig {

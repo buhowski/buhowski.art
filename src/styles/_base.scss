@@ -14,20 +14,23 @@ body {
 }
 
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 4px;
 
 	@include tabletSmall {
 		width: 1px;
 	}
 }
+
 ::-webkit-scrollbar-track {
 	background: $dark;
 	border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
 	background: $blue-main;
 	border-radius: 10px;
 }
+
 .a {
 	color: $snow;
 	padding: 0.75rem 1rem;
@@ -75,6 +78,10 @@ img {
 
 	&--main {
 		font-size: 48px;
+
+		@media screen and (max-width: 1366px) {
+			font-size: 37px;
+		}
 
 		@include mobile {
 			font-size: 33px;
