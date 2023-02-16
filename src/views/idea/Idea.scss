@@ -9,8 +9,13 @@
 	position: relative;
 	padding-bottom: 30px;
 
+	@include laptop {
+		padding-bottom: 20px;
+	}
+
 	@include tabletBig {
 		height: auto;
+		padding-bottom: 30px;
 	}
 
 	.base-title {
@@ -164,6 +169,10 @@
 	max-height: calc(100% - 132px - 2rem);
 	box-shadow: 0px 2px 16px rgba($color: $black, $alpha: 0.5);
 
+	@include laptop {
+		padding: 0 40px 45px;
+	}
+
 	@include tabletBig {
 		flex-direction: column-reverse;
 		padding: 40px;
@@ -189,6 +198,10 @@
 	position: relative;
 	overflow: hidden;
 
+	@include laptop {
+		padding-top: 23px;
+	}
+
 	@include tabletBig {
 		width: 100%;
 		margin-right: 0;
@@ -206,6 +219,14 @@
 	transform: translateX(-50%);
 	display: flex;
 	justify-content: center;
+
+	@include laptop {
+		bottom: 12px;
+	}
+
+	@include tabletBig {
+		bottom: 21px;
+	}
 
 	p {
 		overflow: hidden;
@@ -397,10 +418,6 @@
 	align-items: center;
 
 	@include tabletBig {
-		margin-top: -75px;
-	}
-
-	@include tabletSmall {
 		margin-top: -60px;
 	}
 

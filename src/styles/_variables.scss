@@ -26,6 +26,13 @@ $starYellow: #e3b716;
 		@content;
 	}
 }
+
+@mixin laptop {
+	@media screen and (max-width: 1440px) {
+		@content;
+	}
+}
+
 @mixin tabletBig {
 	@media screen and (max-width: 1280px) {
 		@content;
