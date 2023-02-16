@@ -7,6 +7,8 @@ body {
 	letter-spacing: 1px;
 	user-select: none;
 	overflow: hidden;
+	scrollbar-face-color: $bg-color; /* Firefox 63 compatibility */
+	scrollbar-track-color: $blue-main; /* Firefox 63 compatibility */
 	scrollbar-width: thin;
 	scrollbar-color: $blue-main $dark;
 	@include tabletSmall {
@@ -48,9 +50,9 @@ img {
 	overflow-y: auto;
 	height: 100%;
 	.wrapper-container {
-		padding-bottom: 100px;
+		padding-bottom: 60px;
 		@include tabletSmall {
-			padding-bottom: 50px;
+			padding-bottom: 10px;
 		}
 	}
 }

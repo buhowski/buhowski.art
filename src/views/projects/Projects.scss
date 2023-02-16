@@ -1,23 +1,19 @@
 @import '../../styles/variables.scss';
 
 .projects-container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 40px;
-	@include tablet {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	@include tabletSmall {
-		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 20px;
-	}
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .project {
 	position: relative;
 	justify-content: flex-end;
 	flex-direction: column;
+	width: calc(100% / 3 - 80px / 3);
 	height: 300px;
+	flex-shrink: 0;
+	margin-right: 40px;
+	margin-bottom: 40px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
@@ -26,6 +22,30 @@
 	transform-style: preserve-3d;
 	animation: bgPosition 3s cubic-bezier(0.55, 0.1, 0.55, 0.9) alternate infinite;
 	animation-play-state: paused;
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	@include tablet {
+		width: calc(100% / 2 - 20px);
+
+		&:nth-child(odd) {
+			margin-right: 40px;
+		}
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+
+	@include tabletSmall {
+		height: 280px;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+
 	&:hover {
 		transform: translateY(-5px);
 		transition: all 0.5s ease;
