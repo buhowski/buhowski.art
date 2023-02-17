@@ -39,16 +39,6 @@ const routesData = [
 ];
 
 const App = () => {
-	if (window.innerWidth <= 768) {
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-		window.addEventListener('resize', () => {
-			let vh = window.innerHeight * 0.01;
-			document.documentElement.style.setProperty('--vh', `${vh}px`);
-		});
-	}
-
 	useEffect(() => {
 		if (window.innerWidth <= 768) {
 			let vh = window.innerHeight * 0.01;
