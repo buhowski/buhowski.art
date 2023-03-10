@@ -12,6 +12,11 @@ export default function Idea() {
 	const textItems = textData.map((data, i) => (
 		<div key={i}>
 			<div className='idea-block'>
+				<h2 className='idea-block__title h2'>{data.pitchTitle}</h2>
+				<p className='idea-block__text'>{data.pitchText}</p>
+			</div>
+
+			<div className='idea-block'>
 				<h2 className='idea-block__title h2'>{data.basic}</h2>
 				<p className='idea-block__text'>{data.appSample}</p>
 				<h3 className='h3'>{data.possibilitiesTitle}</h3>
