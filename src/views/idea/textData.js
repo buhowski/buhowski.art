@@ -60,7 +60,7 @@ const textData = [
 		pitchText: `I have a great desire to create a social platform (mobile application and web service) for potential development in Ukraine with the ability to go global. It's a new space of endless possibilities, a fresh air of freedom, a multifunctional product for creating anything you want, from technological innovation to personal improvement, all the best of everything in one place!`,
 
 		basic: `Base: Application`,
-		appSample: `Staffed, feature-rich magazine with the ability to create and promote any kind of activity with a built-in donation feature. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
+		appSample: `Staffed, feature-rich magazine with the ability to create and promote any kind of activity with a built-in donation feature. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible website – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
 
 		possibilitiesTitle: `Features and Capabilities:`,
 		possibilitiesStar: [
