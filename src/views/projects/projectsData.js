@@ -15,6 +15,11 @@ import bgBentley from './images/bentley.jpg';
 
 const projectsData = [
 	{
+		img: `url(${bgBentley})`,
+		url: 'https://www.bentley-skinner.co.uk/',
+		name: 'Bentley & Skinner',
+	},
+	{
 		img: `url(${bgFaber})`,
 		url: 'https://faberacademy.com/',
 		name: 'Faber Academy',
@@ -23,11 +28,6 @@ const projectsData = [
 		img: `url(${bgFaberBooks})`,
 		url: 'https://www.faber.co.uk/',
 		name: 'Faber',
-	},
-	{
-		img: `url(${bgBentley})`,
-		url: 'https://www.bentley-skinner.co.uk/',
-		name: 'Bentley & Skinner',
 	},
 	{
 		img: `url(${bgEnde})`,
