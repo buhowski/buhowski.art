@@ -5,7 +5,7 @@ import textData from './textData';
 
 export default function Idea() {
 	const contactBtnTitle = 'Get In Touch';
-	const baseTitle = 'Pure Details';
+	const baseTitle = 'Presentation';
 	const baseDesc = 'An offer to invest in huge potential!';
 
 	const textItems = textData.map((data, i) => (
