@@ -1,0 +1,514 @@
+@import '../../styles/variables';
+
+// Section Colors
+$cMain1: #41b56f;
+$cMain2: #f3ed5f;
+$cMain3: #5585ff;
+$webColor: rgba(65, 181, 111, 0.1);
+$mobColor: rgba(250, 217, 46, 0.1);
+
+$w2Transparent: rgba(
+	$color: $cWhite,
+	$alpha: 0.2,
+);
+
+// Common styles / mixins
+@mixin elBgWithBorder {
+	border-radius: 8px;
+	border: 1px solid $w2Transparent;
+	background: #161616;
+}
+
+@mixin elBgWithBorderHover {
+	border-color: $cMain1;
+	background: rgba(65, 181, 111, 0.2);
+}
+
+@mixin elBgWithBorderHover2 {
+	border-color: $cMain2;
+	background: rgba(243, 237, 95, 0.06);
+}
+
+@mixin elBgWithBorderHover3 {
+	border-color: $cMain3;
+	background: #122530;
+}
+
+.services {
+	padding-bottom: 114px;
+	padding-top: 45px;
+
+	@include tablet {
+		padding-top: 35px;
+	}
+
+	@include mobile {
+		padding-top: 25px;
+	}
+
+	&--engineering {
+		.servicesText__title {
+			color: $cMain1;
+		}
+
+		.tabsList__item {
+			&[data-active='true'] {
+				background: rgba(65, 181, 111, 0.2);
+				color: $cMain1;
+				border-color: transparent;
+			}
+		}
+
+		.servicesItem {
+			transition: 0.3s all ease;
+
+			&.active {
+				background: rgba(65, 181, 111, 0.2);
+				color: $cMain1;
+				border-color: $cMain1;
+			}
+
+			&:hover {
+				@include elBgWithBorderHover;
+			}
+		}
+
+		.mainBtn {
+			background: $cMain1;
+			color: #1d1d1e;
+			transition: 0.3s all ease;
+
+			& + .letsWork__bg {
+				transition: 0.3s all ease;
+			}
+
+			&:hover {
+				background: $cMain1;
+
+				& + .letsWork__bg {
+					@include elBgWithBorderHover;
+				}
+			}
+
+			.smileMsgPath {
+				fill: #000;
+			}
+		}
+	}
+
+	&--design {
+		.servicesText__title {
+			color: $cMain2;
+		}
+
+		.tabsList__item {
+			&[data-active='true'] {
+				background: rgba(243, 237, 95, 0.2);
+				color: $cMain2;
+				border-color: transparent;
+			}
+		}
+
+		.servicesItem {
+			transition: 0.3s all ease;
+
+			&.active {
+				background: rgba(243, 237, 95, 0.06);
+				color: $cMain2;
+				border-color: $cMain2;
+			}
+
+			&:hover {
+				@include elBgWithBorderHover2;
+			}
+		}
+
+		.mainBtn {
+			background: $cMain2;
+			color: $cDark;
+			transition: 0.3s all ease;
+
+			.smileMsgPath {
+				fill: #000;
+			}
+
+			& + .letsWork__bg {
+				transition: 0.3s all ease;
+			}
+
+			&:hover {
+				background: $cMain2;
+
+				& + .letsWork__bg {
+					@include elBgWithBorderHover2;
+				}
+			}
+		}
+	}
+
+	&--outstaff {
+		.servicesText__title {
+			color: $cMain3;
+		}
+
+		.tabsList__item {
+			&[data-active='true'] {
+				background: #122530;
+				color: $cMain3;
+				border-color: transparent;
+			}
+		}
+
+		.servicesItem {
+			transition: 0.3s all ease;
+
+			&.active {
+				background: #122530;
+				color: $cMain3;
+				border-color: $cMain3;
+			}
+
+			&:hover {
+				@include elBgWithBorderHover3;
+			}
+		}
+
+		.mainBtn {
+			background: $cMain3;
+			color: $cWhite;
+			transition: 0.3s all ease;
+
+			& + .letsWork__bg {
+				transition: 0.3s all ease;
+			}
+
+			&:hover {
+				background: $cMain3;
+
+				& + .letsWork__bg {
+					@include elBgWithBorderHover3;
+				}
+			}
+		}
+	}
+}
+
+.servicesInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 80px;
+
+	@include tablet {
+		margin-bottom: 60px;
+	}
+
+	@include mobile {
+		margin-bottom: 30px;
+	}
+}
+
+.servicesText {
+	&__title {
+		padding-bottom: 5px;
+
+		@include mobile {
+			padding-bottom: 10px;
+		}
+	}
+
+	&__desc {
+		width: 100%;
+		max-width: 707px;
+		font-size: 18px;
+		line-height: 25px;
+		font-style: italic;
+		color: $w4Transparent;
+
+		@include tablet {
+			font-size: 16px;
+			line-height: 1.3;
+			max-width: 480px;
+		}
+
+		@include tablet {
+			font-size: 12px;
+		}
+	}
+}
+
+.servicesImg {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
+
+	& > div > svg > g > g:nth-child(1) > g > path {
+		fill: #101011;
+	}
+
+	@include mobile {
+		display: none;
+	}
+
+	&__lottie {
+		overflow: hidden;
+		width: 350px;
+		height: 350px;
+		border-radius: 50%;
+
+		@include tablet {
+			width: 160px;
+			height: 160px;
+		}
+	}
+}
+
+.tabsList {
+	margin-bottom: 20px;
+	white-space: nowrap;
+
+	@include mobile {
+		margin-bottom: 2px;
+	}
+
+	&__item {
+		padding: 8px 16px;
+		border-radius: 8px;
+		overflow: hidden;
+		font-style: italic;
+		margin-right: 16px;
+		@include elBgWithBorder;
+		border-color: rgba(255, 255, 255, 0.06);
+		color: $w5Transparent;
+		transition: 0.3s all ease;
+
+		@include mobile {
+			font-size: 12px;
+			padding: 5px 8px;
+			margin-right: 14px;
+			margin-bottom: 14px;
+		}
+
+		&:hover {
+			border-color: rgba(255, 255, 255, 0.3);
+			color: rgba(255, 255, 255, 0.8);
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.servicesContent {
+	position: relative;
+}
+
+.servicesItems {
+	display: flex;
+	// overflow: hidden;
+}
+
+.servicesItem {
+	position: relative;
+	width: calc(100% / 4 - 18px / 4);
+	@include elBgWithBorder;
+	padding: 40px 20px;
+	display: flex;
+	align-items: center;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	color: rgba($color: $cWhite, $alpha: 0.8);
+	cursor: pointer;
+
+	&__exit-icon {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		right: 10px;
+		top: 14px;
+		width: 24px;
+		height: 24px;
+		background: #0d0f0e;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 50%;
+
+		&-svg {
+			width: 8px;
+			height: 8px;
+		}
+	}
+
+	@include minStandard {
+		width: calc(100% / 4 - 24px / 4);
+
+		&:nth-child(5n) {
+			margin-right: 0;
+		}
+	}
+
+	@include standard {
+		&:nth-child(4n) {
+			margin-right: 0;
+		}
+	}
+
+	@include tablet {
+		width: calc(100% / 2 - 3px);
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+
+	@include mobile {
+		width: 100%;
+		margin-right: 0;
+		padding: 16px 20px;
+	}
+
+	&__icon {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		margin-right: 20px;
+		padding: 12px;
+
+		@include mobile {
+			width: 42px;
+			height: 42px;
+			margin-right: 14px;
+
+			svg {
+				max-width: 20px;
+				max-height: 21px;
+			}
+		}
+	}
+
+	&__text {
+		line-height: 1.2;
+		font-size: 18px;
+
+		@include mobile {
+			font-size: 14px;
+			display: flex;
+		}
+	}
+
+	&__textLine {
+		display: block;
+
+		@include mobile {
+			display: inline-block;
+		}
+	}
+
+	&--webDev {
+		.servicesItem__icon {
+			background: $webColor;
+		}
+	}
+
+	&--mobDev {
+		.servicesItem__icon {
+			background: rgba($color: #fad92e, $alpha: 0.1);
+		}
+	}
+
+	&--phase {
+		.servicesItem__icon {
+			background: rgba($color: #41aeb5, $alpha: 0.1);
+		}
+	}
+
+	&--team {
+		.servicesItem__icon {
+			background: rgba($color: #ec9462, $alpha: 0.1);
+		}
+	}
+
+	&--quality {
+		.servicesItem__icon {
+			background: rgba($color: #ff52f8, $alpha: 0.1);
+		}
+	}
+
+	&--aiml {
+		.servicesItem__icon {
+			background: rgba($color: #ff6099, $alpha: 0.1);
+		}
+	}
+
+	&--support {
+		.servicesItem__icon {
+			background: rgba($color: #fb5050, $alpha: 0.1);
+		}
+	}
+
+	&--ux {
+		.servicesItem__icon {
+			background: rgba($color: #c5fa2e, $alpha: 0.1);
+		}
+	}
+
+	&--outstaff {
+		.servicesItem__icon {
+			background: rgba($color: rgba(255, 207, 87), $alpha: 0.1);
+		}
+	}
+
+	&--devops {
+		.servicesItem__icon {
+			background: rgba($color: rgb(65, 181, 111), $alpha: 0.1);
+		}
+	}
+
+	&--fintech {
+		.servicesItem__icon {
+			background: rgba($color: #af60ff, $alpha: 0.1);
+		}
+	}
+
+	&--ecommerce {
+		.servicesItem__icon {
+			background: rgba($color: #3fffd1, $alpha: 0.1);
+		}
+	}
+
+	&--edtech {
+		.servicesItem__icon {
+			background: rgba($color: #ff8f4f, $alpha: 0.1);
+		}
+	}
+
+	&--aitech {
+		.servicesItem__icon {
+			background: rgba($color: #ff0bf5, $alpha: 0.1);
+		}
+	}
+
+	&--motionDesign {
+		.servicesItem__icon {
+			background: rgba($color: #ffe381, $alpha: 0.1);
+		}
+	}
+
+	&--estate {
+		.servicesItem__icon {
+			background: rgba($color: #7ffe53, $alpha: 0.1);
+		}
+	}
+
+	&--adtech {
+		.servicesItem__icon {
+			background: rgba($color: #c081e7, $alpha: 0.1);
+		}
+	}
+}

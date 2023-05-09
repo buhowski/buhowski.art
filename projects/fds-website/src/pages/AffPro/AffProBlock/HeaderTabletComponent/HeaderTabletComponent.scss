@@ -1,0 +1,110 @@
+@import '../../../../styles/variables';
+
+.affpro {
+	&__mobile-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		height: fit-content;
+		width: 100vw;
+		padding: 0 40px;
+		;
+
+		@include mobile {
+			padding: 0 20px;
+		}
+
+		&-img {
+			background-image: url('../../../../assets/images/affpro/page-header-image.svg');
+			width: max-content;
+			width: 100%;
+			height: 416px;
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin-bottom: 60px;
+
+			@include mobile {
+				margin-bottom: 0;
+				height: 206px;
+			}
+		}
+
+		&-info {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+			width: 100%;
+		}
+
+		&-link {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			text-transform: uppercase;
+			font-family: $fontMainBold;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 38px;
+			line-height: 40px;
+			letter-spacing: 0.03em;
+		}
+
+		&-svg {
+			width: 36px;
+			height: 26px;
+		}
+
+		&-description {
+			font-family: $fontDefaultLight;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 25px;
+			color: $w4Transparent;
+		}
+
+		&-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 6px;
+			margin-bottom: 100px;
+
+			@include mobile {
+				margin-bottom: 20px;
+			}
+		}
+
+		&-list-item {
+			padding: 6px 12px;
+			background: $cPageBorder;
+			border-radius: 8px;
+			font-family: $fontDefaultMedium;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 15px;
+
+			&:first-child {
+				color: $cGreen;
+			}
+		}
+
+		&-behance {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			font-family: $fontDefaultMedium;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 100%;
+			cursor: pointer;
+
+			&-svg {
+				width: 24px;
+				height: 16px;
+			}
+		}
+	}
+}

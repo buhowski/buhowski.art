@@ -1,0 +1,81 @@
+@import './styles/reset';
+@import './assets/fonts/fonts';
+@import './styles/variables';
+@import './styles/default';
+
+body {
+	background-color: $cDark;
+	color: $cWhite;
+
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.main {
+	padding-top: 89px;
+	display: flex;
+	flex-direction: column;
+
+	@include smallLaptop {
+		padding-top: 69px;
+	}
+
+	@include mobile {
+		padding-top: 108px;
+	}
+}
+
+.pageSection {
+	> .wrapper {
+		height: 100%;
+		overflow-y: auto;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+
+#homeSection {
+	position: relative;
+	height: calc(100vh - 89px);
+
+	@include smallLaptop {
+		height: calc(100vh - 68px);
+	}
+
+	@include mobile {
+		height: calc(100vh - 107px);
+	}
+}
+
+#servicesSection {
+	position: relative;
+
+	> .wrapper {
+		overflow: unset;
+	}
+}
+
+.transitionPage {
+	position: relative;
+	border-top: 1px solid $cPageBorder;
+	border-right: 1px solid $cPageBorder;
+	border-left: 1px solid $cPageBorder;
+	border-radius: 25px 25px 0px 0px;
+	min-height: calc(100vh - 107px);
+
+	@include tablet {
+		min-height: auto;
+	}
+
+	@include mobile {
+		border-radius: 15px 15px 0px 0px;
+	}
+}

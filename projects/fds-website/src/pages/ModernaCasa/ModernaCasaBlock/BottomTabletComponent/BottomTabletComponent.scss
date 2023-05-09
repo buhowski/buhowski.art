@@ -1,0 +1,225 @@
+@import '../../../../styles/variables';
+
+.moderna-casa {
+	&__tablet-content {
+		display: grid;
+		width: calc(100vw - 120px);
+		height: 100vh;
+		grid-template-rows: 1fr 3fr;
+		margin-bottom: 100px;
+		gap: 10px;
+
+		@include tablet {
+			width: calc(100vw - 80px);
+			gap: 12px;
+			padding: 18px;
+			height: fit-content;
+		}
+
+		@include mobile {
+			width: 100%;
+			gap: 12px;
+			padding: 18px;
+		}
+
+		&_top {
+			display: grid;
+			grid-template-columns: 1fr 2fr 1fr;
+			gap: 10px;
+			height: 100%;
+
+			&-mobile {
+				display: flex;
+				gap: 10px
+			}
+
+			@include tablet {}
+
+
+			@include mobile {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+			}
+
+			&-logo {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+
+				@include mobile {
+					width: 50%;
+				}
+			}
+
+			&-logo-svg {
+				width: 72px;
+				height: 62px;
+			}
+
+			&-colors {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				width: 100%;
+			}
+
+			&-color-block {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 40px 0;
+				gap: 10px;
+				color: rgba(255, 255, 255, 0.5);
+
+				@include tablet {
+					padding: 20px 0;
+				}
+			}
+
+			&-color {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100px;
+				height: 100px;
+				border: 1px solid rgba(255, 255, 255, 0.14);
+				border-radius: 6px;
+
+				@include mobile {
+					width: 64px;
+					height: 64px;
+				}
+			}
+
+			&-img {
+				background-image: url('../../../../assets/images/moderna/moderna-bottom-1.jpg');
+				height: 100%;
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
+
+				@include mobile {
+					width: 50%;
+				}
+			}
+
+			&-mobile {
+				width: 100%;
+				height: 50%;
+				display: flex;
+			}
+		}
+
+		&_bottom {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			&-info-block {
+				display: grid;
+				grid-template-rows: 1fr 1fr;
+				width: 100%;
+				gap: 10px;
+			}
+
+			&-info {
+				display: flex;
+				flex-direction: column;
+				gap: 14px;
+				padding: 30px 40px;
+
+				@include mobile {
+					padding: 20px;
+				}
+			}
+
+			&-info-title {
+				font-family: $fontMontseratBold;
+				font-size: 30px;
+				line-height: 37px;
+				color: #fff;
+			}
+
+			&-info-description {
+				color: rgba(255, 255, 255, 0.6);
+				font-family: $fontOverpassRegular;
+				font-size: 14px;
+				line-height: 25px;
+
+				@include mobile {
+					line-height: 16px;
+				}
+			}
+
+			&-images {
+				display: flex;
+				gap: 20px;
+				width: 100%;
+				height: 100%;
+			}
+
+			&-first-img {
+				background-image: url('../../../../assets/images/moderna/moderna-bottom-2.jpg');
+				width: 50%;
+				height: 100%;
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
+
+				@include mobile {
+					width: 100%;
+				}
+			}
+
+			&-second-img {
+				background-image: url('../../../../assets/images/moderna/moderna-bottom-3.jpg');
+				width: 50%;
+				height: 100%;
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+
+			&-devices-block {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				padding: 50px;
+
+				@include mobile {
+					width: 100%;
+					padding: 50px;
+				}
+
+			}
+
+			&-devices-img {
+				@include mobile {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+.moderna-bottom-block {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.moderna-onyx {
+	background: #323436;
+	color: #fff;
+}
+
+.moderna-maize {
+	background: #FFE662;
+	color: #282829;
+}
+
+.moderna-black {
+	background: #000;
+}

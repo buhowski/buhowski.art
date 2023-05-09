@@ -1,0 +1,21 @@
+@import '../../../../../styles/variables';
+
+.uiux {
+  &__content {
+    &-paragraphs {
+      &.ui {
+        @include fromTablet {
+          width: 30%;
+        }
+      }
+    }
+
+    &-schema {
+      &.ui {
+        @include fromTablet {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

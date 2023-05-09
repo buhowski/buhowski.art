@@ -1,0 +1,29 @@
+@import '../../../../styles/variables';
+
+.schema {
+  &__monitor {
+    &-block {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      z-index: 2;
+    }
+
+    &-title {
+      text-align: center;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    &-svg {
+      position: absolute;
+      z-index: 3;
+    }
+
+    &-background {
+      position: relative;
+    }
+  }
+}

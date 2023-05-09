@@ -1,0 +1,152 @@
+// breakpoints
+$largeWidth: 1920px;
+$standardWidth: 1680px;
+$smallLaptop: 1367px;
+$tablet: 1281px;
+$mobile: 720px;
+$mobileMiddle: 480px;
+$mobileMini: 355px;
+$fromTablet: 1280px;
+$toDesktop: 1279px;
+$w850: 850px;
+
+// breakpoints screen height
+$h850: 800px;
+$h700: 750px;
+
+//fonts
+$fontDefaultLight: 'InterLight', sans-serif;
+$fontDefaultRegular: 'InterRegular', sans-serif;
+$fontDefaultMedium: 'InterMedium', sans-serif;
+// $fontDefaultSemiBold: 'InterSemiBold', sans-serif;
+$fontMainBold: 'grifterbold', sans-serif;
+$fontMainBold: 'KanitSemiBold', sans-serif;
+$fontOverpassRegular: 'OverpassRegular', sans-serif;
+$fontMontseratBold: 'MontseratBold', sans-serif;
+$fontWallpoetRegular: 'WallpoetRegular', sans-serif;
+$fontBaiJamjuree: 'BaiJamjuree', sans-serif;
+$fontComfortaBold: 'ComfortaBold', sans-serif;
+$fontComfortaRegular: 'ComfortaRegular', sans-serif;
+$fontBaiJamjureeLightItalic: 'BaiJamjureeLightItalic', sans-serif;
+
+//colors TODO: refactor for each section
+$cDark: #101011;
+$cDarker: #222222;
+$cWhite: #fff;
+$cGrey: #808080;
+$cBlue: #451cf8;
+$cBlueHover: #3517b9;
+$cPageBorder: #494949;
+$cGreen: #41b56f;
+$cSecondaryBackgroundColor: #1d1d1e;
+$cThirdBackgroundColor: #161616;
+
+$w4Transparent: rgba(
+	$color: $cWhite,
+	$alpha: 0.4,
+);
+
+$w5Transparent: rgba(
+	$color: $cWhite,
+	$alpha: 0.5,
+);
+
+$w7Transparent: rgba(
+	$color: $cWhite,
+	$alpha: 0.7,
+);
+
+// Services section colors
+$sElBgColor: #161616;
+
+// timing
+$timeSm: 0.3s;
+$timeMd: 0.6s;
+
+// z-index
+$zIndex: (
+	cursor: 100000000,
+	modal: 1200,
+	overlay: 1100,
+	header: 1000,
+	footer: 900,
+	dropdown: 800,
+);
+
+@mixin minLarge {
+	@media screen and (min-width: $largeWidth) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media screen and (max-width: $largeWidth) {
+		@content;
+	}
+}
+
+@mixin minStandard {
+	@media screen and (min-width: $standardWidth) {
+		@content;
+	}
+}
+
+@mixin standard {
+	@media screen and (max-width: $standardWidth) {
+		@content;
+	}
+}
+
+@mixin smallLaptop {
+	@media screen and (max-width: $smallLaptop) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (max-width: $tablet) {
+		@content;
+	}
+}
+
+@mixin fromTablet {
+	@media screen and (min-width: $fromTablet) {
+		@content;
+	}
+}
+
+@mixin toDesktop {
+	@media screen and (max-width: $toDesktop) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and (max-width: $mobile) {
+		@content;
+	}
+}
+
+@mixin mobileMiddle {
+	@media screen and (max-width: $mobileMiddle) {
+		@content;
+	}
+}
+
+@mixin mobileMini {
+	@media screen and (max-width: $mobileMini) {
+		@content;
+	}
+}
+
+@mixin maxWidth850 {
+	@media screen and (max-width: $w850) {
+		@content;
+	}
+}
+
+@mixin maxHeight850 {
+	@media screen and (min-width: 1281px) and (max-width: 1920px) and (max-height: $h850) {
+		@content;
+	}
+}

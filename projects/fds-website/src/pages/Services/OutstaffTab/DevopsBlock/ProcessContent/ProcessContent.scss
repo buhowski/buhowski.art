@@ -1,0 +1,25 @@
+@import '../../../../../styles/variables';
+
+.outstaff {
+  &__content {
+    align-items: center;
+    justify-content: center;
+
+    &-paragraph-description {
+      padding-left: 30px;
+    }
+
+    &-paragraphs {
+      width: 40%;
+
+      @include tablet {
+        width: 100%;
+      }
+    }
+
+    &-item {
+      list-style-type: disc;
+      margin-bottom: 20px;
+    }
+  }
+}

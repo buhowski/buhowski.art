@@ -1,0 +1,16 @@
+@import '../../../styles/variables';
+
+
+.service {
+	&_tab {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&_tab-titles {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+}
