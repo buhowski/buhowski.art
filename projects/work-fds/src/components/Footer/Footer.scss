@@ -1,0 +1,279 @@
+@import '../../styles/variables';
+
+// New footer styles
+.footer {
+	font-size: 18px;
+	border-right: 1px solid $cPageBorder;
+	border-left: 1px solid $cPageBorder;
+	border-bottom: 1px solid $cPageBorder;
+	color: rgba(255, 255, 255, 0.5);
+
+	@include tablet {
+		font-size: 16px;
+	}
+
+	@include mobileMini {
+		font-size: 14px;
+	}
+
+	&__line {
+		width: 100%;
+		// max-width: 1880px;
+		// margin: 0 40px;
+		// width: calc(100% - 80px);
+		display: block;
+		height: 1px;
+		background: rgba(255, 255, 255, 0.2);
+	}
+}
+
+.footerContent {
+	display: flex;
+	padding: 30px 20px;
+
+	@include tablet {
+		padding: 0;
+		padding-top: 30px;
+		justify-content: space-around;
+		// align-items: center;
+	}
+	@include mobile {
+		flex-direction: column;
+	}
+
+	&__logo {
+		padding: 0 10px;
+		flex-shrink: 0;
+		width: 12%;
+
+		@include tablet {
+			width: fit-content;
+		}
+
+		@include mobile {
+			width: 100%;
+			margin-bottom: 30px;
+			padding: 0;
+		}
+
+		&-svg {
+			display: block;
+			width: 64px;
+			margin-bottom: 8px;
+		}
+
+		&-year {
+			color: $cGreen;
+		}
+	}
+}
+
+.footerInfo {
+	display: flex;
+	white-space: nowrap;
+	justify-content: space-between;
+	width: 88%;
+
+	@include tablet {
+		flex-direction: column;
+		width: fit-content;
+	}
+
+	@include mobile {
+		width: 100%;
+	}
+}
+
+.footerBlock {
+	padding: 0 10px;
+
+	@include tablet {
+		margin-bottom: 30px;
+
+		&--phone {
+			order: 5;
+		}
+	}
+
+	@include mobile {
+		padding: 0;
+	}
+
+	&__title {
+		font-family: $fontDefaultMedium;
+		color: $cWhite;
+		margin-bottom: 15px;
+		font-style: italic;
+
+		@include tablet {
+			font-style: normal;
+		}
+	}
+
+	&__link {
+		margin-bottom: 12px;
+
+		a {
+			transition: 0.4s;
+
+			&:hover {
+				color: $cGreen;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.footerCopyright {
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: normal;
+
+	@include tablet {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0;
+		margin-top: 30px;
+
+		&__info {
+			order: 2;
+			margin-top: 30px;
+		}
+
+		&__text {
+			// max-width: 220px;
+		}
+	}
+
+	&__text {
+		span {
+			display: block;
+			// @include tablet {
+			// 	display: inline-block;
+			// 	margin-left: 5px;
+			// }
+		}
+	}
+
+	&__address {
+		color: rgba(255, 255, 255, 0.3);
+		font-size: 12px;
+		max-width: 256px;
+		margin-top: 8px;
+	}
+
+	&__social {
+		&-item {
+			margin-right: 10px;
+			width: 26px;
+			overflow: hidden;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+// For Old footer Styles
+// .footer {
+// 	width: 100%;
+// 	margin-top: auto;
+// position: absolute;
+// bottom: 0;
+// left: 0;
+// z-index: 100;
+// background-color: transparent;
+// border-radius: 25px 25px 0px 0px;
+// border-top: 1px solid $cPageBorder;
+// border-right: 1px solid $cPageBorder;
+// border-left: 1px solid $cPageBorder;
+// border-color: transparent;
+// transition: background-color 0.4s, border-color 0.4s;
+
+// &.scrolled {
+// 	background-color: $cDark;
+// 	border-color: $cPageBorder;
+// }
+// }
+
+// .transitionPage {
+// 	+ .footer {
+// 		position: relative;
+// 	}
+// }
+
+// .footerContent {
+// height: 84px;
+// 	padding: 30px 0;
+// 	display: flex;
+// 	align-items: center;
+// 	color: $cGrey;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-between;
+
+// 	@include maxHeight850 {
+// 		padding: 15px 0;
+// 	}
+
+// 	@include tablet {
+// 		flex-wrap: wrap;
+// 		padding: 20px 0;
+// 	}
+
+// 	@include mobile {
+// 		flex-wrap: wrap;
+// 		padding: 16px 0;
+// 	}
+
+// 	&__item {
+// 		white-space: nowrap;
+// 	}
+
+// 	&__title,
+// 	&__pageNumber {
+// 		font-style: italic;
+
+// 		@include tablet {
+// 			width: 50%;
+// 			order: 1;
+// 			margin-bottom: 20px;
+// 		}
+// 	}
+
+// 	&__pageNumber {
+// 		@include tablet {
+// 			text-align: right;
+// 			padding-right: 2px;
+// 		}
+// 	}
+// }
+
+// .footerTime {
+// 	font-family: $fontDefaultLight;
+// 	font-size: 14px;
+
+// 	@include tablet {
+// 		order: 2;
+// 	}
+
+// 	&__item {
+// 		width: 60px;
+// 		display: inline-block;
+
+// 		@include tablet {
+// 			width: 56px;
+// 		}
+
+// 		@include mobile {
+// 			display: block;
+// 			margin-top: 3px;
+// 		}
+// 	}
+// }
