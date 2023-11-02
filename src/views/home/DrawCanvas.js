@@ -1,215 +1,141 @@
-import React, { useEffect, useRef } from 'react';
-import beforeImg from './img/before.jpg';
-import afterImg from './img/moderna.jpg';
+import { useEffect } from 'react';// Import your SCSS file
+import myImage from'../../assets/images/face.png';
+import illustrationImage from '../../assets/images/face-after.png';
 
-const DrawCanvas = () => {
-	const illustrationImageRef = useRef(null);
-	const imageCanvasRef = useRef(null);
-	const lineCanvasRef = useRef(null);
+export default function DrawCanvas() {
+  useEffect(() => {
+    const imageCanvas = document.createElement("canvas");
+    const imageCanvasContext = imageCanvas.getContext("2d");
+    const lineCanvas = document.createElement("canvas");
+    const lineCanvasContext = lineCanvas.getContext("2d");
+    const pointLifetime = 1000;
+    let points = [];
 
-	useEffect(() => {
-		if (illustrationImageRef.current) {
-			const image = illustrationImageRef.current;
-			const imageCanvas = imageCanvasRef.current;
-			const imageCanvasContext = imageCanvas.getContext('2d');
-			const lineCanvas = lineCanvasRef.current;
-			const lineCanvasContext = lineCanvas.getContext('2d');
-			const pointLifetime = 3000;
-			let points = [];
+    const image = document.querySelector(".illustrationImage") as HTMLImageElement;
 
-			function onMouseMove(event) {
-				var rect = imageCanvas.getBoundingClientRect();
+    const start = () => {
+      imageCanvas.addEventListener("mousemove", onMouseMove);
+      imageCanvas.addEventListener("touchmove", onTouchMove);
+      window.addEventListener("resize", resizeCanvases);
+      document.querySelector(".drawCanvas")?.appendChild(imageCanvas);
+      resizeCanvases();
+      tick();
+    };
 
-				points.push({
-					time: Date.now(),
-					x: event.clientX - rect.left,
-					y: event.clientY - rect.top,
-				});
-			}
+    const onMouseMove = (event: MouseEvent) => {
+      const rect = imageCanvas.getBoundingClientRect();
+      points.push({
+        time: Date.now(),
+        x: event.pageX - rect.left,
+        y: event.pageY - rect.top,
+      });
+    };
 
-			let isDrawing = false;
+    const onTouchMove = (event: TouchEvent) => {
+      const touch = event.targetTouches[0];
+      const rect = imageCanvas.getBoundingClientRect();
+      points.push({
+        time: Date.now(),
+        x: touch.pageX - rect.left,
+        y: touch.pageY - rect.top,
+      });
+    };
 
-			function onTouchStart(event) {
-				isDrawing = true;
-			}
+    const resizeCanvases = () => {
+      if (imageCanvas && lineCanvas) {
+        imageCanvas.width = lineCanvas.width = document.querySelector('.photoContainer')?.offsetWidth || 0;
+        imageCanvas.height = lineCanvas.height = document.querySelector('.photoContainer')?.offsetHeight || 0;
+      }
+    };
 
-			function onTouchMove(event) {
-				if (!isDrawing) {
-					return;
-				}
-				var touch = event.targetTouches[0];
-				var rect = imageCanvas.getBoundingClientRect();
-				points.push({
-					time: Date.now(),
-					x: touch.clientX - rect.left,
-					y: touch.clientY - rect.top,
-				});
-				// requestAnimationFrame(renderCanvas);
-			}
+    const tick = () => {
+			// Remove old points
+      points = points.filter((point) => {
+        const age = Date.now() - point.time;
+        return age < pointLifetime;
+      });
 
-			function onTouchEnd(event) {
-				isDrawing = false;
-				// debounce(renderCanvas, 100)();
-			}
+      drawLineCanvas();
+      drawImageCanvas();
+      requestAnimationFrame(tick);
+    };
 
-			function renderCanvas() {
-				// clearCanvas();
-				// drawPoints();
-			}
+    const drawLineCanvas = () => {
+      const minimumLineWidth = 80;
+      const maximumLineWidth = 80;
+      const lineWidthRange = maximumLineWidth - minimumLineWidth;
+      const maximumSpeed = 100;
 
-			function debounce(func, wait) {
-				let timeout;
-				return function (...args) {
-					const context = this;
-					clearTimeout(timeout);
-					timeout = setTimeout(() => func.apply(context, args), wait);
-				};
-			}
+      if (lineCanvasContext) {
+        lineCanvasContext.clearRect(0, 0, lineCanvas.width, lineCanvas.height);
+        lineCanvasContext.lineCap = "round";
 
-			function throttle(func, limit) {
-				let lastFunc;
-				let lastRan;
-				return function (...args) {
-					const context = this;
-					if (!lastRan) {
-						func.apply(context, args);
-						lastRan = Date.now();
-					} else {
-						clearTimeout(lastFunc);
-						lastFunc = setTimeout(() => {
-							if (Date.now() - lastRan >= limit) {
-								func.apply(context, args);
-								lastRan = Date.now();
-							}
-						}, limit - (Date.now() - lastRan));
-					}
-				};
-			}
+        for (let i = 1; i < points.length; i++) {
+          const point = points[i];
+          const previousPoint = points[i - 1];
 
-			// function onTouchMove(event) {
-			// 	var touch = event.targetTouches[0];
-			// 	var rect = imageCanvas.getBoundingClientRect();
-
-			// 	points.push({
-			// 		time: Date.now(),
-			// 		x: touch.clientX - rect.left,
-			// 		y: touch.clientY - rect.top,
-			// 	});
-			// }
-
-			const resizeCanvases = () => {
-				if (document.querySelector('.photoContainer')) {
-					imageCanvas.width = lineCanvas.width =
-						document.querySelector('.photoContainer').offsetWidth;
-					imageCanvas.height = lineCanvas.height =
-						document.querySelector('.photoContainer').offsetHeight;
-				}
-			};
-
-			const tick = () => {
-				// Remove old points
-				points = points.filter(function (point) {
-					const age = Date.now() - point.time;
-					return age < pointLifetime;
-				});
-
-				drawLineCanvas();
-				drawImageCanvas();
-				requestAnimationFrame(tick);
-			};
-
-			const drawLineCanvas = () => {
-				const minimumLineWidth = 150;
-				const maximumLineWidth = 150;
-				const lineWidthRange = maximumLineWidth - minimumLineWidth;
-				const maximumSpeed = 300;
-
-				lineCanvasContext.clearRect(0, 0, lineCanvas.width, lineCanvas.height);
-				lineCanvasContext.lineCap = 'round';
-
-				for (let i = 1; i < points.length; i++) {
-					const point = points[i];
-					const previousPoint = points[i - 1];
-
-					// Change line width based on speed
-					const distance = getDistanceBetween(point, previousPoint);
-					const speed = Math.max(0, Math.min(maximumSpeed, distance));
-					const percentageLineWidth = (maximumSpeed - speed) / maximumSpeed;
-					lineCanvasContext.lineWidth =
-						minimumLineWidth + percentageLineWidth * lineWidthRange;
+					 // Change line width based on speed
+          const distance = getDistanceBetween(point, previousPoint);
+          const speed = Math.max(0, Math.min(maximumSpeed, distance));
+          const percentageLineWidth = (maximumSpeed - speed) / maximumSpeed;
+          lineCanvasContext.lineWidth = minimumLineWidth + percentageLineWidth * lineWidthRange;
 
 					// Fade points as they age
-					const age = Date.now() - point.time;
-					const opacity = (pointLifetime - age) / pointLifetime;
-					lineCanvasContext.strokeStyle = 'rgba(0, 0, 0, ' + opacity + ')';
+          const age = Date.now() - point.time;
+          const opacity = (pointLifetime - age) / pointLifetime;
+          lineCanvasContext.strokeStyle = `rgba(0, 0, 0, ${opacity})`;
 
-					lineCanvasContext.beginPath();
-					lineCanvasContext.moveTo(previousPoint.x, previousPoint.y);
-					lineCanvasContext.lineTo(point.x, point.y);
-					lineCanvasContext.stroke();
-				}
-			};
+          lineCanvasContext.beginPath();
+          lineCanvasContext.moveTo(previousPoint.x, previousPoint.y);
+          lineCanvasContext.lineTo(point.x, point.y);
+          lineCanvasContext.stroke();
+        }
+      }
+    };
 
-			const getDistanceBetween = (a, b) => {
-				return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
-			};
+    const getDistanceBetween = (a, b) => {
+      return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2);
+    };
 
-			const drawImageCanvas = () => {
-				if (document.querySelector('.drawCanvas') != null) {
+    const drawImageCanvas = () => {
+      if (imageCanvasContext && image) {
+        const dpi = window.devicePixelRatio;
+
+        if (document.querySelector('.drawCanvas') !== null) {
+          // imageCanvas.width = document.querySelector('.drawCanvas').offsetWidth || 0;
+          // imageCanvas.height = document.querySelector('.drawCanvas').offsetHeight || 0;
+
 					imageCanvas.width = document.querySelector('.drawCanvas').offsetWidth;
-					imageCanvas.height = document.querySelector('.drawCanvas').offsetHeight;
-				}
+        imageCanvas.height = document.querySelector('.drawCanvas').offsetHeight;
+        }
 
 				// Emulate background-size: cover
+        let width = imageCanvas.width;
+        let height = (imageCanvas.width / image.naturalWidth) * image.naturalHeight;
 
-				let width = imageCanvas.width;
-				let height = (imageCanvas.width / image.naturalWidth) * image.naturalHeight;
+        if (height < imageCanvas.height) {
+          width = (imageCanvas.height / image.naturalHeight) * image.naturalWidth;
+          height = imageCanvas.height;
+        }
 
-				if (height < imageCanvas.height) {
-					width = (imageCanvas.height / image.naturalHeight) * image.naturalWidth;
-					height = imageCanvas.height;
-				}
+        imageCanvasContext.clearRect(0, 0, width, height);
+        imageCanvasContext.globalCompositeOperation = "source-over";
+        imageCanvasContext.drawImage(image, 0, 0, width, height);
+        imageCanvasContext.globalCompositeOperation = "destination-in";
+        imageCanvasContext.drawImage(lineCanvas, 0, 0);
+      }
+    };
 
-				imageCanvasContext.clearRect(0, 0, width, height);
-				imageCanvasContext.globalCompositeOperation = 'source-over';
-				imageCanvasContext.drawImage(image, 0, 0, width, height);
-				imageCanvasContext.globalCompositeOperation = 'destination-in';
-				imageCanvasContext.drawImage(lineCanvas, 0, 0);
-			};
+    if (image && image.complete) {
+      start();
+    } else if (image) {
+      image.onload = start;
+    }
+  }, []);
 
-			const start = () => {
-				imageCanvas.addEventListener('mousemove', onMouseMove);
-				// imageCanvas.addEventListener('touchmove', onTouchMove);
-				imageCanvas.addEventListener('touchstart', onTouchStart, false);
-				imageCanvas.addEventListener('touchmove', throttle(onTouchMove, 16), false);
-				imageCanvas.addEventListener('touchend', onTouchEnd, false);
-				window.addEventListener('resize', resizeCanvases);
-				document.querySelector('.drawCanvas').appendChild(imageCanvas);
-				resizeCanvases();
-				tick();
-			};
-
-			if (image.complete) {
-				start();
-				// console.log(true);
-			} else {
-				image.onload = start;
-			}
-		}
-	}, []);
-
-	return (
-		<div className='drawCanvas' style={{ backgroundImage: `url(${beforeImg})` }}>
-			<img
-				className='illustrationImage'
-				src={afterImg}
-				alt=''
-				ref={illustrationImageRef}
-			/>
-			<canvas className='' ref={imageCanvasRef} />
-			<canvas className='' ref={lineCanvasRef} />
-		</div>
-	);
-};
-
-export default DrawCanvas;
+  return (
+    <div className="drawCanvas" style={{ backgroundImage: `url(${myImage})` }}>
+      <img className="illustrationImage" src={illustrationImage} alt="illustrationImage" />
+    </div>
+  );
+}
